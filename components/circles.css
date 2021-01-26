@@ -1,0 +1,29 @@
+.circles-top {
+  display: flex;
+  margin-top: 200px;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.circles-bottom {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 10px 15px 0px 2px #89ABAA;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Rum raisin;
+  font-size: 60px;
+}
+

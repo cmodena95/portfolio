@@ -2,14 +2,35 @@
   position: relative;
 }
 
+
 .intro {
   background-color: white;
-  height: 700px;
+  height: 500px;
   width: 100%;
   position: absolute;
   left: 0;
   margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.intro-text {
+  margin-left: 50px;
+  font-family: Rum raisin;
+}
+
+.intro-heading {
+  font-size: 96px;
+  text-shadow: 6px 6px 3px lightgrey;
+}
+
+.intro-content {
+  font-size: 46px;
+}
+
+
+
 
 .main {
   background-color: #B7E4E2;
@@ -17,5 +38,21 @@
   width: 100%;
   position: absolute;
   left: 0;
-  margin-top: 780px;
+  margin-top: 750px;
 }
+
+
+.floor {
+  height: 150px;
+  width: 100%;
+  background-color: #EFD884;
+  position: absolute;
+  margin-top: 1750px;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 70px;
+}
+
+
+
