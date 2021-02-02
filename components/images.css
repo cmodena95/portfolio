@@ -5,3 +5,10 @@
   margin-right: 50px;
   margin-top: 200px;
 }
+
+
+#wave {
+  width: 100%;
+  position: relative;
+  top: -100px;
+}
