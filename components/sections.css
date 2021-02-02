@@ -34,7 +34,7 @@
 
 .main {
   background-color: #B3DBD7;
-  height: 1500px;
+  height: 1700px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -42,17 +42,22 @@
 }
 
 
-.floor {
+/*.floor {
   height: 150px;
   width: 100%;
   background-color: #EFD884;
   position: absolute;
-  margin-top: 1750px;
+  margin-top: 1900px;
   left: 0;
   display: flex;
   justify-content: space-around;
   padding-top: 70px;
-}
+}*/
 
+.floor {
+  position: relative;
+  top: 20;
+  justify-content: space-around;
+}
 
 

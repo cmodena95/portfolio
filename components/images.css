@@ -12,3 +12,8 @@
   position: relative;
   top: -100px;
 }
+
+#sand {
+  width: 100%;
+  position: absolute;
+}

@@ -1,4 +1,4 @@
-.navbar {
+.navbar-top {
   background-color: #B7E4E2;
   width: 100%;
   height: 80px;
@@ -12,6 +12,14 @@
 
 .navbar-links {
   display: flex;
+}
+
+.navbar-links-bottom {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 500px;
+  left: 650px;
 }
 
 

@@ -1,6 +1,6 @@
 .circles-top {
   display: flex;
-  margin-top: 200px;
+/*  margin-top: 50px;*/
   justify-content: space-between;
   margin-left: 100px;
   margin-right: 100px;
@@ -15,8 +15,8 @@
 
 
 .circle {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background-color: white;
   box-shadow: 10px 15px 0px 2px #89ABAA;
@@ -27,3 +27,6 @@
   font-size: 60px;
 }
 
+#illustrations {
+  font-size: 50px;
+}
