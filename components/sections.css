@@ -1,27 +1,20 @@
-.main {
-  position: relative;
-}
-
-
 .intro {
   background-color: white;
-  height: 400px;
-  width: 100%;
-  position: absolute;
+  height: 65vh;
   left: 0;
-  margin-top: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .intro-text {
-  margin-left: 50px;
+/*  margin-right: 5vw;*/
   font-family: Rum raisin;
+  margin: auto;
 }
 
 .intro-heading {
-  font-size: 96px;
+  font-size: 80px;
   text-shadow: 6px 6px 3px lightgrey;
 }
 
@@ -32,32 +25,40 @@
 
 
 
-.main {
-  background-color: #B3DBD7;
-  height: 1700px;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  margin-top: 750px;
+
+/*@media screen and (min-width: 501px) {
+  .intro-heading {
+    font-size: 96px;
+    text-shadow: 6px 6px 3px lightgrey;
+  }
 }
 
 
-/*.floor {
-  height: 150px;
-  width: 100%;
-  background-color: #EFD884;
-  position: absolute;
-  margin-top: 1900px;
-  left: 0;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 70px;
+@media screen and (max-width: 500px) {
+  .intro-heading {
+    font-size: 30px;
+  }
 }*/
 
-.floor {
-  position: relative;
-  top: 20;
-  justify-content: space-around;
+
+
+
+
+
+.main {
+  background-color: #B3DBD7;
 }
+
+
+.floor {
+  background-image: url('../sand.png');
+  min-height: 46vw;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+
 
 

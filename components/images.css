@@ -1,19 +1,16 @@
 #pot {
-  height: 500px;
-  width: 400px;
-  position: relative;
-  margin-right: 50px;
-  margin-top: 200px;
+  height: 100%;
+  width: 50vw;
+  object-fit: contain;
 }
 
 
 #wave {
   width: 100%;
   position: relative;
-  top: -100px;
 }
 
 #sand {
   width: 100%;
-  position: absolute;
+  /*position: absolute;*/
 }
