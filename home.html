@@ -64,16 +64,16 @@
             </div>
 
             <div class="circles-middle">
-              <div class="circle">
+              <div class="circle" id="websites">
                 Websites
               </div>
-              <div class="circle">
+              <div class="circle" id="books">
                 Books
               </div>
             </div>
 
             <div class="circles-bottom">
-              <div class="circle">
+              <div class="circle" id="about">
                 About
               </div>
             </div>
@@ -105,12 +105,21 @@
 
 
 <script>
-
   const circles = document.querySelectorAll('.circle');
 
-  function toggleSelected() {
-    console.log('Hello');
-    this.classList.toggle('open');
+  function toggleSelected(event) {
+    const clickedCircle = event.currentTarget;
+    if (clickedCircle.classList.contains('open')) {
+      circles.forEach(circle => circle.classList.remove('open'));
+      circles.forEach(circle => circle.classList.remove('small'));
+    } else {
+      circles.forEach(circle => circle.classList.remove('open'));
+      circles.forEach(circle => circle.classList.remove('small'));
+
+      clickedCircle.classList.add('open');
+      circles.forEach(circle => circle.classList.add('small'));
+      clickedCircle.classList.remove('small');
+    }
   }
 
   circles.forEach(circle => circle.addEventListener('click', toggleSelected));
