@@ -118,18 +118,22 @@
 
   #illustrations.circle.small {
     transform: translate(-85%, -73%);
+    font-size: 30px;
   }
 
   #websites.circle.small {
     transform: translate(-27%, -104%);
+    font-size: 40px;
   }
 
   #books.circle.small {
     transform: translate(-107%, -85%);
+    font-size: 40px;
   }
 
   #about.circle.small {
     transform: translate(250%,-386%);
+    font-size: 40px;
   }
 
   .circle.small {
@@ -168,18 +172,22 @@
 
   #illustrations.circle.small {
     transform: translate(-100%, 30%);
+    font-size: 30px;
   }
 
   #websites.circle.small {
     transform: translate(30%, -135%);
+    font-size: 40px;
   }
 
   #books.circle.small {
     transform: translate(-30%, -140%);
+    font-size: 40px;
   }
 
   #about.circle.small {
     transform: translate(100%, -300%);
+    font-size: 40px;
   }
 
   .circle.small {
