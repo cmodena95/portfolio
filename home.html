@@ -105,6 +105,18 @@
 
 
 <script>
+
+  const circles = document.querySelectorAll('.circle');
+
+  function toggleSelected() {
+    console.log('Hello');
+    this.classList.toggle('open');
+  }
+
+  circles.forEach(circle => circle.addEventListener('click', toggleSelected));
+
+  // Add separate .selected classes to each circle
+
 </script>
 
 </html>
