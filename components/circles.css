@@ -39,58 +39,156 @@
   transition: all 0.5s;
 }
 
-/*#illustrations {
+#illustrations {
   font-size: 50px;
-}*/
+}
 
 
 
-.circles {
+/*.circles {
   padding-top: 10vh;
 }
 
 
 #websites.circle.open {
-  transform: translate(-35%, -100%);
+  transform: translate(-24%, -71%);
 }
 
 #illustrations.circle.open {
-  transform: translate(-35%, 0%);
+  transform: translate(-41%, -57%);
 }
 
 #books.circle.open {
-  transform: translate(-35%, -100%);
+  transform: translate(-56%, -71%);
 }
 
 #about.circle.open {
-  transform: translate(134%, -200%);
+  transform: translate(116%, -268%);
 }
 
 
 
 #illustrations.circle.small {
-  transform: translate(-80%, 37%);
+  transform: translate(-85%, -73%);
 }
 
 #websites.circle.small {
-  transform: translate(-80%, -129%);
+  transform: translate(-27%, -104%);
 }
 
 #books.circle.small {
-  transform: translate(-60%, -130%);
+  transform: translate(-107%, -85%);
 }
 
 #about.circle.small {
-  transform: translate(250%,-298%);
+  transform: translate(250%,-386%);
 }
 
 .circle.small {
   width: 150px;
   height: 150px;
 }
+*/
 
 
 
+@media screen and (max-device-width: 400px) {
+  .circles {
+    padding-top: 10vh;
+  }
+
+
+  #websites.circle.open {
+    transform: translate(-24%, -71%);
+  }
+
+  #illustrations.circle.open {
+    transform: translate(-41%, -57%);
+  }
+
+  #books.circle.open {
+    transform: translate(-56%, -71%);
+  }
+
+  #about.circle.open {
+    transform: translate(116%, -268%);
+  }
+
+
+
+  #illustrations.circle.small {
+    transform: translate(-85%, -73%);
+  }
+
+  #websites.circle.small {
+    transform: translate(-27%, -104%);
+  }
+
+  #books.circle.small {
+    transform: translate(-107%, -85%);
+  }
+
+  #about.circle.small {
+    transform: translate(250%,-386%);
+  }
+
+  .circle.small {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+
+
+@media screen and (min-device-width: 401px) {
+
+  .circles {
+    padding-top: 10vh;
+  }
+
+
+  #websites.circle.open {
+    transform: translate(-20%, -100%);
+  }
+
+  #illustrations.circle.open {
+    transform: translate(-70%, 0%);
+  }
+
+  #books.circle.open {
+    transform: translate(0%, -99%);
+  }
+
+  #about.circle.open {
+    transform: translate(50%, -200%);
+  }
+
+
+
+  #illustrations.circle.small {
+    transform: translate(-100%, 30%);
+  }
+
+  #websites.circle.small {
+    transform: translate(30%, -135%);
+  }
+
+  #books.circle.small {
+    transform: translate(-30%, -140%);
+  }
+
+  #about.circle.small {
+    transform: translate(100%, -300%);
+  }
+
+  .circle.small {
+    width: 150px;
+    height: 150px;
+  }
+
+
+}
 
 
 
