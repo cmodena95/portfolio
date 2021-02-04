@@ -14,3 +14,32 @@
   width: 100%;
   /*position: absolute;*/
 }
+
+
+/*
+  margin-top: 15vh;
+  z-index: 1;*/
+/*@media screen
+ and (max-device-width: 1400px)
+ and (min-device-width: 480px)
+{
+  body {
+    background-color: black;
+  }
+}
+*/
+
+@media screen and (max-device-width: 400px) {
+  #pot {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (min-device-width: 401px) {
+  #pot {
+    z-index: 1;
+    margin-top: 20vh;
+  }
+}
+
+
