@@ -141,6 +141,18 @@
 
           </div>
 
+
+
+          <div id="illustration-modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Text</p>
+            </div>
+          </div>
+
+
+
+
           <!-- SAND -->
 
           <div class="floor">
@@ -191,7 +203,7 @@
   circles.forEach(circle => circle.addEventListener('click', toggleSelected));
 
 
-// ILLUSTRATIONS CAROUSEL
+// ILLUSTRATIONS
 
   const illustrationsButton = document.querySelector('#illustrations');
   const illustrationsSection = document.querySelector('.illustrations-section');
@@ -202,9 +214,27 @@
 
   illustrationsButton.addEventListener('click', toggleIllustrations);
 
+// ILLUSTRATIONS MODAL WINDOW
 
+var modal = document.getElementById("illustration-modal");
 
-// TOGGLE HIDDEN CLASS
+var images = document.querySelectorAll(".img");
+
+var span = document.getElementsByClassName("close")[0];
+
+images.forEach(img => (img.onclick = function() {
+  modal.style.display = "block";
+}));
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 </script>
 

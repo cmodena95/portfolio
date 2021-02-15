@@ -99,7 +99,7 @@
 #long {
   padding: 10px 10px 0 0;
   transform: translate(3px, 53px) rotate(-17deg);
-  width: 20vw;
+  width: 23vw;
   height: 55vh;
 }
 
@@ -188,5 +188,6 @@
   transform: translate(10px, 42px) rotate(6deg);
   padding: 0 10px;
 }
+
 
 
