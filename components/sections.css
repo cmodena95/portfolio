@@ -51,7 +51,7 @@
 
 
 .floor {
-  background-image: url('../images/sand.png');
+  background-image: url('https://res.cloudinary.com/cmodena6695/image/upload/v1613415905/sand_j8xph5.png');
   min-height: 46vw;
   background-size: cover;
   position: relative;
