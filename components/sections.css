@@ -51,7 +51,7 @@
 
 
 .floor {
-  background-image: url('../sand.png');
+  background-image: url('../images/sand.png');
   min-height: 46vw;
   background-size: cover;
   position: relative;

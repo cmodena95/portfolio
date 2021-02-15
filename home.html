@@ -38,7 +38,7 @@
 
     <!-- INTRO SECTION -->
     <div class="intro">
-      <img src="pot.png" id="pot">
+      <img src="./images/pot.png" id="pot">
       <div class="intro-text">
         <div class="intro-heading">
           Camila Modena
@@ -50,8 +50,12 @@
     </div>
     <!-- ---------- -->
 
+
+<!-- USE JS TO INSERT HTML OF CONTENT BELOW -->
+
+
     <!-- MAIN SECTION -->
-    <img src="wave.png" id="wave">
+    <img src="./images/wave.png" id="wave">
 
         <div class="main">
 
@@ -80,6 +84,65 @@
 
           </div>
 
+          <!-- ILLUSTRATIONS -->
+
+          <div class="illustrations-section hidden">
+
+            <div class="illustrations-grid">
+              <div class="grid">
+                <div class="row">
+                  <img src="./images/ppwhite.png" class="img" id="purple">
+                  <img src="./images/ewhite.png" class="img middle" id="elephant">
+                  <img src="./images/pwhite.png" class="img" id="ricky">
+                </div>
+                <div class="row">
+                  <img src="./images/uncleed.png" class="img" id="uncleed">
+                  <img src="./images/onioncat.png" class="img middle" id="onion">
+                  <img src="./images/teapot.png" class="img" id="teapot">
+                </div>
+                 <div class="row">
+                  <img src="./images/pot.png" class="img" id="bluepot">
+                  <img src="./images/kyle.png" class="img middle" id="kyle">
+                  <img src="./images/run.png" class="img" id="run">
+                </div>
+                <div class="row">
+                  <img src="./images/shark.png" class="img" id="shark">
+                  <img src="./images/long.png" class="img middle" id="long">
+                  <img src="./images/cat.png" class="img" id="cat">
+                </div>
+                <div class="row">
+                  <img src="./images/bigwave.png" class="img" id="bigwave">
+                  <img src="./images/doodles.png" class="img middle" id="doodles">
+                  <img src="./images/space.png" class="img" id="space">
+                </div>
+                <div class="row">
+                  <img src="./images/egg.png" class="img" id="egg">
+                  <img src="./images/max.png" class="img middle" id="max">
+                  <img src="./images/banana.png" class="img" id="banana">
+                </div>
+                <div class="row">
+                  <img src="./images/ramen.png" class="img" id="ramen1">
+                  <img src="./images/neck.png" class="img middle" id="neck">
+                  <img src="./images/house.png" class="img" id="house">
+                </div>
+                <div class="row">
+                  <img src="./images/chameleon.png" class="img" id="chameleon">
+                  <img src="./images/relax.png" class="img middle" id="relax">
+                  <img src="./images/cateat.png" class="img" id="cateat">
+                </div>
+                <div class="row">
+                  <img src="./images/squash.png" class="img" id="squash">
+                  <img src="./images/cathead.png" class="img middle" id="cathead">
+                  <img src="./images/ramen2.png" class="img" id="ramen2">
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- SAND -->
+
           <div class="floor">
             <div class="navbar-links-bottom">
               <div class="instagram-icon">
@@ -105,9 +168,12 @@
 
 
 <script>
+
+// CIRCLES
+
   const circles = document.querySelectorAll('.circle');
 
-  function toggleSelected(event) {
+  const toggleSelected = (event) => {
     const clickedCircle = event.currentTarget;
     if (clickedCircle.classList.contains('open')) {
       circles.forEach(circle => circle.classList.remove('open'));
@@ -124,7 +190,21 @@
 
   circles.forEach(circle => circle.addEventListener('click', toggleSelected));
 
-  // Add separate .selected classes to each circle
+
+// ILLUSTRATIONS CAROUSEL
+
+  const illustrationsButton = document.querySelector('#illustrations');
+  const illustrationsSection = document.querySelector('.illustrations-section');
+
+  const toggleIllustrations = (event) => {
+    illustrationsSection.classList.toggle("hidden");
+  }
+
+  illustrationsButton.addEventListener('click', toggleIllustrations);
+
+
+
+// TOGGLE HIDDEN CLASS
 
 </script>
 
