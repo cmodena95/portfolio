@@ -1,0 +1,34 @@
+/* GENERAL */
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: Rum raisin;
+}
+
+/* MAIN */
+
+.intro-text {
+  font-family: Rum raisin;
+  margin: auto;
+}
+
+.intro-heading {
+  font-size: 80px;
+  text-shadow: 6px 6px 3px lightgrey;
+}
+
+.intro-content {
+  font-size: 46px;
+}
+
+
+
+/* BOOKS */
+
+.fish-in-the-sea-text {
+  margin-left: 75px;
+}
+

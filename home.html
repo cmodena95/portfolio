@@ -9,6 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -71,18 +72,21 @@
               <div class="circle" id="websites">
                 Websites
               </div>
-              <div class="circle" id="books">
-                Books
-              </div>
-            </div>
-
-            <div class="circles-bottom">
               <div class="circle" id="about">
                 About
               </div>
             </div>
 
+            <div class="circles-bottom">
+              <div class="circle" id="books">
+                Books
+              </div>
+            </div>
+
           </div>
+
+
+
 
           <!-- ILLUSTRATIONS -->
 
@@ -151,6 +155,21 @@
           </div>
 
 
+          <!-- BOOKS -->
+
+          <div class="books-section hidden">
+            <div class="fish-in-the-sea">
+              <img src="https://le-cdn.website-editor.net/78ffe2defb144734a89b5257444983bd/dms3rep/multi/opt/IMG_20200719_102847-381w.jpg" id="fish-in-the-sea-image">
+              <div class="fish-in-the-sea-text">
+                <h2>The Fish in the Sea Who Could Not See</h2>
+                <p>Bla bla bla text here</p>
+              </div>
+            </div>
+
+            <div class="octopus">
+              <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613499848/Untitled_Artwork_5_2_hhn3ol.png" id="octopus-illustration">
+            </div>
+          </div>
 
 
           <!-- SAND -->
@@ -203,7 +222,10 @@
   circles.forEach(circle => circle.addEventListener('click', toggleSelected));
 
 
-// ILLUSTRATIONS
+
+
+
+// ILLUSTRATION CIRCLE
 
   const illustrationsButton = document.querySelector('#illustrations');
   const illustrationsSection = document.querySelector('.illustrations-section');
@@ -214,6 +236,7 @@
 
   illustrationsButton.addEventListener('click', toggleIllustrations);
 
+
 // ILLUSTRATIONS MODAL WINDOW
 
 var modal = document.getElementById("illustration-modal");
@@ -223,11 +246,6 @@ var content = document.getElementById("modal-content-illustration");
 var images = document.querySelectorAll(".img");
 
 var span = document.getElementsByClassName("close")[0];
-
-
-
-
-
 
 
 images.forEach(img => (img.onclick = function() {
@@ -249,6 +267,25 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+
+// BOOKS CIRCLE
+
+const booksButton = document.querySelector('#books');
+const booksSection = document.querySelector('.books-section');
+
+const toggleBooks = (event) => {
+  if (!illustrationsSection.classList.contains("hidden")) {
+    illustrationsSection.classList.toggle("hidden");
+  }
+  booksSection.classList.toggle("hidden");
+}
+
+booksButton.addEventListener('click', toggleBooks);
+
+
 
 </script>
 

@@ -1,0 +1,50 @@
+.books-section {
+  margin: auto;
+}
+
+.fish-in-the-sea {
+  background-color: white;
+  border-radius: 50px;
+  height: auto;
+  width: 60vw;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  transform: translate(10px, -194px);
+}
+
+
+#fish-in-the-sea-image {
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+
+  animation: fish-sway 4s;
+}
+
+
+@keyframes fish-sway {
+    0% {transform: rotate(2deg);}
+    30% {transform:  rotate(-2deg);}
+    60% {transform:  rotate(2deg);}
+    100% {transform: rotate(0deg)}
+}
+
+
+
+#octopus-illustration {
+  width: 40%;
+  margin: auto;
+  display: block;
+  transform: translate(10px, 43px);
+
+  animation: octopus-sway 4s infinite;
+}
+
+
+@keyframes octopus-sway {
+  0% {transform: translate(10px, 43px) rotate(2deg);}
+  50% {transform: translate(10px, 43px) rotate(-2deg);}
+  100% {transform: translate(10px, 43px) rotate(2deg);}
+}
