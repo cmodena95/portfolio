@@ -91,9 +91,9 @@
             <div class="illustrations-grid">
               <div class="grid">
                 <div class="row">
-                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613415904/ppwhite_gweiag.png" class="img" id="purple">
-                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613415899/ewhite_wkiuwt.png" class="img middle" id="elephant">
-                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613415903/pwhite_joti5w.png" class="img" id="ricky">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613415903/purple_pribn6.png" class="img" id="purple">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613415898/elephant_gtrbzu.png" class="img middle" id="elephant">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613415900/portrait_kfvit6.png" class="img" id="ricky">
                 </div>
                 <div class="row">
                   <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613415908/uncleed_wa2zoi.png" class="img" id="uncleed">
@@ -143,10 +143,10 @@
 
 
 
-          <div id="illustration-modal" class="modal">
-            <div class="modal-content">
+          <div id="illustration-modal" class="my-modal">
+            <div class="modal-box">
               <span class="close">&times;</span>
-              <p>Text</p>
+                <img id="modal-content-illustration" src=''>
             </div>
           </div>
 
@@ -218,12 +218,26 @@
 
 var modal = document.getElementById("illustration-modal");
 
+var content = document.getElementById("modal-content-illustration");
+
 var images = document.querySelectorAll(".img");
 
 var span = document.getElementsByClassName("close")[0];
 
+
+
+
+
+
+
 images.forEach(img => (img.onclick = function() {
-  modal.style.display = "block";
+  var imageSource = img.src;
+
+  console.log(imageSource);
+
+  modal.style.display = "flex";
+
+  content.src = imageSource;
 }));
 
 span.onclick = function() {

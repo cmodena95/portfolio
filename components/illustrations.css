@@ -26,13 +26,14 @@
   margin: 0 70px 0 70px;
 }
 
-
+.illustrations-section {
+  transform: translate(0px, -182px);
+}
 
 .illustrations-grid {
   display: flex;
   justify-content: space-around;
 }
-
 
 
 /* ILLUSTRATIONS */
@@ -188,6 +189,4 @@
   transform: translate(10px, 42px) rotate(6deg);
   padding: 0 10px;
 }
-
-
 
