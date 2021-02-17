@@ -182,13 +182,13 @@
 
               <div class="handyladies-images-carousel">
                 <div class="handyladies-images">
-                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613549880/Screenshot_2021-02-17_at_09.16.02_uv0hfx.png" id="handyladies-img">
-                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613549879/Screenshot_2021-02-17_at_09.15.36_z1djux.png" id="handyladies-img" class="hidden">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613549880/Screenshot_2021-02-17_at_09.16.02_uv0hfx.png" class="handyladies-img-1">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613549879/Screenshot_2021-02-17_at_09.15.36_z1djux.png" class="handyladies-img-2 hidden">
                 </div>
 
                 <div class="handyladies-images-buttons">
-                  <i class="fas fa-square selected"></i>
-                  <i class="fas fa-square"></i>
+                  <i class="fas fa-square" id="handyladies-button-1"></i>
+                  <i class="fas fa-square" id="handyladies-button-2"></i>
                 </div>
 
               </div>
@@ -350,6 +350,40 @@ const toggleWebsites = (event) => {
 
 websitesButton.addEventListener('click', toggleWebsites);
 
+// HANDYLADIES BUTTONS
+
+const handyladiesButton1 = document.getElementById('handyladies-button-1');
+const handyladiesButton2 = document.getElementById('handyladies-button-2');
+
+const handyladiesImage1 = document.querySelector(".handyladies-img-1");
+const handyladiesImage2 = document.querySelector(".handyladies-img-2");
+
+const changeToHandyladiesImage2 = (event) => {
+  if (!handyladiesImage1.classList.contains("hidden")) {
+    handyladiesImage1.classList.toggle("hidden");
+
+    handyladiesImage2.classList.toggle("hidden");
+
+    handyladiesButton1.style.opacity = 0.5;
+    handyladiesButton2.style.opacity = 1;
+  }
+}
+
+
+
+const changeToHandyladiesImage1 = (event) => {
+  if (!handyladiesImage2.classList.contains("hidden")) {
+    handyladiesImage2.classList.toggle("hidden");
+
+    handyladiesImage1.classList.toggle("hidden");
+
+    handyladiesButton2.style.opacity = 0.5;
+    handyladiesButton1.style.opacity = 1;
+  }
+}
+
+handyladiesButton2.addEventListener('click', changeToHandyladiesImage2);
+handyladiesButton1.addEventListener('click', changeToHandyladiesImage1);
 
 </script>
 

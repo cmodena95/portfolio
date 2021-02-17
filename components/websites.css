@@ -15,7 +15,11 @@
 }
 
 
-#handyladies-img {
+.handyladies-img-1 {
+  width: 20vw !important;
+}
+
+.handyladies-img-2 {
   width: 20vw !important;
 }
 
@@ -25,4 +29,9 @@
 
 .handyladies-images-buttons {
   text-align: center;
+  color: red;
+}
+
+#handyladies-button-2 {
+  opacity: 0.5;
 }
