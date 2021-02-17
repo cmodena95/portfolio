@@ -15,21 +15,38 @@
 }
 
 
-#fish-in-the-sea-image {
+#fish-in-the-sea-image-1 {
   margin: auto;
   display: block;
   border-radius: 10px;
-
-  animation: fish-sway 4s;
+  width: 450px;
+  height: 600px;
 }
 
-
-@keyframes fish-sway {
-    0% {transform: rotate(2deg);}
-    30% {transform:  rotate(-2deg);}
-    60% {transform:  rotate(2deg);}
-    100% {transform: rotate(0deg)}
+#fish-in-the-sea-image-2 {
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  width: 450px;
+  height: 600px;
 }
+
+#fish-in-the-sea-image-3 {
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  width: 450px;
+  height: 600px;
+}
+
+#fish-in-the-sea-image-4 {
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  width: 450px;
+  height: 600px;
+}
+
 
 
 
@@ -47,4 +64,25 @@
   0% {transform: translate(10px, 43px) rotate(2deg);}
   50% {transform: translate(10px, 43px) rotate(-2deg);}
   100% {transform: translate(10px, 43px) rotate(2deg);}
+}
+
+
+/* FISH IN THE SEA BUTTONS */
+
+.fish-in-the-sea-images-buttons {
+  margin-top: 30px;
+  text-align: center;
+  color: purple;
+}
+
+#fish-in-the-sea-button-2 {
+  opacity: 0.5;
+}
+
+#fish-in-the-sea-button-3 {
+  opacity: 0.5;
+}
+
+#fish-in-the-sea-button-4 {
+  opacity: 0.5;
 }

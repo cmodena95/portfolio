@@ -162,12 +162,28 @@
 
           <div class="books-section hidden">
             <div class="fish-in-the-sea">
-              <img src="https://le-cdn.website-editor.net/78ffe2defb144734a89b5257444983bd/dms3rep/multi/opt/IMG_20200719_102847-381w.jpg" id="fish-in-the-sea-image">
-              <div class="fish-in-the-sea-text">
-                <h2>The Fish in the Sea Who Could Not See</h2>
-                <p>Bla bla bla text here</p>
+              <div class="fish-in-the-sea-carousel">
+
+                <div class="fish-in-the-sea-images">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613571876/WhatsApp_Image_2021-02-17_at_13.14.27_agj49b.jpg" id="fish-in-the-sea-image-1">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613573552/Screenshot_2021-02-17_at_15.51.17_iu4vch.png" class="hidden" id="fish-in-the-sea-image-2">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613573551/Screenshot_2021-02-17_at_15.51.40_eskarr.png" class="hidden" id="fish-in-the-sea-image-3">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613571877/WhatsApp_Image_2021-02-17_at_13.14.29_scsxnl.jpg" class="hidden" id="fish-in-the-sea-image-4">
+                </div>
+
+                <div class="fish-in-the-sea-images-buttons">
+                  <i class="fas fa-square" id="fish-in-the-sea-button-1"></i>
+                  <i class="fas fa-square" id="fish-in-the-sea-button-2"></i>
+                  <i class="fas fa-square" id="fish-in-the-sea-button-3"></i>
+                  <i class="fas fa-square" id="fish-in-the-sea-button-4"></i>
+                </div>
               </div>
-            </div>
+
+                <div class="fish-in-the-sea-text">
+                  <h2>The Fish in the Sea Who Could Not See</h2>
+                  <p>Bla bla bla text here</p>
+                </div>
+              </div>
 
             <div class="octopus">
               <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613499848/Untitled_Artwork_5_2_hhn3ol.png" id="octopus-illustration">
@@ -216,6 +232,12 @@
 
           </div>
 
+
+          <!-- ABOUT -->
+
+          <div class="about-section hidden">
+            <p>Hi</p>
+          </div>
 
           <!-- SAND -->
 
@@ -284,6 +306,10 @@
       websitesSection.classList.toggle("hidden");
     }
 
+    if (!aboutSection.classList.contains("hidden")) {
+      aboutSection.classList.toggle("hidden");
+    }
+
     illustrationsSection.classList.toggle("hidden");
   }
 
@@ -338,13 +364,137 @@ const toggleBooks = (event) => {
     websitesSection.classList.toggle("hidden");
   }
 
+  if (!aboutSection.classList.contains("hidden")) {
+    aboutSection.classList.toggle("hidden");
+  }
+
   booksSection.classList.toggle("hidden");
 }
 
 booksButton.addEventListener('click', toggleBooks);
 
 
+// FISH IN THE SEA BUTTONS
 
+const fishButton1 = document.getElementById('fish-in-the-sea-button-1');
+const fishButton2 = document.getElementById('fish-in-the-sea-button-2');
+const fishButton3 = document.getElementById('fish-in-the-sea-button-3');
+const fishButton4 = document.getElementById('fish-in-the-sea-button-4');
+
+const fishImage1 = document.getElementById('fish-in-the-sea-image-1');
+const fishImage2 = document.getElementById('fish-in-the-sea-image-2');
+const fishImage3 = document.getElementById('fish-in-the-sea-image-3');
+const fishImage4 = document.getElementById('fish-in-the-sea-image-4');
+
+const changeToFishImage1 = (event) => {
+  if (!fishImage2.classList.contains("hidden")) {
+    fishImage2.classList.toggle("hidden");
+
+    fishImage1.classList.toggle("hidden");
+  }
+
+  if (!fishImage3.classList.contains("hidden")) {
+    fishImage3.classList.toggle("hidden");
+
+    fishImage1.classList.toggle("hidden");
+  }
+
+  if (!fishImage4.classList.contains("hidden")) {
+    fishImage4.classList.toggle("hidden");
+
+    fishImage1.classList.toggle("hidden");
+  }
+
+  fishButton1.style.opacity = 1;
+  fishButton2.style.opacity = 0.5;
+  fishButton3.style.opacity = 0.5;
+  fishButton4.style.opacity = 0.5;
+}
+
+
+const changeToFishImage2 = (event) => {
+  if (!fishImage1.classList.contains("hidden")) {
+    fishImage1.classList.toggle("hidden");
+
+    fishImage2.classList.toggle("hidden");
+  }
+
+  if (!fishImage3.classList.contains("hidden")) {
+    fishImage3.classList.toggle("hidden");
+
+    fishImage2.classList.toggle("hidden");
+  }
+
+  if (!fishImage4.classList.contains("hidden")) {
+    fishImage4.classList.toggle("hidden");
+
+    fishImage2.classList.toggle("hidden");
+  }
+
+
+  fishButton2.style.opacity = 1;
+  fishButton1.style.opacity = 0.5;
+  fishButton3.style.opacity = 0.5;
+  fishButton4.style.opacity = 0.5;
+}
+
+
+const changeToFishImage3 = (event) => {
+  if (!fishImage1.classList.contains("hidden")) {
+    fishImage1.classList.toggle("hidden");
+
+    fishImage3.classList.toggle("hidden");
+  }
+
+  if (!fishImage2.classList.contains("hidden")) {
+    fishImage2.classList.toggle("hidden");
+
+    fishImage3.classList.toggle("hidden");
+  }
+
+  if (!fishImage4.classList.contains("hidden")) {
+    fishImage4.classList.toggle("hidden");
+
+    fishImage3.classList.toggle("hidden");
+  }
+
+  fishButton3.style.opacity = 1;
+  fishButton1.style.opacity = 0.5;
+  fishButton2.style.opacity = 0.5;
+  fishButton4.style.opacity = 0.5;
+
+}
+
+
+const changeToFishImage4 = (event) => {
+  if (!fishImage1.classList.contains("hidden")) {
+    fishImage1.classList.toggle("hidden");
+
+    fishImage4.classList.toggle("hidden");
+  }
+
+  if (!fishImage2.classList.contains("hidden")) {
+    fishImage2.classList.toggle("hidden");
+
+    fishImage4.classList.toggle("hidden");
+  }
+
+  if (!fishImage3.classList.contains("hidden")) {
+    fishImage3.classList.toggle("hidden");
+
+    fishImage4.classList.toggle("hidden");
+  }
+
+  fishButton4.style.opacity = 1;
+  fishButton1.style.opacity = 0.5;
+  fishButton2.style.opacity = 0.5;
+  fishButton3.style.opacity = 0.5;
+}
+
+fishButton1.addEventListener('click', changeToFishImage1);
+fishButton2.addEventListener('click', changeToFishImage2);
+fishButton3.addEventListener('click', changeToFishImage3);
+fishButton4.addEventListener('click', changeToFishImage4);
 
 // WEBSITES CIRCLE
 
@@ -358,6 +508,10 @@ const toggleWebsites = (event) => {
 
   if (!booksSection.classList.contains("hidden")) {
     booksSection.classList.toggle("hidden");
+  }
+
+  if (!aboutSection.classList.contains("hidden")) {
+    aboutSection.classList.toggle("hidden");
   }
 
   websitesSection.classList.toggle("hidden");
@@ -399,6 +553,32 @@ const changeToHandyladiesImage1 = (event) => {
 
 handyladiesButton2.addEventListener('click', changeToHandyladiesImage2);
 handyladiesButton1.addEventListener('click', changeToHandyladiesImage1);
+
+
+
+// ABOUT CIRCLE
+
+const aboutButton = document.querySelector('#about');
+const aboutSection = document.querySelector('.about-section');
+
+const toggleAbout = (event) => {
+  if (!illustrationsSection.classList.contains("hidden")) {
+    illustrationsSection.classList.toggle("hidden");
+  }
+
+  if (!booksSection.classList.contains("hidden")) {
+    booksSection.classList.toggle("hidden");
+  }
+
+  if (!websitesSection.classList.contains("hidden")) {
+    websitesSection.classList.toggle("hidden");
+  }
+
+  aboutSection.classList.toggle("hidden");
+}
+
+aboutButton.addEventListener('click', toggleAbout);
+
 
 </script>
 
