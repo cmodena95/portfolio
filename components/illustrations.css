@@ -40,15 +40,15 @@
 
 #purple {
   transform: translate(-17px, -78px) rotate(-8deg);
-  width: 25vw !important;
-  height: 67vh !important;
+  width: 25vw;
+  height: 67vh;
   padding-top: 10px;
 }
 
 #elephant {
   transform: translate(8px, -11px) rotate(7deg);
-  width: 27vw !important;
-  height: 68vh !important;
+  width: 27vw;
+  height: 68vh;
   padding: 0 10px 0 10px;
 }
 
@@ -59,8 +59,8 @@
 
 #uncleed {
   transform: translate(-3px, -34px) rotate(10deg);
-  width: 22vw !important;
-  height: 55vh !important;
+  width: 22vw;
+  height: 55vh;
   padding: 0 20px 10px 0;
 }
 
@@ -69,9 +69,9 @@
 }
 
 #teapot {
-  height: 65vh !important;
+  height: 65vh;
   padding-bottom: 10px;
-  width: 22vw !important;
+  width: 22vw;
   transform: translate(-33px, -63px) rotate(8deg);
 }
 
@@ -82,7 +82,7 @@
 
 #kyle {
   padding: 30px 10px 0 10px;
-  height: 65vh !important;
+  height: 65vh;
   transform: translate(10px, 10px) rotate(5deg);
 }
 
@@ -115,7 +115,7 @@
 
 #doodles {
   width: 33vw;
-  transform: translate(10px, 63px);
+  transform: translate(10px, 63px)
   margin-left: 10px !important;
   padding: 10px;
 }
@@ -190,3 +190,179 @@
   padding: 0 10px;
 }
 
+
+
+/* MOBILE VIEW */
+
+@media screen and (max-device-width: 400px) {
+
+  .grid {
+    transform: translate(10px, 456px);
+    padding-bottom: 500px;
+  }
+
+
+
+
+  #purple {
+    width: 58%;
+    height: 40%;
+    transform: translate(125px, -560px) rotate(10deg);
+  }
+
+  #elephant {
+    width: 58%;
+    height: 40%;
+    transform: translate(219px, -510px) rotate(-17deg);
+  }
+
+  #ricky {
+    width: 58%;
+    height: 40%;
+    transform: translate(93px, -465px);
+  }
+
+  #uncleed {
+    width: 58%;
+    height: 40%;
+    transform: translate(310px, -483px) rotate(-15deg);
+  }
+
+  #onion {
+    width: 58%;
+    height: 40%;
+    transform: translate(65px, -430px) rotate(13deg);
+  }
+
+  #teapot {
+    width: 58%;
+    height: 40%;
+    transform: translate(240px, -373px) rotate(-9deg);
+  }
+
+  #bluepot {
+    width: 58%;
+    height: 40%;
+    transform: translate(300px, -338px) rotate(15deg);
+  }
+
+  #kyle {
+    width: 58%;
+    height: 40%;
+    transform: translate(30px, -317px);
+  }
+
+  #run {
+    width: 58%;
+    height: 40%;
+    transform: translate(304px, -265px) rotate(14deg);
+  }
+
+  #shark {
+    width: 58%;
+    height: 40%;
+    transform: translate(110px, -234px) rotate(-15deg);
+  }
+
+  #long {
+    width: 58%;
+    height: 40%;
+    transform: translate(220px, -200px) rotate(5deg);
+  }
+
+  #cat {
+    width: 58%;
+    height: 40%;
+    transform: translate(112px, -170px) rotate(-15deg);
+  }
+
+  #bigwave {
+    width: 58%;
+    height: 40%;
+    transform: translate(290px, -162px) rotate(15deg);
+  }
+
+  #doodles {
+    width: 78%;
+    height: 40%;
+    transform: translate(10px, -130px);
+  }
+
+  #space {
+    width: 66%;
+    height: 40%;
+    transform: translate(130px, -90px) rotate(-15deg);
+  }
+
+  #egg {
+    width: 58%;
+    height: 40%;
+    transform: translate(234px, -46px) rotate(26deg);
+  }
+
+  #max {
+    width: 58%;
+    height: 40%;
+    transform: translate(180px, 14px);
+  }
+
+  #banana {
+    width: 58%;
+    height: 40%;
+    transform: translate(140px, 50px) rotate(-15deg);
+  }
+
+  #ramen1 {
+    width: 58%;
+    height: 40%;
+    transform: translate(226px, 84px) rotate(26deg);
+  }
+
+  #neck {
+    width: 58%;
+    height: 40%;
+    transform: translate(30px, 142px);
+  }
+
+  #house {
+    width: 58%;
+    height: 40%;
+    transform: translate(310px, 152px) rotate(-15deg);
+  }
+
+  #chameleon {
+    width: 58%;
+    height: 40%;
+    transform: translate(160px, 183px) rotate(15deg);
+  }
+
+  #relax {
+    width: 64%;
+    height: 40%;
+    transform: translate(230px, 221px) rotate(-5deg);
+  }
+
+  #cateat {
+    width: 51%;
+    height: 40%;
+    transform: translate(110px, 236px) rotate(7deg);
+  }
+
+  #squash {
+    width: 62%;
+    height: 40%;
+    transform: translate(302px, 209px) rotate(-9deg);
+  }
+
+  #cathead {
+    width: 48%;
+    height: 40%;
+    transform: translate(82px, 247px) rotate(15deg);
+  }
+
+  #ramen2 {
+    width: 58%;
+    height: 40%;
+    transform: translate(240px, 280px);
+  }
+}
