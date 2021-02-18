@@ -45,3 +45,24 @@
   border-radius: 16px;
 }
 
+
+/* MOBILE VIEW */
+
+@media screen and (max-device-width: 400px) {
+  #modal-content-illustration {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/* TABLET VIEW */
+
+@media screen and (min-device-width: 401px) and (max-device-width: 1336px) {
+  #modal-content-illustration {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+

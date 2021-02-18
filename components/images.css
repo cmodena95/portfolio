@@ -16,6 +16,15 @@
   }
 }
 
+@media screen and (min-device-width: 401px) and (max-device-width: 1336px) {
+  #wave {
+    transform: translate(0px, 3px);
+  }
+}
+
+
+
+
 #sand {
   width: 100%;
   /*position: absolute;*/
