@@ -20,11 +20,23 @@
 
 
 .handyladies-img-1 {
-  width: 20vw !important;
+  width: 288px;
+  height: 630px;
 }
 
 .handyladies-img-2 {
-  width: 20vw !important;
+  width: 288px;
+  height: 630px;
+}
+
+.handyladies-img-3 {
+  width: 288px;
+  height: 630px;
+}
+
+.handyladies-img-4 {
+  width: 288px;
+  height: 630px;
 }
 
 .handyladies-images {
@@ -37,6 +49,14 @@
 }
 
 #handyladies-button-2 {
+  opacity: 0.5;
+}
+
+#handyladies-button-3 {
+  opacity: 0.5;
+}
+
+#handyladies-button-4 {
   opacity: 0.5;
 }
 

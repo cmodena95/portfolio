@@ -1,14 +1,14 @@
 .responsive-overlay {
-  display:none;
-  background-color: blue;
-  position:fixed;
-  top:0;
-  width: calc(100vw);
-  height:calc(100vh);
+  display: none;
+  background-color: #B3DBD7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
   z-index: 1000;
 }
 
-.responsive-overlay .responsive-overlay__phone-container {
+.responsive-overlay__phone-container {
   width: 200px;
   height: 200px;
   position: absolute;
@@ -18,7 +18,7 @@
   margin-top: -100px;
 }
 
-.responsive-overlay  p {
+.responsive-overlay__phone-container p {
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -26,23 +26,22 @@
   font-size: 30px;
   font-family: Rum raisin;
   opacity: 0;
-  color: red;
 }
 
 
-.phone-container__phone-item {
+#phone-container__phone-item {
   position: relative;
   left: 50%;
   margin-left: -50px;
   width: 0;
   height: 0;
-  border: 0 solid black;
-  background: blue;
+  border: 0 solid #007bff;
+  background: #B3DBD7;
   border-radius: 10px;
   box-sizing: border-box;
 }
 
-.phone-container__phone-item i {
+#phone-container__phone-item i {
   text-align: center;
   width: 100%;
   line-height: 120px;
@@ -53,15 +52,15 @@
 
 /* IPHONE QUERY */
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (orientation : landscape) {
-  .phone-container__phone-item {
+  #phone-container__phone-item {
     transform: rotate(90deg);
   }
 
-  .phone-container__phone-item  i {
+  #phone-container__phone-item i {
       transform: scaleX(-1);
   }
 
-  .responsive-overlay .phone-container__phone-item {
+  #phone-container__phone-item {
     animation:
       sizeIncrease .5s forwards ease,
       borderIncrease .5s .5s forwards ease,
@@ -71,15 +70,15 @@
 
 /* IPAD QUERY */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  .phone-container__phone-item {
+  #phone-container__phone-item {
     transform: rotate(0deg);
   }
 
-  .phone-container__phone-item  i {
+  #phone-container__phone-item i {
       transform: scaleX(1);
   }
 
-  .responsive-overlay .phone-container__phone-item {
+  #phone-container__phone-item {
     animation:
       sizeIncrease .5s forwards ease,
       borderIncrease .5s .5s forwards ease,
@@ -88,8 +87,8 @@
 }
 
 @media
-  only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : portrait),
-  only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+  only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : landscape),
+  only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
   only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
   only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
   only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
@@ -107,11 +106,11 @@
 
   .responsive-overlay { display: block; }
 
-  .responsive-overlay .phone-container__phone-item i {
+  #phone-container__phone-item i {
     animation: fadeIn .5s .8s forwards ease;
   }
 
-  .responsive-overlay .responsive-overlay__phone-container p {
+  .responsive-overlay__phone-container p {
     animation: fadeIn .5s 1.3s forwards ease;
   }
 }

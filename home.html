@@ -27,10 +27,10 @@
 
     <div class="responsive-overlay">
       <div class="responsive-overlay__phone-container">
-        <div class="phone-container__phone-item">
-          <i class="fa fa-repeat"></i>
+        <div id="phone-container__phone-item">
+          <i class="fas fa-redo"></i>
         </div>
-        <p>Rotate your device!</p>
+        <p>Rotate your device ☺ ☺ ☺</p>
       </div>
     </div>
 
@@ -215,11 +215,15 @@
                 <div class="handyladies-images">
                   <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613549880/Screenshot_2021-02-17_at_09.16.02_uv0hfx.png" class="handyladies-img-1">
                   <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613549879/Screenshot_2021-02-17_at_09.15.36_z1djux.png" class="handyladies-img-2 hidden">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613662701/Screenshot_2021-02-18_at_16.30.32_yl2lk1.png" class="handyladies-img-3 hidden">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613662701/Screenshot_2021-02-18_at_16.36.49_no95yw.png" class="handyladies-img-4 hidden">
                 </div>
 
                 <div class="handyladies-images-buttons">
                   <i class="fas fa-square" id="handyladies-button-1"></i>
                   <i class="fas fa-square" id="handyladies-button-2"></i>
+                  <i class="fas fa-square" id="handyladies-button-3"></i>
+                  <i class="fas fa-square" id="handyladies-button-4"></i>
                 </div>
               </div>
 
@@ -543,24 +547,18 @@ const toggleWebsites = (event) => {
 
 websitesButton.addEventListener('click', toggleWebsites);
 
+
 // HANDYLADIES BUTTONS
 
 const handyladiesButton1 = document.getElementById('handyladies-button-1');
 const handyladiesButton2 = document.getElementById('handyladies-button-2');
+const handyladiesButton3 = document.getElementById('handyladies-button-3');
+const handyladiesButton4 = document.getElementById('handyladies-button-4');
 
 const handyladiesImage1 = document.querySelector(".handyladies-img-1");
 const handyladiesImage2 = document.querySelector(".handyladies-img-2");
-
-const changeToHandyladiesImage2 = (event) => {
-  if (!handyladiesImage1.classList.contains("hidden")) {
-    handyladiesImage1.classList.toggle("hidden");
-
-    handyladiesImage2.classList.toggle("hidden");
-
-    handyladiesButton1.style.opacity = 0.5;
-    handyladiesButton2.style.opacity = 1;
-  }
-}
+const handyladiesImage3 = document.querySelector(".handyladies-img-3");
+const handyladiesImage4 = document.querySelector(".handyladies-img-4");
 
 
 
@@ -569,14 +567,108 @@ const changeToHandyladiesImage1 = (event) => {
     handyladiesImage2.classList.toggle("hidden");
 
     handyladiesImage1.classList.toggle("hidden");
-
-    handyladiesButton2.style.opacity = 0.5;
-    handyladiesButton1.style.opacity = 1;
   }
+
+  if (!handyladiesImage3.classList.contains("hidden")) {
+    handyladiesImage3.classList.toggle("hidden");
+
+    handyladiesImage1.classList.toggle("hidden");
+  }
+
+  if (!handyladiesImage4.classList.contains("hidden")) {
+    handyladiesImage4.classList.toggle("hidden");
+
+    handyladiesImage1.classList.toggle("hidden");
+  }
+
+  handyladiesButton1.style.opacity = 1;
+  handyladiesButton2.style.opacity = 0.5;
+  handyladiesButton3.style.opacity = 0.5;
+  handyladiesButton4.style.opacity = 0.5;
 }
 
-handyladiesButton2.addEventListener('click', changeToHandyladiesImage2);
+
+const changeToHandyladiesImage2 = (event) => {
+  if (!handyladiesImage1.classList.contains("hidden")) {
+    handyladiesImage1.classList.toggle("hidden");
+
+    handyladiesImage2.classList.toggle("hidden");
+  }
+
+  if (!handyladiesImage3.classList.contains("hidden")) {
+    handyladiesImage3.classList.toggle("hidden");
+
+    handyladiesImage2.classList.toggle("hidden");
+  }
+
+  if (!handyladiesImage4.classList.contains("hidden")) {
+    handyladiesImage4.classList.toggle("hidden");
+
+    handyladiesImage2.classList.toggle("hidden");
+  }
+
+  handyladiesButton1.style.opacity = 0.5;
+  handyladiesButton2.style.opacity = 1;
+  handyladiesButton3.style.opacity = 0.5;
+  handyladiesButton4.style.opacity = 0.5;
+}
+
+
+const changeToHandyladiesImage3 = (event) => {
+  if (!handyladiesImage1.classList.contains("hidden")) {
+    handyladiesImage1.classList.toggle("hidden");
+
+    handyladiesImage3.classList.toggle("hidden");
+  }
+
+  if (!handyladiesImage2.classList.contains("hidden")) {
+    handyladiesImage2.classList.toggle("hidden");
+
+    handyladiesImage3.classList.toggle("hidden");
+  }
+
+  if (!handyladiesImage4.classList.contains("hidden")) {
+    handyladiesImage4.classList.toggle("hidden");
+
+    handyladiesImage3.classList.toggle("hidden");
+  }
+
+  handyladiesButton1.style.opacity = 0.5;
+  handyladiesButton2.style.opacity = 0.5;
+  handyladiesButton3.style.opacity = 1;
+  handyladiesButton4.style.opacity = 0.5;
+}
+
+
+const changeToHandyladiesImage4 = (event) => {
+  if (!handyladiesImage1.classList.contains("hidden")) {
+    handyladiesImage1.classList.toggle("hidden");
+
+    handyladiesImage4.classList.toggle("hidden");
+  }
+
+  if (!handyladiesImage2.classList.contains("hidden")) {
+    handyladiesImage2.classList.toggle("hidden");
+
+    handyladiesImage4.classList.toggle("hidden");
+  }
+
+  if (!handyladiesImage3.classList.contains("hidden")) {
+    handyladiesImage3.classList.toggle("hidden");
+
+    handyladiesImage4.classList.toggle("hidden");
+  }
+
+  handyladiesButton1.style.opacity = 0.5;
+  handyladiesButton2.style.opacity = 0.5;
+  handyladiesButton3.style.opacity = 0.5;
+  handyladiesButton4.style.opacity = 1;
+}
+
 handyladiesButton1.addEventListener('click', changeToHandyladiesImage1);
+handyladiesButton2.addEventListener('click', changeToHandyladiesImage2);
+handyladiesButton3.addEventListener('click', changeToHandyladiesImage3);
+handyladiesButton4.addEventListener('click', changeToHandyladiesImage4);
 
 
 // FISHBNB BUTTONS
