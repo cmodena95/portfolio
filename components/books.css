@@ -88,19 +88,66 @@
 }
 
 
+/* MOBILE VIEW */
 
+@media screen and (max-device-width: 400px) {
 
+#fish-in-the-sea-image-1 {
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    width: 400px;
+    height: 550px;
+  }
+
+  #fish-in-the-sea-image-2 {
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    width: 400px;
+    height: 550px;
+  }
+
+  #fish-in-the-sea-image-3 {
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    width: 400px;
+    height: 550px;
+  }
+
+  #fish-in-the-sea-image-4 {
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    width: 400px;
+    height: 550px;
+  }
+
+  .fish-in-the-sea {
+    background-color: white;
+    border-radius: 50px;
+    height: auto;
+    width: 90vw;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    transform: translate(0px, -194px);
+  }
+
+}
 
 /* TABLET VIEW */
 
-@media screen and (min-device-width: 401px) and (max-device-width: 1336px) and (orientation: portrait) {
+@media screen and (min-device-width: 401px) and (max-device-width: 1336px) {
 
   #fish-in-the-sea-image-1 {
     margin: auto;
     display: block;
     border-radius: 10px;
     width: 375px;
-    height: 350px;
+    height: 450px;
   }
 
   #fish-in-the-sea-image-2 {
@@ -108,7 +155,7 @@
     display: block;
     border-radius: 10px;
     width: 375px;
-    height: 350px;
+    height: 450px;
   }
 
   #fish-in-the-sea-image-3 {
@@ -116,7 +163,7 @@
     display: block;
     border-radius: 10px;
     width: 375px;
-    height: 350px;
+    height: 450px;
   }
 
   #fish-in-the-sea-image-4 {
@@ -124,7 +171,7 @@
     display: block;
     border-radius: 10px;
     width: 375px;
-    height: 350px;
+    height: 450px;
   }
 
   .fish-in-the-sea {
@@ -136,7 +183,6 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
-    transform: translate(10px, -194px);
-}
-
+    transform: translate(0px, -194px);
+  }
 }

@@ -1,0 +1,164 @@
+.responsive-overlay {
+  display:none;
+  background-color: blue;
+  position:fixed;
+  top:0;
+  width: calc(100vw);
+  height:calc(100vh);
+  z-index: 1000;
+}
+
+.responsive-overlay .responsive-overlay__phone-container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+
+.responsive-overlay  p {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  font-family: Rum raisin;
+  opacity: 0;
+  color: red;
+}
+
+
+.phone-container__phone-item {
+  position: relative;
+  left: 50%;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border: 0 solid black;
+  background: blue;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.phone-container__phone-item i {
+  text-align: center;
+  width: 100%;
+  line-height: 120px;
+  font-size: 30px;
+  color: black;
+  opacity: 0;
+}
+
+/* IPHONE QUERY */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (orientation : landscape) {
+  .phone-container__phone-item {
+    transform: rotate(90deg);
+  }
+
+  .phone-container__phone-item  i {
+      transform: scaleX(-1);
+  }
+
+  .responsive-overlay .phone-container__phone-item {
+    animation:
+      sizeIncrease .5s forwards ease,
+      borderIncrease .5s .5s forwards ease,
+      rotateLeft .7s 1s forwards ease;
+  }
+}
+
+/* IPAD QUERY */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .phone-container__phone-item {
+    transform: rotate(0deg);
+  }
+
+  .phone-container__phone-item  i {
+      transform: scaleX(1);
+  }
+
+  .responsive-overlay .phone-container__phone-item {
+    animation:
+      sizeIncrease .5s forwards ease,
+      borderIncrease .5s .5s forwards ease,
+      rotateRight .7s 1s forwards ease;
+  }
+}
+
+@media
+  only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation : portrait),
+  only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+  only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+  only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+  only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+  only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
+  only screen and (min-device-width: 414px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape)
+  {
+  body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .mobile-body { opacity: 0;}
+
+  .nonmobile-body { opacity: 0;}
+
+  .responsive-overlay { display: block; }
+
+  .responsive-overlay .phone-container__phone-item i {
+    animation: fadeIn .5s .8s forwards ease;
+  }
+
+  .responsive-overlay .responsive-overlay__phone-container p {
+    animation: fadeIn .5s 1.3s forwards ease;
+  }
+}
+
+/* Animate width + height */
+@keyframes sizeIncrease {
+  0% {
+    width: 0;
+    height: 10px;
+  }
+
+  50% {
+    width: 100px;
+    height: 10px;
+  }
+
+  100% {
+    width: 100px;
+    height: 160px;
+  }
+}
+
+/* Add borders */
+@keyframes borderIncrease {
+  100% {
+    border-width: 20px 10px;
+  }
+}
+
+/* fade-in  */
+@keyframes fadeIn {
+  100% {
+    color: var(--primary);
+    opacity: 1;
+  }
+}
+
+/* Rotate device */
+@keyframes rotateLeft {
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Rotate device */
+@keyframes rotateRight {
+  100% {
+    transform: rotate(90deg);
+  }
+}

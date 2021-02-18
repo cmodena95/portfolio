@@ -115,7 +115,7 @@
 
 #doodles {
   width: 33vw;
-  transform: translate(10px, 63px)
+  transform: translate(10px, 63px);
   margin-left: 10px !important;
   padding: 10px;
 }
@@ -194,7 +194,8 @@
 
 /* MOBILE VIEW */
 
-@media screen and (max-device-width: 400px) {
+/* PORTRAIT */
+@media screen and (max-device-width: 400px) and (orientation: portrait) {
 
   .grid {
     transform: translate(10px, 456px);
@@ -368,9 +369,169 @@
 }
 
 
+/* LANDSCAPE */
+
+/*@media screen and (max-device-width: 400px) and (orientation: landscape) {
+
+  #purple {
+    transform: translate(33px, -78px) rotate(-8deg);
+    width: 25vw;
+    height: 67vh;
+    padding-top: 10px;
+  }
+
+  #elephant {
+    transform: translate(8px, -11px) rotate(7deg);
+    width: 27vw;
+    height: 68vh;
+    padding: 0 10px 0 10px;
+  }
+
+  #ricky {
+    transform: translate(-17px, -82px) rotate(-3deg);
+    padding: 0 10px 0 10px;
+  }
+
+  #uncleed {
+    transform: translate(57px, -34px) rotate(10deg);
+    width: 22vw;
+    height: 55vh;
+    padding: 0 20px 10px 0;
+  }
+
+  #onion {
+    transform: translate(-3px, 7px);
+  }
+
+  #teapot {
+    height: 65vh;
+    padding-bottom: 10px;
+    width: 22vw;
+    transform: translate(-33px, -63px) rotate(8deg);
+  }
+
+  #bluepot {
+    padding: 10px 10px 0 0;
+    transform: translate(44px, -16px) rotate(-15deg);
+  }
+
+  #kyle {
+    padding: 30px 10px 0 10px;
+    height: 65vh;
+    transform: translate(10px, 10px) rotate(5deg);
+  }
+
+  #run {
+    height: 55vh;
+    transform: translate(-30px, -40px);
+  }
+
+  #shark {
+    width: 25vw;
+    height: 45vh;
+    transform: translate(17px, -27px);
+  }
+
+  #long {
+    padding: 10px 10px 0 0;
+    transform: translate(3px, 53px) rotate(-17deg);
+    width: 23vw;
+    height: 55vh;
+  }
+
+  #cat {
+    transform: translate(7px, -36px) rotate(7deg);
+  }
+
+  #bigwave {
+    transform: translate(-6px, -56px) rotate(10deg);
+    height: 65vh;
+  }
+
+  #doodles {
+    width: 33vw;
+    transform: translate(10px, 63px);
+    margin-left: 10px !important;
+    padding: 10px;
+  }
+
+  #space {
+    height: 58vh;
+    transform: translate(0px, 14px) rotate(-14deg);
+  }
+
+  #egg {
+    transform: translate(24px, -1px) rotate(-12deg);
+    width: 20vw;
+    height: 55vh;
+  }
+
+  #max {
+    transform: translate(10px, 54px) rotate(8deg);
+  }
+
+  #banana {
+    transform: translate(-30px, 50px);
+    width: 20vw;
+    height: 55vh;
+  }
+
+  #ramen1 {
+    height: 67vh;
+  }
+
+  #neck {
+    transform: translate(0px, 107px) rotate(-15deg);
+    height: 55vh;
+  }
+
+  #house {
+    transform: translate(10px, 53px) rotate(11deg);
+    width: 24vw;
+    height: 55vh;
+  }
+
+  #chameleon {
+    height: 60vh;
+    width: 21vw;
+    transform: translate(10px, 30px) rotate(-15deg);
+  }
+
+  #relax {
+    width: 33vw;
+    padding: 0 0 0 20px;
+    transform: translate(10px, 75px);
+  }
+
+  #cateat {
+    width: 20vw;
+    height: 53vh;
+    transform: translate(10px, 49px) rotate(7deg);
+  }
+
+  #squash {
+    width: 30vw;
+    transform: translate(-4px, 76px) rotate(5deg);
+  }
+
+  #cathead {
+    transform: translate(10px, 143px) rotate(-13deg);
+    width: 20vw;
+  }
+
+  #ramen2 {
+    height: 63vh;
+    transform: translate(10px, 42px) rotate(6deg);
+    padding: 0 10px;
+  }
+
+}*/
+
+
+
 /* TABLET VIEW */
 
-@media screen and (min-device-width: 401px) and (max-device-width: 1336px) and (orientation: portrait) {
+@media screen and (min-device-width: 401px) and (max-device-width: 1336px) {
   #purple {
     width: 40%;
     height: 40%;

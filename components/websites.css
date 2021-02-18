@@ -63,4 +63,25 @@
   width: 66% !important;
 }
 
+.fishbnb-img-2 {
+  width: 66% !important;
+}
 
+.fishbnb-img-3 {
+  width: 66% !important;
+}
+
+
+
+.fishbnb-images-buttons {
+  text-align: center;
+  color: blue;
+}
+
+#fishbnb-button-2 {
+  opacity: 0.5;
+}
+
+#fishbnb-button-3 {
+  opacity: 0.5;
+}

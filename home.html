@@ -20,6 +20,21 @@
   </head>
 
   <body>
+
+
+
+    <!-- RESPONSIVE OVERLAY -->
+
+    <div class="responsive-overlay">
+      <div class="responsive-overlay__phone-container">
+        <div class="phone-container__phone-item">
+          <i class="fa fa-repeat"></i>
+        </div>
+        <p>Rotate your device!</p>
+      </div>
+    </div>
+
+
     <!-- TOP NAVBAR -->
     <div class="navbar-top">
       <div class="navbar-links">
@@ -221,7 +236,16 @@
               <div class="fishbnb-carousel">
                 <div class="fishbnb-images">
                   <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613572067/Screenshot_2021-02-17_at_15.27.08_scer5w.png" class="fishbnb-img-1">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613572067/Screenshot_2021-02-17_at_15.27.08_scer5w.png" class="fishbnb-img-2 hidden">
+                  <img src="https://res.cloudinary.com/cmodena6695/image/upload/v1613572067/Screenshot_2021-02-17_at_15.27.08_scer5w.png" class="fishbnb-img-3 hidden">
                 </div>
+
+                <div class="fishbnb-images-buttons">
+                  <i class="fas fa-square" id="fishbnb-button-1"></i>
+                  <i class="fas fa-square" id="fishbnb-button-2"></i>
+                  <i class="fas fa-square" id="fishbnb-button-3"></i>
+                </div>
+
               </div>
 
               <div class="fishbnb-text">
@@ -555,6 +579,73 @@ handyladiesButton2.addEventListener('click', changeToHandyladiesImage2);
 handyladiesButton1.addEventListener('click', changeToHandyladiesImage1);
 
 
+// FISHBNB BUTTONS
+
+const fishbnbImage1 = document.querySelector(".fishbnb-img-1");
+const fishbnbImage2 = document.querySelector(".fishbnb-img-2");
+const fishbnbImage3 = document.querySelector(".fishbnb-img-3");
+
+const fishbnbButton1 = document.getElementById("fishbnb-button-1");
+const fishbnbButton2 = document.getElementById("fishbnb-button-2");
+const fishbnbButton3 = document.getElementById("fishbnb-button-3");
+
+const changeToFishbnbImage1 = (event) => {
+  if (!fishbnbImage2.classList.contains("hidden")) {
+    fishbnbImage2.classList.toggle("hidden");
+
+    fishbnbImage1.classList.toggle("hidden");
+  }
+
+  if (!fishbnbImage3.classList.contains("hidden")) {
+    fishbnbImage3.classList.toggle("hidden");
+
+    fishbnbImage1.classList.toggle("hidden");
+  }
+
+  fishbnbButton1.style.opacity = 1;
+  fishbnbButton2.style.opacity = 0.5;
+  fishbnbButton3.style.opacity = 0.5;
+}
+
+const changeToFishbnbImage2 = (event) => {
+  if (!fishbnbImage1.classList.contains("hidden")) {
+    fishbnbImage1.classList.toggle("hidden");
+
+    fishbnbImage2.classList.toggle("hidden");
+  }
+
+  if (!fishbnbImage3.classList.contains("hidden")) {
+    fishbnbImage3.classList.toggle("hidden");
+
+    fishbnbImage2.classList.toggle("hidden");
+  }
+
+  fishbnbButton1.style.opacity = 0.5;
+  fishbnbButton2.style.opacity = 1;
+  fishbnbButton3.style.opacity = 0.5;
+}
+
+const changeToFishbnbImage3 = (event) => {
+  if (!fishbnbImage1.classList.contains("hidden")) {
+    fishbnbImage1.classList.toggle("hidden");
+
+    fishbnbImage3.classList.toggle("hidden");
+  }
+
+  if (!fishbnbImage2.classList.contains("hidden")) {
+    fishbnbImage2.classList.toggle("hidden");
+
+    fishbnbImage3.classList.toggle("hidden");
+  }
+
+  fishbnbButton1.style.opacity = 0.5;
+  fishbnbButton2.style.opacity = 0.5;
+  fishbnbButton3.style.opacity = 1;
+}
+
+fishbnbButton1.addEventListener('click', changeToFishbnbImage1);
+fishbnbButton2.addEventListener('click', changeToFishbnbImage2);
+fishbnbButton3.addEventListener('click', changeToFishbnbImage3);
 
 // ABOUT CIRCLE
 
