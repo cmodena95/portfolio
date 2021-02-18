@@ -10,6 +10,12 @@
   position: relative;
 }
 
+@media screen and (max-device-width: 400px) {
+  #wave {
+    transform: translate(0px, 1px);
+  }
+}
+
 #sand {
   width: 100%;
   /*position: absolute;*/

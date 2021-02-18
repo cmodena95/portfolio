@@ -366,3 +366,170 @@
     transform: translate(240px, 280px);
   }
 }
+
+
+/* TABLET VIEW */
+
+@media screen and (min-device-width: 401px) and (max-device-width: 1336px) and (orientation: portrait) {
+  #purple {
+    width: 40%;
+    height: 40%;
+    transform: translate(530px, -160px) rotate(-19deg);
+  }
+
+  #elephant {
+    width: 40%;
+    height: 40%;
+    transform: translate(8px, 650px) rotate(3deg);
+  }
+
+  #ricky {
+    width: 40%;
+    height: 40%;
+    transform: translate(93px, -260px);
+  }
+
+  #uncleed {
+    width: 40%;
+    height: 40%;
+    transform: translate(90px, 50px) rotate(-5deg);
+  }
+
+  #onion {
+    width: 35%;
+    height: 40%;
+    transform: translate(-10px, 330px) rotate(-17deg);
+  }
+
+  #teapot {
+    width: 40%;
+    height: 40%;
+    transform: translate(121px, 307px) rotate(11deg);
+  }
+
+  #bluepot {
+    width: 40%;
+    height: 40%;
+    transform: translate(81px, 512px) rotate(-5deg);
+  }
+
+  #kyle {
+    width: 40%;
+    height: 40%;
+    transform: translate(30px, 232px);
+  }
+
+  #run {
+    width: 40%;
+    height: 40%;
+    transform: translate(574px, 507px) rotate(4deg);
+  }
+
+  #shark {
+    width: 46%;
+    height: 50%;
+    transform: translate(88px, 1376px) rotate(0deg);
+  }
+
+  #long {
+    width: 35%;
+    height: 40%;
+    transform: translate(20px, 1243px) rotate(-5deg);
+  }
+
+  #cat {
+    width: 40%;
+    height: 40%;
+    transform: translate(123px, 2070px) rotate(-15deg);
+  }
+
+  #bigwave {
+    width: 40%;
+    height: 40%;
+    transform: translate(450px, 2040px) rotate(5deg);
+  }
+
+  #doodles {
+    width: 60%;
+    height: 46%;
+    transform: translate(109px, -960px) rotate(15deg);
+  }
+
+  #space {
+    width: 50%;
+    height: 40%;
+    transform: translate(408px, -160px) rotate(25deg);
+  }
+
+  #egg {
+    width: 40%;
+    height: 40%;
+    transform: translate(84px, 884px) rotate(-8deg);
+  }
+
+  #max {
+    width: 40%;
+    height: 40%;
+    transform: translate(29px, 1094px) rotate(5deg);
+  }
+
+  #banana {
+    width: 35%;
+    height: 40%;
+    transform: translate(630px, 1220px) rotate(-5deg);
+  }
+
+  #ramen1 {
+    width: 45%;
+    height: 40%;
+    transform: translate(96px, 554px) rotate(6deg);
+  }
+
+  #neck {
+    width: 40%;
+    height: 40%;
+    transform: translate(30px, 1262px);
+  }
+
+  #house {
+    width: 40%;
+    height: 40%;
+    transform: translate(80px, 632px) rotate(-10deg);
+  }
+
+  #chameleon {
+    width: 40%;
+    height: 40%;
+    transform: translate(40px, 680px);
+  }
+
+  #relax {
+    width: 42%;
+    height: 40%;
+    transform: translate(-20px, 610px) rotate(14deg);
+  }
+
+  #cateat {
+    width: 40%;
+    height: 40%;
+    transform: translate(550px, 550px) rotate(-12deg);
+  }
+
+  #squash {
+    width: 40%;
+    height: 40%;
+    transform: translate(102px, 209px) rotate(-9deg);
+  }
+
+  #cathead {
+    width: 35%;
+    height: 35%;
+    transform: translate(-9px, 677px) rotate(-5deg);
+  }
+
+  #ramen2 {
+    width: 40%;
+    height: 40%;
+    transform: translate(76px, 180px) rotate(5deg);
+  }
+}

@@ -86,3 +86,57 @@
 #fish-in-the-sea-button-4 {
   opacity: 0.5;
 }
+
+
+
+
+
+/* TABLET VIEW */
+
+@media screen and (min-device-width: 401px) and (max-device-width: 1336px) and (orientation: portrait) {
+
+  #fish-in-the-sea-image-1 {
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    width: 375px;
+    height: 350px;
+  }
+
+  #fish-in-the-sea-image-2 {
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    width: 375px;
+    height: 350px;
+  }
+
+  #fish-in-the-sea-image-3 {
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    width: 375px;
+    height: 350px;
+  }
+
+  #fish-in-the-sea-image-4 {
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    width: 375px;
+    height: 350px;
+  }
+
+  .fish-in-the-sea {
+    background-color: white;
+    border-radius: 50px;
+    height: auto;
+    width: 80vw;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    transform: translate(10px, -194px);
+}
+
+}
