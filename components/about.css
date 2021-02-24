@@ -1,0 +1,125 @@
+/* BIO */
+
+.about-text-bio {
+  width: 50vw;
+  background-color: #85bcb7;
+  padding: 60px;
+  transform: translate(550px, -380px);
+}
+
+.about-text-bio h2 {
+  font-family: Rum raisin;
+  font-size: 42px;
+}
+
+.about-text-bio h3 {
+  font-family: Rum raisin;
+}
+
+#about-photo {
+  border-radius: 50%;
+  width: 25%;
+  height: 25%;
+  transform: translate(270px, -280px);
+  z-index: 1;
+}
+
+
+.about-text-bio a:link {
+  color: #374782;
+}
+
+.about-text-bio a:hover {
+  color: #374782;
+  text-decoration: none;
+}
+
+.about-text-bio a:visited {
+  color: #374782;
+  text-decoration: none;
+}
+
+
+/* ILLUSTRATION */
+
+.about-text-illustration {
+  width: 50vw;
+  background-color: #8690ba;
+  padding: 60px;
+  transform: translate(80px, -437px) rotate(5deg);
+}
+
+.about-text-illustration h2 {
+  font-family: Rum raisin;
+}
+
+.about-text-illustration a:link {
+  color: #374782;
+}
+
+.about-text-illustration a:hover {
+  color: #374782;
+  text-decoration: none;
+}
+
+.about-text-illustration a:visited {
+  color: #374782;
+  text-decoration: none;
+}
+
+.il-text {
+  transform: translate(0px, 0px) rotate(-5deg);
+  background-color: #85bcb7;
+  padding: 10px;
+}
+
+
+/* WEB DEVELOPMENT */
+
+.about-text-development {
+  width: 50vw;
+  background-color: #ea77d5;
+  padding: 60px;
+  transform: translate(417px, -450px) rotate(-5deg);
+}
+
+.about-text-development h2 {
+  font-family: Rum raisin;
+}
+
+.web-text {
+  background-color: #ff96eb;
+  padding: 10px;
+  transform: translate(0px, -10px) rotate(8deg);
+}
+
+/* CONTACT */
+
+.about-contact {
+  width: 50vw;
+  background-color: #8690ba;
+  margin: auto;
+  padding: 60px 30px 60px 30px;
+  transform: translate(-170px, -460px) rotate(5deg);
+}
+
+.typeform-widget {
+  margin: auto;
+  transform: translate(0px, 0px) rotate(-5deg);
+}
+
+/* END MESSAGE */
+
+.about-charity {
+  width: 50vw;
+  background-color: #85bcb7;
+  margin: auto;
+  padding: 60px;
+  transform: translate(90px, -450px) rotate(-5deg);
+}
+
+.about-charity p {
+  font-family: Rum raisin;
+  font-size: 25px;
+}
+

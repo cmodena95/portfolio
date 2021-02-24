@@ -1,10 +1,17 @@
-.websites-section {
+.websites {
   margin: auto;
   display: flex;
 }
 
 
 /* HANDYLADIES */
+
+@keyframes handyladies-sway {
+  0% {transform: translate(20px, -271px) rotate(0deg);}
+  30% {transform: translate(20px, -271px) rotate(-2deg);}
+  65% {transform: translate(20px, -271px) rotate(2deg);}
+  100% {transform: translate(20px, -271px) rotate(0deg);}
+}
 
 .handyladies {
   background-color: lightpink;
@@ -13,9 +20,10 @@
   padding: 20px;
   display: flex;
   justify-content: space-around;
-  transform: translate(10px, -194px);
   width: 100%;
-  transform: translate(0px, 0px);
+  transform: translate(20px, -271px);
+
+  animation: handyladies-sway 6s;
 }
 
 
@@ -41,6 +49,8 @@
 
 .handyladies-images {
   width: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .handyladies-images-buttons {
@@ -63,6 +73,13 @@
 
 /* FISHBNB */
 
+@keyframes fishbnb-sway {
+  0% {transform: translate(-20px, 0px) rotate(0deg);}
+  30% {transform: translate(-20px, 0px) rotate(2deg);}
+  65% {transform: translate(-20px, 0px) rotate(-2deg);}
+  100% {transform: translate(-20px, 0px) rotate(0deg);}
+}
+
 .fishbnb {
   background-color: #009dff;
   height: auto;
@@ -70,11 +87,14 @@
   padding: 50px;
   justify-content: space-around;
   margin: auto;
-  transform: translate(0px, 0px);
+  transform: translate(-20px, 0px);
+
+  animation: fishbnb-sway 6s;
 }
 
 .fishbnb-images {
   width: auto;
+  margin-bottom: 10px;
 }
 
 .fishbnb-img-1 {
@@ -102,4 +122,45 @@
 
 #fishbnb-button-3 {
   opacity: 0.5;
+}
+
+
+
+
+.fish {
+  display: flex;
+  justify-content: space-around;
+}
+
+#fish-illustration {
+  width: 50%;
+}
+
+
+/* MOBILE VIEW */
+
+@media screen and (max-device-width: 400px) {
+  .handyladies {
+    transform: translate(330px, -300px) rotate(5deg);
+  }
+
+  .fishbnb {
+    transform: translate(-390px, 350px) rotate(-5deg);
+  }
+
+  #fish-illustration {
+    transform: translate(80px, 150px);
+  }
+}
+
+/* TABLET VIEW */
+
+@media screen and (min-device-width: 401px) and (max-device-width: 1336px) {
+  .handyladies {
+    width: 120vw;
+  }
+
+  .handyladies-text {
+    margin-left: 20px;
+  }
 }

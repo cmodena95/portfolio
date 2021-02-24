@@ -1,7 +1,7 @@
 /* GENERAL */
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'PT Mono', monospace;
 }
 
 h2 {
@@ -17,11 +17,33 @@ h2 {
 
 .intro-heading {
   font-size: 80px;
-  text-shadow: 6px 6px 3px lightgrey;
+  color: #f2395a;
+  text-shadow: 1px 1px #d10e31,
+              2px 2px #d10e31,
+              3px 3px #d10e31,
+              4px 4px #d10e31,
+              5px 5px #d10e31,
+              6px 6px #d10e31,
+              7px 7px #d10e31,
+              8px 8px #890920,
+              9px 9px #890920,
+              10px 10px #890920,
+              11px 11px 15px rgba(0,0,0,0.5);
+  text-align: center;
 }
 
+
 .intro-content {
-  font-size: 46px;
+  font-size: 40px;
+  color: #f2395a;
+  text-shadow: 1px 1px #d10e31,
+                2px 2px #d10e31,
+                3px 3px #d10e31,
+                4px 4px #890920,
+                5px 5px #890920,
+                6px 6px #890920,
+                7px 7px 11px rgba(0,0,0,0.5);
+  text-align: center;
 }
 
 
@@ -41,4 +63,12 @@ h2 {
 
 .fishbnb-text {
   font-family: Rum raisin;
+}
+
+
+
+#navbar-text {
+  font-family: Rum raisin;
+  color: white;
+  margin: auto;
 }
