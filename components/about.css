@@ -176,3 +176,73 @@
   color: white;
 }
 
+
+
+
+
+
+
+
+/* MOBILE VIEW */
+
+@media screen and (max-device-width: 400px) {
+  #about-photo {
+    width: 30%;
+    height: 30%;
+    transform: translate(110px, -360px);
+  }
+
+
+  .about-text-bio {
+    transform: translate(281px, -430px);
+    font-size: 30px;
+    width: 70vw;
+  }
+
+  .about-text-bio h2 {
+    font-size: 60px;
+  }
+
+
+  .about-text-illustration {
+    width: 80vw;
+  }
+
+  .il-text {
+    font-size: 30px;
+  }
+
+  .about-text-illustration h2 {
+    font-size: 60px;
+  }
+
+
+  .about-text-development {
+    transform: translate(220px, -430px) rotate(-5deg);
+    font-size: 30px;
+    width: 70vw;
+  }
+
+  .about-text-development h2 {
+    font-size: 60px;
+  }
+
+
+  .about-contact {
+    transform: translate(-60px, -440px) rotate(5deg);
+    width: 70vw;
+  }
+
+
+  .about-charity {
+    transform: translate(20px, -430px) rotate(-5deg);
+    width: 80vw;
+  }
+
+  .about-charity p {
+    font-size: 40px;
+  }
+}
+
+
+/* TABLET VIEW */
