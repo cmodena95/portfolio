@@ -5,15 +5,18 @@
   background-color: #85bcb7;
   padding: 60px;
   transform: translate(550px, -380px);
+  color: white;
 }
 
 .about-text-bio h2 {
   font-family: Rum raisin;
   font-size: 42px;
+  color: white;
 }
 
 .about-text-bio h3 {
   font-family: Rum raisin;
+  color: white;
 }
 
 #about-photo {
@@ -26,17 +29,36 @@
 
 
 .about-text-bio a:link {
-  color: #374782;
+  background:
+     linear-gradient(
+       to bottom, #8690ba 0%,
+       #8690ba 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;;
+  text-decoration: none;
+  transition: background-size .5s;
+  padding: 0 5px 0 5px;
 }
 
 .about-text-bio a:hover {
-  color: #374782;
-  text-decoration: none;
+  background-size: 4px 50px;
 }
 
 .about-text-bio a:visited {
-  color: #374782;
+  background:
+     linear-gradient(
+       to bottom, #8690ba 0%,
+       #8690ba 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;
   text-decoration: none;
+  transition: background-size .5s;
 }
 
 
@@ -47,25 +69,53 @@
   background-color: #8690ba;
   padding: 60px;
   transform: translate(80px, -437px) rotate(5deg);
+  color: white;
 }
 
 .about-text-illustration h2 {
   font-family: Rum raisin;
+  color: white;
 }
 
 .about-text-illustration a:link {
-  color: #374782;
+  background:
+     linear-gradient(
+       to bottom, #8690ba 0%,
+       #8690ba 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;
+  text-decoration: none;
+  transition: background-size .5s;
+  padding: 5px;
 }
 
 .about-text-illustration a:hover {
-  color: #374782;
-  text-decoration: none;
+  background-size: 4px 50px;
 }
 
 .about-text-illustration a:visited {
-  color: #374782;
+  background:
+     linear-gradient(
+       to bottom, #8690ba 0%,
+       #8690ba 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;
   text-decoration: none;
+  transition: background-size .5s;
+  padding: 5;
 }
+
+
+
+
+
+
 
 .il-text {
   transform: translate(0px, 0px) rotate(-5deg);
@@ -81,10 +131,12 @@
   background-color: #ea77d5;
   padding: 60px;
   transform: translate(417px, -450px) rotate(-5deg);
+  color: white;
 }
 
 .about-text-development h2 {
   font-family: Rum raisin;
+  color: white;
 }
 
 .web-text {
@@ -121,5 +173,6 @@
 .about-charity p {
   font-family: Rum raisin;
   font-size: 25px;
+  color: white;
 }
 

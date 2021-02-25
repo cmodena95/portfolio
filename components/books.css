@@ -12,6 +12,7 @@
   margin: auto;
   transform: translate(10px, -194px);
   animation: fish-sway 4s;
+  color: white;
 }
 
 
@@ -186,4 +187,46 @@
     margin: auto;
     transform: translate(0px, -194px);
   }
+}
+
+
+
+
+
+
+
+
+
+.fish-in-the-sea-text a:link {
+  background:
+     linear-gradient(
+       to bottom, #8962e5 0%,
+       #8962e5 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;
+  text-decoration: none;
+  transition: background-size .5s;
+  padding: 5px;
+}
+
+.fish-in-the-sea-text a:hover {
+  background-size: 4px 50px;
+}
+
+.fish-in-the-sea-text a:visited {
+  background:
+     linear-gradient(
+       to bottom, #8962e5 0%,
+       #8962e5 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;
+  text-decoration: none;
+  transition: background-size .5s;
+  padding: 5px;
 }

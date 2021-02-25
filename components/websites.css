@@ -22,9 +22,55 @@
   justify-content: space-around;
   width: 100%;
   transform: translate(20px, -271px);
-
   animation: handyladies-sway 6s;
+  color: white;
 }
+
+.handyladies-text {
+  margin-left: 25px;
+}
+
+
+
+.handyladies-text a:link {
+  background:
+     linear-gradient(
+       to bottom, #fc798c 0%,
+       #fc798c 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;
+  text-decoration: none;
+  transition: background-size .5s;
+  padding: 5px;
+}
+
+.handyladies-text a:hover {
+  background-size: 4px 50px;
+}
+
+.handyladies-text a:visited {
+  background:
+     linear-gradient(
+       to bottom, #fc798c 0%,
+       #fc798c 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;
+  text-decoration: none;
+  transition: background-size .5s;
+  padding: 5px;
+}
+
+
+
+
+
+
 
 
 .handyladies-img-1 {
@@ -88,9 +134,52 @@
   justify-content: space-around;
   margin: auto;
   transform: translate(-20px, 0px);
-
   animation: fishbnb-sway 6s;
+  color: white;
 }
+
+
+
+
+
+.fishbnb-text a:link {
+  background:
+     linear-gradient(
+       to bottom, blue 0%,
+       blue 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;
+  text-decoration: none;
+  transition: background-size .5s;
+  padding: 5px;
+}
+
+.fishbnb-text a:hover {
+  background-size: 4px 50px;
+}
+
+.fishbnb-text a:visited {
+  background:
+     linear-gradient(
+       to bottom, blue 0%,
+       blue 100%
+     );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: white;
+  text-decoration: none;
+  transition: background-size .5s;
+  padding: 5px;
+}
+
+
+
+
+
 
 .fishbnb-images {
   width: auto;

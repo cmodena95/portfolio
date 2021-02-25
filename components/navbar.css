@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 2px 2px black;
 }
 
 .navbar-links {
@@ -20,6 +21,13 @@
   z-index: 1;
   bottom: 5vh;
   left: 43vw;
+}
+
+
+.navbar-text {
+  font-family: Rum raisin;
+  font-size: 40px;
+  color: white;
 }
 
 
