@@ -246,3 +246,26 @@
 
 
 /* TABLET VIEW */
+
+@media screen and (min-device-width: 401px) and (max-device-width: 1336px) {
+  #about-photo {
+    transform: translate(230px, -303px);
+  }
+
+  .about-text-bio {
+    transform: translate(410px, -370px);
+  }
+
+  .about-text-illustration {
+    transform: translate(80px, -417px) rotate(5deg);
+  }
+
+  .about-contact {
+    width: 70vw;
+    transform: translate(-80px, -460px) rotate(5deg);
+  }
+
+  .about-charity {
+    width: 60vw;
+  }
+}

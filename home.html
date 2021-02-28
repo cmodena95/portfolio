@@ -296,7 +296,7 @@
                 <p>Creativity is at the heart of everything I do and I believe everyone deserves a creation that fully embodies the vision that drives them and their organisation.
                 </p>
 
-                <h3>Got an idea? <a href="#">Get in touch!</a></h3>
+                <h3>Got an idea? <a href="javascript: scrollToForm();" id="get-in-touch">Get in touch!</a></h3>
 
 
               </div>
@@ -318,7 +318,7 @@
               <div class="about-text-seo hidden">
               </div>
 
-              <div class="about-contact">
+              <div class="about-contact" id="about-contact">
                 <div class="typeform-widget" data-url="https://form.typeform.com/to/pDDPs8Sn?typeform-medium=embed-snippet" style="width: 600px; height: 400px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
               </div>
 
@@ -825,6 +825,23 @@ const toggleAbout = (event) => {
 
 aboutButton.addEventListener('click', toggleAbout);
 
+
+
+
+
+
+
+
+
+// SCROLL TO CONTACT FORM
+
+function scrollToForm() {
+  document.querySelector('#about-contact').scrollIntoView({behavior: 'smooth'});
+}
+
+const getInTouch = document.querySelector('#get-in-touch');
+
+getInTouch.addEventListener('click', scrollToForm);
 
 </script>
 
