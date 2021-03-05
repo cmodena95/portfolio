@@ -197,9 +197,13 @@
 @media screen and (max-device-width: 400px) and (orientation: portrait) {
 
   .grid {
-    transform: translate(10px, 456px);
+    transform: translate(0px, 456px);
     padding-bottom: 500px;
     margin: 0 !important;
+  }
+
+  .middle {
+    margin: 0 0 0 70px;
   }
 
   .row {
