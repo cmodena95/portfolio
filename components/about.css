@@ -4,7 +4,7 @@
   width: 50vw;
   background-color: #85bcb7;
   padding: 60px;
-  transform: translate(550px, -380px);
+  transform: translate(550px, -50px);
   color: white;
 }
 
@@ -23,7 +23,7 @@
   border-radius: 50%;
   width: 25%;
   height: 25%;
-  transform: translate(270px, -280px);
+  transform: translate(290px, -760px);
   z-index: 1;
 }
 
@@ -189,12 +189,12 @@
   #about-photo {
     width: 30%;
     height: 30%;
-    transform: translate(110px, -360px);
+    transform: translate(530px, -1300px);
   }
 
 
   .about-text-bio {
-    transform: translate(281px, -430px);
+    transform: translate(231px, -140px) rotate(-5deg);
     font-size: 30px;
     width: 70vw;
   }
@@ -249,11 +249,12 @@
 
 @media screen and (min-device-width: 401px) and (max-device-width: 1336px) {
   #about-photo {
-    transform: translate(230px, -303px);
+    transform: translate(200px, -823px);
+    width: 28%;
   }
 
   .about-text-bio {
-    transform: translate(410px, -370px);
+    transform: translate(410px, -100px);
   }
 
   .about-text-illustration {

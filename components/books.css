@@ -63,19 +63,20 @@
 
 
 #octopus-illustration {
-  width: 40%;
+  width: 50%;
   margin: auto;
   display: block;
   transform: translate(10px, 43px);
+  padding-top: 10px;
 
-  animation: octopus-sway 4s infinite;
+  animation: octopus-sway 6s infinite;
 }
 
 
 @keyframes octopus-sway {
-  0% {transform: translate(10px, 43px) rotate(2deg);}
-  50% {transform: translate(10px, 43px) rotate(-2deg);}
-  100% {transform: translate(10px, 43px) rotate(2deg);}
+  0% {transform: translate(10px, 43px) rotate(4deg);}
+  50% {transform: translate(10px, 43px) rotate(-4deg);}
+  100% {transform: translate(10px, 43px) rotate(4deg);}
 }
 
 

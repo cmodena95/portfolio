@@ -222,7 +222,14 @@
 }
 
 #fish-illustration {
-  width: 50%;
+  width: 40%;
+  animation: fish-sway 4s infinite;
+}
+
+@keyframes fish-sway {
+  0% {transform: rotate(2deg);}
+  50% {transform: rotate(-2deg);}
+  100% {transform: rotate(2deg);}
 }
 
 
