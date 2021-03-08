@@ -8,46 +8,6 @@ h2 {
   font-family: Rum raisin;
 }
 
-/* MAIN */
-
-.intro-text {
-  font-family: Rum raisin;
-  margin: auto;
-}
-
-.intro-heading {
-  font-size: 80px;
-  color: #f2395a;
-  text-shadow: 1px 1px #d10e31,
-              2px 2px #d10e31,
-              3px 3px #d10e31,
-/*              4px 4px #d10e31,
-              5px 5px #d10e31,
-              6px 6px #d10e31,*/
-              4px 4px #d10e31,
-              5px 5px #890920,
-              6px 6px #890920,
-              7px 7px #890920,
-              8px 8px 11px rgba(0,0,0,0.5);
-  text-align: center;
-  letter-spacing: 4px;
-}
-
-
-.intro-content {
-  font-size: 40px;
-  color: #f2395a;
-  text-shadow: 1px 1px #d10e31,
-                2px 2px #d10e31,
-                3px 3px #d10e31,
-/*                4px 4px #890920,
-                5px 5px #890920,*/
-                4px 4px #890920,
-                5px 5px 9px rgba(0,0,0,0.5);
-  text-align: center;
-  letter-spacing: 4px;
-}
-
 
 
 /* BOOKS */

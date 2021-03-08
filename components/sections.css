@@ -9,6 +9,28 @@
 
 
 
+#intro-text-illustration {
+  width: 70%;
+  height: 70%;
+  transform: translate(-80px, 40px);
+}
+
+
+@media screen and (max-device-width: 400px) {
+  #intro-text-illustration {
+    width: 90%;
+    height: 90%;
+    transform: translate(10px, 20px);
+  }
+}
+
+@media screen and (min-device-width: 401px) and (max-device-width: 1336px) {
+  #intro-text-illustration {
+    width: 90%;
+    height: 90%;
+    transform: translate(10px, 110px);
+  }
+}
 
 
 /*@media screen and (min-width: 501px) {
