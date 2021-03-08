@@ -1,3 +1,7 @@
+.about {
+  transform: translate(0px, 140px);
+}
+
 /* BIO */
 
 .about-text-bio {
@@ -176,6 +180,19 @@
   color: white;
 }
 
+
+#jellyfish-illustration {
+  width: 50%;
+  height: 50%;
+  transform: translate(300px, -230px);
+  animation: jellyfish-float 5s infinite;
+}
+
+@keyframes jellyfish-float {
+  0% {transform: translate(300px, -230px);}
+  50% {transform: translate(300px, -270px);}
+  100% {transform: translate(300px, -230px);}
+}
 
 
 
