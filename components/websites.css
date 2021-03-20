@@ -4,6 +4,7 @@
 }
 
 
+
 /* HANDYLADIES */
 
 @keyframes handyladies-sway {
@@ -120,10 +121,10 @@
 /* FISHBNB */
 
 @keyframes fishbnb-sway {
-  0% {transform: translate(-20px, 0px) rotate(0deg);}
-  30% {transform: translate(-20px, 0px) rotate(2deg);}
-  65% {transform: translate(-20px, 0px) rotate(-2deg);}
-  100% {transform: translate(-20px, 0px) rotate(0deg);}
+  0% {transform: translate(-20px, 50px) rotate(0deg);}
+  30% {transform: translate(-20px, 50px) rotate(2deg);}
+  65% {transform: translate(-20px, 50px) rotate(-2deg);}
+  100% {transform: translate(-20px, 50px) rotate(0deg);}
 }
 
 .fishbnb {
@@ -133,7 +134,7 @@
   padding: 50px;
   justify-content: space-around;
   margin: auto;
-  transform: translate(-20px, 0px);
+  transform: translate(-20px, 50px);
   animation: fishbnb-sway 6s;
   color: white;
 }
@@ -227,9 +228,9 @@
 }
 
 @keyframes fish-sway {
-  0% {transform: rotate(2deg);}
-  50% {transform: rotate(-2deg);}
-  100% {transform: rotate(2deg);}
+  0% {transform: translate(150px, 150px) rotate(2deg);}
+  50% {transform: translate(150px, 150px) rotate(-2deg);}
+  100% {transform: translate(150px, 150px) rotate(2deg);}
 }
 
 
@@ -237,26 +238,94 @@
 
 @media screen and (max-device-width: 400px) {
   .handyladies {
-    transform: translate(330px, -300px) rotate(5deg);
+    transform: translate(0px, 0px);
+    animation: none;
+    width: 95%;
+    margin: auto auto 30px auto;
+
+  }
+
+  .handyladies-text h2 {
+    font-size: 45px;
+  }
+
+  .handyladies-text p {
+    font-size: 30px;
+  }
+
+  .handyladies-images-carousel {
+    margin: auto;
+  }
+
+  #handyladies-button-1, #handyladies-button-2, #handyladies-button-3, #handyladies-button-4 {
+    font-size: 40px;
   }
 
   .fishbnb {
-    transform: translate(-390px, 350px) rotate(-5deg);
+    transform: translate(0px, 0px);
+    animation: none;
+    width: 95%;
+    margin: auto;
+  }
+
+  .fishbnb-text h2 {
+    font-size: 45px;
+  }
+
+  .fishbnb-text p {
+    font-size: 30px;
   }
 
   #fish-illustration {
-    transform: translate(80px, 150px);
+    transform: translate(0px, 0px);
   }
+
+  #fishbnb-button-1, #fishbnb-button-2, #fishbnb-button-3 {
+    font-size: 40px;
+  }
+
+  .websites {
+    display: block;
+  }
+
 }
 
 /* TABLET VIEW */
 
 @media screen and (min-device-width: 401px) and (max-device-width: 1336px) {
-  .handyladies {
-    width: 120vw;
+
+  .websites {
+    display: block;
   }
 
-  .handyladies-text {
-    margin-left: 20px;
+  .handyladies {
+    transform: translate(0px, -150px);
+    animation: none;
+    width: 95%;
+    margin: auto auto 30px auto;
+
+  }
+
+  .handyladies-text h2 {
+    font-size: 45px;
+  }
+
+  .handyladies-text p {
+    font-size: 30px;
+  }
+
+  .handyladies-images-carousel {
+    margin: auto;
+  }
+
+  #handyladies-button-1, #handyladies-button-2, #handyladies-button-3, #handyladies-button-4 {
+    font-size: 40px;
+  }
+
+  .fishbnb {
+    transform: translate(0px, 0px);
+    animation: none;
+    width: 95%;
+    margin: auto;
   }
 }
