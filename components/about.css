@@ -204,29 +204,38 @@
 
 @media screen and (max-device-width: 400px) {
   #about-photo {
-    width: 30%;
+    width: 40%;
     height: 30%;
-    transform: translate(530px, -1300px);
+    transform: translate(520px, -1770px);
   }
 
 
   .about-text-bio {
-    transform: translate(231px, -140px) rotate(-5deg);
-    font-size: 30px;
-    width: 70vw;
+    transform: translate(0px, 0px) rotate(0deg);
+    font-size: 45px;
+    width: 95%;
+    margin: auto;
   }
 
   .about-text-bio h2 {
     font-size: 60px;
   }
 
+  .about-text-bio h3 {
+    font-size: 60px;
+  }
+
 
   .about-text-illustration {
-    width: 80vw;
+    width: 95%;
+    transform: translate(0px, -290px) rotate(0deg);
+    margin: auto;
   }
 
   .il-text {
-    font-size: 30px;
+    font-size: 45px;
+    background-color: none;
+    transform: translate(0px, 0px) rotate(0deg);
   }
 
   .about-text-illustration h2 {
@@ -235,9 +244,10 @@
 
 
   .about-text-development {
-    transform: translate(220px, -430px) rotate(-5deg);
-    font-size: 30px;
-    width: 70vw;
+    transform: translate(0px, -210px) rotate(0deg);
+    font-size: 45px;
+    width: 95%;
+    margin: auto;
   }
 
   .about-text-development h2 {
@@ -246,17 +256,18 @@
 
 
   .about-contact {
-    transform: translate(-60px, -440px) rotate(5deg);
-    width: 70vw;
+    transform: translate(0px, 0px) rotate(0deg);
+    width: 100%;
   }
 
 
   .about-charity {
-    transform: translate(20px, -430px) rotate(-5deg);
-    width: 80vw;
+    transform: translate(0px, 0px) rotate(0deg);
+    width: 95%;
+    margin: auto;
   }
 
-  .about-charity p {
+  .about-charity h2 {
     font-size: 40px;
   }
 
@@ -267,9 +278,9 @@
   }
 
   @keyframes jellyfish-float-mobile {
-    0% {transform: translate(220px, -210px);}
-    50% {transform: translate(220px, -260px);}
-    100% {transform: translate(220px, -210px);}
+    0% {transform: translate(220px, -40px);}
+    50% {transform: translate(220px, -90px);}
+    100% {transform: translate(220px, -40px);}
   }
 }
 
@@ -278,16 +289,61 @@
 
 @media screen and (min-device-width: 401px) and (max-device-width: 1336px) {
   #about-photo {
-    transform: translate(200px, -823px);
-    width: 28%;
+    transform: translate(540px, -1143px);
+    width: 40%;
   }
 
   .about-text-bio {
-    transform: translate(410px, -100px);
+    transform: translate(0px, -0px);
+    width: 95%;
   }
 
+  .about-text-bio h2 {
+    font-size: 45px;
+  }
+
+  .about-text-bio h3 {
+    font-size: 45px;
+  }
+
+  .about-text-bio p {
+    font-size: 30px;
+  }
+
+
+
+
   .about-text-illustration {
-    transform: translate(80px, -417px) rotate(5deg);
+    transform: translate(0px, -350px) rotate(0deg);
+    width: 95%;
+    margin: 0 0 0 auto;
+  }
+
+  .about-text-illustration h2 {
+    font-size: 45px;
+  }
+
+  .about-text-illustration p {
+    font-size: 30px;
+  }
+
+  .il-text {
+    background-color: none;
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+
+  .about-text-development {
+    transform: translate(0px, -290px);
+    width: 95%;
+  }
+
+  .about-text-development h2 {
+    font-size: 45px;
+  }
+
+  .about-text-development p {
+    font-size: 30px;
   }
 
   .about-contact {

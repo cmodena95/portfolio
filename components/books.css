@@ -11,7 +11,6 @@
   justify-content: space-between;
   margin: auto;
   transform: translate(10px, -194px);
-  animation: fish-sway 4s;
   color: white;
 }
 
@@ -53,13 +52,6 @@
 }
 
 
-
-@keyframes fish-sway {
-  0% {transform: translate(10px, -194px) rotate(0deg);}
-  30% {transform: translate(10px, -194px) rotate(2deg);}
-  65% {transform: translate(10px, -194px) rotate(-2deg);}
-  100% {transform: translate(10px, -194px) rotate(0deg);}
-}
 
 
 #octopus-illustration {
@@ -140,12 +132,31 @@
   .fish-in-the-sea {
     background-color: #b593ff;
     height: auto;
-    width: 90vw;
+    width: 95%;
     padding: 50px;
-    display: flex;
+    display: block;
     justify-content: space-between;
     margin: auto;
-    transform: translate(0px, -194px);
+    animation: none;
+    transform: translate(0px, 0px);
+  }
+
+  .fish-in-the-sea-text {
+    margin-top: 10px;
+    margin-left: 0px !important;
+    transform: translate(-20px, 30px);
+  }
+
+  .fish-in-the-sea h2 {
+    font-size: 60px;
+  }
+
+  .fish-in-the-sea p {
+    font-size: 40px;
+  }
+
+  #fish-in-the-sea-button-1, #fish-in-the-sea-button-2, #fish-in-the-sea-button-3, #fish-in-the-sea-button-4 {
+    font-size: 45px;
   }
 }
 
@@ -181,12 +192,24 @@
   .fish-in-the-sea {
     background-color: #b593ff;
     height: auto;
-    width: 80vw;
+    width: 95%;
     padding: 50px;
     display: flex;
     justify-content: space-between;
     margin: auto;
     transform: translate(0px, -194px);
+  }
+
+  .fish-in-the-sea-text h2 {
+    font-size: 60px;
+  }
+
+  .fish-in-the-sea-text p {
+    font-size: 45px;
+  }
+
+  #fish-in-the-sea-button-1, #fish-in-the-sea-button-2, #fish-in-the-sea-button-3, #fish-in-the-sea-button-4 {
+    font-size: 40px;
   }
 }
 
