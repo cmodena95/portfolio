@@ -8,6 +8,7 @@
 #wave {
   width: 100%;
   position: relative;
+  padding-top: 63px;
 }
 
 @media screen and (max-device-width: 400px) {
