@@ -1,0 +1,53 @@
+<div data-controller="parallax">
+  <div class="banner" data-action="scroll@window->parallax#move">
+    <%= image_tag "mountain.png", class: "mountain", data: {parallax_target: "mountain"} %>
+    <div class="banner-bg">
+      <%= image_tag "sun.png", class: "sun", data: {parallax_target: "sun"} %>
+
+      <%#= image_tag "shark.png", class: "shark", data: {parallax_target: "shark"} %>
+      <%= image_tag "tree.png", class: "tree", data: {parallax_target: "tree"} %>
+      <%= image_tag "houses.png", class: "houses", data: {parallax_target: "houses"} %>
+    </div>
+  </div>
+
+  <div class="home">
+    <div class="home-objects-left">
+      <%= image_tag "home_objects/guava.png", class: "guava", data: {parallax_target: "guava"} %>
+      <%= image_tag "home_objects/pizza.png", class: "pizza", data: {parallax_target: "pizza"} %>
+      <%= image_tag "home_objects/swan.png", class: "swan", data: {parallax_target: "swan"} %>
+    </div>
+
+    <div class="home-menu" data-controller="hover">
+      <%= image_tag "menu_en/illustrations_en_bw.png", class: "menu-illustrations", data: {
+        action: "mouseover->hover#color mouseout->hover#decolor",
+        color: "#{image_path "menu_en/illustrations_en_col.png"}",
+        bw: "#{image_path "menu_en/illustrations_en_bw.png"}"} %>
+
+      <%= image_tag "menu_en/design_en_bw.png", class: "menu-design", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+      color: "#{image_path "menu_en/design_en_col.png"}",
+      bw: "#{image_path "menu_en/design_en_bw.png"}"} %>
+
+      <%= image_tag "menu_en/websites_en_bw.png", class: "menu-websites", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+      color: "#{image_path "menu_en/websites_en_col.png"}",
+      bw: "#{image_path "menu_en/websites_en_bw.png"}"} %>
+
+      <%= image_tag "menu_en/about_en_bw.png", class: "menu-about", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+      color: "#{image_path "menu_en/about_en_col.png"}",
+      bw: "#{image_path "menu_en/about_en_bw.png"}"} %>
+
+      <%= image_tag "menu_en/contact_en_bw.png", class: "menu-contact", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+      color: "#{image_path "menu_en/contact_en_col.png"}", 
+      bw: "#{image_path "menu_en/contact_en_bw.png"}"} %>
+
+      <%= image_tag "menu_en/shop_en_bw.png", class: "menu-shop", data: {
+        action: "mouseover->hover#color mouseout->hover#decolor",
+        color: "#{image_path "menu_en/shop_en_col.png"}",
+        bw: "#{image_path "menu_en/shop_en_bw.png"}"} %>
+    </div>
+
+    <div class="home-objects-right">
+      <%= image_tag "home_objects/sushi.png", class: "sushi", data: {parallax_target: "sushi"} %>
+      <%= image_tag "home_objects/statue.png", class: "statue", data: {parallax_target: "statue"} %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,140 @@
+.banner {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 160vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+
+// images
+.sun {
+  width: 54rem;
+  object-fit: cover;
+  position: absolute;
+  bottom: 3rem;
+  right: -1rem;
+  transform: translate(-350px, 125px)
+}
+
+.mountain {
+  width: 110%;
+  z-index: 2;
+  position: relative;
+  transform: translate(-80px, 0px);
+}
+
+.shark {
+  width: 54rem;
+  object-fit: cover;
+  position: absolute;
+  bottom: 3rem;
+  right: -1rem;
+  z-index: 1;
+}
+
+.tree {
+  width: 43rem;
+  position: absolute;
+  bottom: 0;
+  left: -8rem;
+  z-index: 1;
+  transform: translate(0,200px);
+}
+
+.houses {
+  width: 39rem;
+  position: absolute;
+  bottom: 6rem;
+  left: 12rem;
+  transform: translate(0,200px);
+}
+
+
+// menu
+.home {
+  background-color: var(--purple);
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+
+.home-menu {
+  // width: 60vw;
+  margin: 0 auto;
+  padding-top: 6rem;
+}
+
+.menu-illustrations {
+  width: 60%;
+}
+
+.menu-design {
+  width: 40%;
+}
+
+.menu-about {
+  width: 30%;
+  transform: translate(21%, -19%) rotate(25deg);
+}
+
+.menu-websites {
+  width: 40%;
+  transform: translate(1%, -39%) rotate(-15deg);
+}
+
+.menu-contact {
+  width: 40%;
+  transform: translate(-29%, -89%);
+}
+
+.menu-shop {
+  width: 25%;
+  transform: translate(1%, -19%) rotate(25deg);
+}
+
+.home-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+// objects
+.guava {
+  width: 10rem;
+  transform: translate(61%,-19%);
+}
+
+.pizza {
+  width: 18rem;
+  // animation: float1 5s;
+  // animation-iteration-count: infinite;
+}
+
+.statue {
+  width: 16rem;
+  transform: translate(-29%, 41%);
+  // animation: float2 7s;
+  // animation-iteration-count: infinite;
+}
+
+.sushi {
+  width: 8rem;
+  transform: translate(1%, -39%) rotate(135deg);
+}
+
+.swan {
+  width: 6rem;
+  transform: translate(81%, 31%) rotate(-15deg);
+  // animation: sway 10s;
+  // animation-iteration-count: infinite;
+}
+
+.home-objects-left, .home-objects-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
