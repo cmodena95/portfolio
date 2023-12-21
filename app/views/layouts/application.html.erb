@@ -11,6 +11,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <% unless current_page?(root_path) %>
+      <div class="layout">
+        <%= render "shared/navbar" %>
+        <%= yield %>
+      </div>
+    <% else %>
+      <%= yield %>
+    <% end %>
   </body>
 </html>

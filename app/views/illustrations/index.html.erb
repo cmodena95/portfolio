@@ -1,0 +1,33 @@
+<div class="grid-3" data-controller="slide hover" style="display: none;">
+  <% @illustrations.each do |illustration| %>
+    <div>
+      <%= cl_image_tag illustration.main_photo.key, data: {action: "click->slide#infoIn", description: illustration.description, images: "#{cl_image_path illustration.main_photo.key}"} %>
+    </div>
+  <% end %>
+</div>
+
+<div class="illustration-show">
+  <div class="illustration-show-top">
+    <%= image_tag "left_arrow_bw.png", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+    color: "#{image_path "left_arrow_col.png"}", 
+    bw: "#{image_path "left_arrow_bw.png"}"} %>
+  </div>
+
+  <div class="illustration-show-content">
+    <div class="illustration-show-content-top">
+      <%= cl_image_tag Illustration.first.main_photo.key %>
+
+      <div class="illustration-show-description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non leo mauris. Praesent semper tortor in ipsum bibendum, in sodales justo fringilla. Curabitur gravida consequat metus vitae mattis. Phasellus eleifend ante quis purus bibendum varius. Nulla nibh enim, molestie non fringilla in, tincidunt eget augue. Morbi euismod suscipit pulvinar. Donec convallis pharetra erat eget mollis.</p>
+      </div>
+    </div>
+
+    <% if Illustration.first.photos.attached? %>
+      <div class="illustrations-photos">
+        <% Illustration.first.photos.each do |photo| %>
+          <%= cl_image_tag photo.key, class: "#{Illustration.first.photos.length.odd? && Illustration.first.photos.last.key == photo.key ? "final-photo" : ""}" %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

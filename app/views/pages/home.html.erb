@@ -18,10 +18,12 @@
     </div>
 
     <div class="home-menu" data-controller="hover">
-      <%= image_tag "menu_en/illustrations_en_bw.png", class: "menu-illustrations", data: {
-        action: "mouseover->hover#color mouseout->hover#decolor",
-        color: "#{image_path "menu_en/illustrations_en_col.png"}",
-        bw: "#{image_path "menu_en/illustrations_en_bw.png"}"} %>
+      <%= link_to illustrations_path, class: "menu-illustrations" do %>
+        <%= image_tag "menu_en/illustrations_en_bw.png", data: {
+          action: "mouseover->hover#color mouseout->hover#decolor",
+          color: "#{image_path "menu_en/illustrations_en_col.png"}",
+          bw: "#{image_path "menu_en/illustrations_en_bw.png"}"} %>
+      <% end %>
 
       <%= image_tag "menu_en/design_en_bw.png", class: "menu-design", data: {action: "mouseover->hover#color mouseout->hover#decolor",
       color: "#{image_path "menu_en/design_en_col.png"}",

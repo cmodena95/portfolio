@@ -1,0 +1,30 @@
+.navbar {
+  width: 20vw;
+  background-color: var(--purple);
+  height: 90vh;
+  padding: 5vh 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  position: sticky;
+  top: 0;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-item {
+  height: 2rem;
+  transition: 0.5s ease all;
+}
+
+.navbar-item:hover {
+  transform: scale(1.2);
+}
