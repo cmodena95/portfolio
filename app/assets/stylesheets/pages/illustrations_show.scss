@@ -1,5 +1,6 @@
 .illustration-show {
   padding: 0 2rem;
+  transition: 0.5s ease all;
 }
 
 .illustration-show-top {
@@ -11,6 +12,12 @@
 
   img {
     height: 4rem;
+    cursor: pointer;
+    transition: 0.5s ease all;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
