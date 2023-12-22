@@ -9,18 +9,18 @@ export default class extends Controller {
 
     setTimeout(() => {
       this.indexTarget.style.display = "none"
-    }, 1000)
+    }, 500)
 
 
     this.modalTargets.forEach((modal) => {
       if (modal.dataset.ref == event.currentTarget.dataset.ref) {
         setTimeout(() => {
           modal.style.display = "block"
-        }, 1100)
+        }, 600)
 
         setTimeout(() => {
           modal.classList.remove("hidden")
-        }, 1500)
+        }, 700)
       }
     })
   }
@@ -32,16 +32,16 @@ export default class extends Controller {
 
         setTimeout(() => {
           modal.style.display = "none"
-        }, 1000)
+        }, 500)
       }
 
       setTimeout(() => {
         this.indexTarget.style.display = "grid"
-      }, 1100)
+      }, 600)
 
       setTimeout(() => {
         this.indexTarget.classList.remove("hidden")
-      }, 1200)
+      }, 700)
     })
   }
 }
