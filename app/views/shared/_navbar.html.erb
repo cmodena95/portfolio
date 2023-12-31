@@ -1,13 +1,19 @@
 <div class="navbar" data-controller="hover">
-  <div style="width: 200px; height: 200px; border-radius: 50%; background-color: lightgrey;"></div>
+  <%# <div style="width: 200px; height: 200px; border-radius: 50%; background-color: lightgrey;"></div> %>
+  <%= link_to root_path do %>
+    <%= image_tag "logo.png", class: "logo",
+      data: {action: "mouseover->hover#color mouseout->hover#decolor",
+      color: "#{image_path "logo_animated_en.png"}", 
+      bw: "#{image_path "logo.png"}"}  %>
+  <% end %>
 
   <div class="navbar-menu">
-    <%= link_to root_path do %>
-      <%= image_tag "navbar_en/home_bw.png", class: "navbar-item",
+
+      <%#= image_tag "navbar_en/home_bw.png", class: "navbar-item",
           data: {action: "mouseover->hover#color mouseout->hover#decolor",
           color: "#{image_path "navbar_en/home_col.png"}", 
           bw: "#{image_path "navbar_en/home_bw.png"}"} %>
-    <% end %>
+    
 
     <%= link_to illustrations_path do %>
       <%= image_tag "navbar_en/illustrations_#{current_page?(illustrations_path) ? "col" : "bw"}.png", class: "navbar-item",
@@ -24,13 +30,17 @@
         data: {action: "mouseover->hover#color mouseout->hover#decolor",
         color: "#{image_path "navbar_en/websites_col.png"}", 
         bw: "#{image_path "navbar_en/websites_bw.png"}"} %>
-    <%= image_tag "navbar_en/contact_bw.png", class: "navbar-item",
+    <%= image_tag "navbar_en/shop_bw.png", class: "navbar-item",
         data: {action: "mouseover->hover#color mouseout->hover#decolor",
-        color: "#{image_path "navbar_en/contact_col.png"}", 
-        bw: "#{image_path "navbar_en/contact_bw.png"}"} %>
+        color: "#{image_path "navbar_en/shop_col.png"}", 
+        bw: "#{image_path "navbar_en/shop_bw.png"}"} %>
     <%= image_tag "navbar_en/about_bw.png", class: "navbar-item",
         data: {action: "mouseover->hover#color mouseout->hover#decolor",
         color: "#{image_path "navbar_en/about_col.png"}", 
         bw: "#{image_path "navbar_en/about_bw.png"}"} %>
+    <%= image_tag "navbar_en/contact_bw.png", class: "navbar-item",
+        data: {action: "mouseover->hover#color mouseout->hover#decolor",
+        color: "#{image_path "navbar_en/contact_col.png"}", 
+        bw: "#{image_path "navbar_en/contact_bw.png"}"} %>
   </div>
 </div>
