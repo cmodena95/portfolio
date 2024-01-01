@@ -15,6 +15,14 @@
   transition: 0.5s ease all;
   height: 50px;
 
+  a {
+    transition: 0.5s ease all;
+  }
+
+  a:hover {
+    transform: scale(1.2);
+  }
+
   &:hover {
     height: 150px;
   }
@@ -28,15 +36,30 @@
     transform: translate(0, 0) !important;
     transition: 1s ease all;
   }
+
+  &:hover .language-icon#en {
+    transform: translate(0, 0) !important;
+    transition: 1s ease all;
+  }
+
+  &:hover .language-icon#es-en {
+    transform: translate(0, 0) !important;
+    transition: 0.5s ease all;
+  }
+
+  &:hover .language-icon#es-pt {
+    transform: translate(0, 0) !important;
+    transition: 1s ease all;
+  }
 }
 
-// #es {
-//   transition: 3s ease all;
-// }
+#es-en {
+  transition: 1s ease all;
+}
 
-// #pt {
-//   transition: 3s ease all;
-// }
+#es-pt {
+  transition: 0.5s ease all;
+}
 
 .language-icon {
   height: 50px;
@@ -49,6 +72,10 @@
 
 .language-icon#es {
   transition: 1s ease all;
+}
+
+.language-icon#en {
+  transition: 0.5s ease all;
 }
 
 .language-icon.hidden {

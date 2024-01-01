@@ -1,7 +1,29 @@
 <div class="languages">
-  <% if params[:language].nil? %>
+  <% if params[:language].nil? || params[:language] == "en" %>
     <%= image_tag "languages/en.png", class: "language-icon active" %>
-    <%= image_tag "languages/es.png", class: "language-icon hidden", id: "es" %>
-    <%= image_tag "languages/pt.png", class: "language-icon hidden", id: "pt" %>
+    <%= link_to request.params.merge(language: "es") do %>
+      <%= image_tag "languages/es.png", class: "language-icon hidden", id: "es" %>
+    <% end %>
+    <%= link_to request.params.merge(language: "pt") do %>
+      <%= image_tag "languages/pt.png", class: "language-icon hidden", id: "pt" %>
+    <% end %>
+
+  <% elsif params[:language] == "es" %>
+    <%= image_tag "languages/es.png", class: "language-icon active" %>
+    <%= link_to request.params.merge(language: "en") do %>
+      <%= image_tag "languages/en.png", class: "language-icon hidden", id: "es-en" %>
+    <% end %>
+    <%= link_to request.params.merge(language: "pt") do %>
+      <%= image_tag "languages/pt.png", class: "language-icon hidden", id: "es-pt" %>
+    <% end %>
+
+  <% elsif params[:language] == "pt" %>
+    <%= image_tag "languages/pt.png", class: "language-icon active" %>
+    <%= link_to request.params.merge(language: "es") do %>
+      <%= image_tag "languages/es.png", class: "language-icon hidden", id: "es" %>
+    <% end %>
+    <%= link_to request.params.merge(language: "en") do %>
+      <%= image_tag "languages/en.png", class: "language-icon hidden", id: "en" %>
+    <% end %>
   <% end %>
 </div>
