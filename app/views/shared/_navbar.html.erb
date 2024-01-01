@@ -1,5 +1,4 @@
 <div class="navbar" data-controller="hover">
-  <%# <div style="width: 200px; height: 200px; border-radius: 50%; background-color: lightgrey;"></div> %>
   <%= link_to root_path do %>
     <%= image_tag "logo.png", class: "logo",
       data: {action: "mouseover->hover#color mouseout->hover#decolor",
@@ -8,12 +7,10 @@
   <% end %>
 
   <div class="navbar-menu">
-
-      <%#= image_tag "navbar_en/home_bw.png", class: "navbar-item",
-          data: {action: "mouseover->hover#color mouseout->hover#decolor",
-          color: "#{image_path "navbar_en/home_col.png"}", 
-          bw: "#{image_path "navbar_en/home_bw.png"}"} %>
-    
+    <%#= image_tag "navbar_en/home_bw.png", class: "navbar-item",
+        data: {action: "mouseover->hover#color mouseout->hover#decolor",
+        color: "#{image_path "navbar_en/home_col.png"}", 
+        bw: "#{image_path "navbar_en/home_bw.png"}"} %>
 
     <%= link_to illustrations_path do %>
       <%= image_tag "navbar_en/illustrations_#{current_page?(illustrations_path) ? "col" : "bw"}.png", class: "navbar-item",

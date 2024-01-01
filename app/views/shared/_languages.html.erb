@@ -1,0 +1,7 @@
+<div class="languages">
+  <% if params[:language].nil? %>
+    <%= image_tag "languages/en.png", class: "language-icon active" %>
+    <%= image_tag "languages/es.png", class: "language-icon hidden", id: "es" %>
+    <%= image_tag "languages/pt.png", class: "language-icon hidden", id: "pt" %>
+  <% end %>
+</div>
