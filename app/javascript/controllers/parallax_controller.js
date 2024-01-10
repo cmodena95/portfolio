@@ -23,10 +23,15 @@ export default class extends Controller {
   }
 
   move() {
+    // if window.scrollY == 0, put everything back to the beginning
+    // OR set limits on how far each element can move (if position is > x...)
+
+    //  number minus window.scrollY
+
     this.st = window.scrollY || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
     if (this.st > this.lastScrollTop) {
       // banner
-      this.sunPos -= 4
+      this.sunPos -= 5
       this.sunTarget.style.transform = `translate(-350px, ${this.sunPos}px)`
 
       this.mountainPos += 0.5
@@ -39,7 +44,6 @@ export default class extends Controller {
       this.housesPosHorizontal -= 2.5
       this.housesPosVertical -= 2
       this.housesTarget.style.transform = `translate(${this.housesPosHorizontal}px,${this.housesPosVertical}px)`
-
 
       // objects
       this.guavaPos += 0.5
@@ -59,10 +63,14 @@ export default class extends Controller {
         this.swanTarget.style.transform = `translate(81%, ${this.swanPos}%) rotate(-15deg)`
       }
     } else if (this.st < this.lastScrollTop) {
-      this.sunPos += 4
+      this.sunPos += 5
       this.sunTarget.style.transform = `translate(-350px,${this.sunPos}px)`
+      
 
       this.mountainPos -= 0.5
+      this.mountainTarget.style.transform = `translate(${this.mountainPos}px,0)`
+
+      this.mountainPos -= window.scrollY / 1200
       this.mountainTarget.style.transform = `translate(${this.mountainPos}px,0)`
 
       this.treePosHorizontal += 2.5

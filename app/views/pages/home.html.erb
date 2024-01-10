@@ -18,30 +18,34 @@
     </div>
 
     <div class="home-menu" data-controller="hover">
-      <%= link_to illustrations_path(language: @language), class: "menu-illustrations menu-item" do %>
-        <%= image_tag "menu_#{@language}/illustrations_#{@language}_bw.png", data: {
-          action: "mouseover->hover#color mouseout->hover#decolor",
-          color: "#{image_path "menu_#{@language}/illustrations_#{@language}_col.png"}",
-          bw: "#{image_path "menu_#{@language}/illustrations_#{@language}_bw.png"}"} %>
-      <% end %>
+      <div>
+        <%= link_to illustrations_path(language: @language) do %>
+          <%= image_tag "menu_#{@language}/illustrations_#{@language}_bw.png", class: "home-illustrations menu-item", data: {
+            action: "mouseover->hover#color mouseout->hover#decolor",
+            color: "#{image_path "menu_#{@language}/illustrations_#{@language}_col.png"}",
+            bw: "#{image_path "menu_#{@language}/illustrations_#{@language}_bw.png"}"} %>
+        <% end %>
+      </div>
 
-      <%= image_tag "menu_#{@language}/design_#{@language}_bw.png", class: "menu-design", id: "design-#{@language}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+      <%#= image_tag "menu_#{@language}/design_#{@language}_bw.png", class: "menu-design", id: "design-#{@language}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
       color: "#{image_path "menu_#{@language}/design_#{@language}_col.png"}",
       bw: "#{image_path "menu_#{@language}/design_#{@language}_bw.png"}"} %>
 
-      <%= image_tag "menu_#{@language}/websites_#{@language}_bw.png", class: "menu-websites", id: "websites-#{@language}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+      <%#= image_tag "menu_#{@language}/websites_#{@language}_bw.png", class: "menu-websites", id: "websites-#{@language}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
       color: "#{image_path "menu_#{@language}/websites_#{@language}_col.png"}",
       bw: "#{image_path "menu_#{@language}/websites_#{@language}_bw.png"}"} %>
 
-      <%= image_tag "menu_#{@language}/about_#{@language}_bw.png", class: "menu-about", id: "about-#{@language}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
-      color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}",
-      bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
+      <div class="home-menu-level-2<%= @language == "en"  ? "" : "-es-pt" %>">
+        <%= image_tag "menu_#{@language}/about_#{@language}_bw.png", class: "menu-item home-about", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+        color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}",
+        bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
 
-      <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-contact", id: "contact-#{@language}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
-      color: "#{image_path "menu_#{@language}/contact_#{@language}_col.png"}", 
-      bw: "#{image_path "menu_#{@language}/contact_#{@language}_bw.png"}"} %>
+        <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-item #{@language == "en" ? "home-contact-en" : "home-contact"}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+        color: "#{image_path "menu_#{@language}/contact_#{@language}_col.png"}", 
+        bw: "#{image_path "menu_#{@language}/contact_#{@language}_bw.png"}"} %>
+      </div>
 
-      <%= image_tag "menu_#{@language}/shop_#{@language}_bw.png", class: "menu-shop", id: "shop-#{@language}", data: {
+      <%#= image_tag "menu_#{@language}/shop_#{@language}_bw.png", class: "menu-shop", id: "shop-#{@language}", data: {
         action: "mouseover->hover#color mouseout->hover#decolor",
         color: "#{image_path "menu_#{@language}/shop_#{@language}_col.png"}",
         bw: "#{image_path "menu_#{@language}/shop_#{@language}_bw.png"}"} %>
