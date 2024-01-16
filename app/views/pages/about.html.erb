@@ -1,0 +1,81 @@
+<div class="about-top">
+  <%= image_tag "about/about_photo.png", class: "about-photo" %>
+
+  <% if @language == "en" %>
+    <div class="about-text">
+      <h2>Hi! I'm Camila</h2>
+      <p>
+        I'm an illustrator and web development teacher. I'm Brazilian but grew up in England. My identity crisis as the English cousin in Brazil but the Brazilian friend in England eventually took me to live in Spain, where I'm just another person 'not from here'.
+      </p>
+
+      <p>
+        I've been drawing my entire life but only realised after being approached to illustrate a children's book for the charity Learn Achieve Become that art could have a purpose (the book is no longer for sale, but <span class="book-text">hover here<%= image_tag "about/book_photo", class: "about-book-photo" %></span> for a picture of a kid in Xuzhou, China reading it).
+      </p>
+    </div>
+  <% end %>
+
+  <% if @language == "pt" %>
+    <div class="about-text">
+      <h2>Oi! Meu nome é Camila</h2>
+      <p>
+        Sou ilustradora e professora de programação. Sou brasileira mas cresci na Inglaterra. Minha crise de identidade como a prima inglesa no Brasil mas a amiga brasileira na Inglaterra acabou me levando a morar aqui na Espanha, onde sou apenas mais uma pessoa 'não daqui'.
+      </p>
+
+      <p>
+        Desenho desde criança, mas só percebi que a arte poderia ter um propósito depois de ser abordada para ilustrar um livro infantil para a ONG Learn Achieve Become (o livro não está mais à venda, mas <span class="book-text">passe o mouse aquí<%= image_tag "about/book_photo", class: "about-book-photo" %></span> pra ver uma criança em Xuzhou, China, lendo ele).
+
+      </p>
+    </div>
+  <% end %>
+
+  <% if @language == "es" %>
+    <div class="about-text">
+      <h2>Hola! Soy Camila</h2>
+      <p>
+        Soy ilustradora y professora de programación. Soy brasileña pero crecí en Inglaterra. Mi crise de identidad como la prima inglesa en Brasil pero la amiga brasileña en Inglaterra me acabó llevandome a vivir aquí en españa, donde soy simplemente una persona más 'no de aquí'.
+      </p>
+
+      <p>
+        Dibujo desde niña, pero sólo me di cuenta de que el arte podía tener un propósito cuande me propusieron ilustrar un libro infantil para la ONG Learn Achieve Become (el libro ya no está a la venta, pero puedes pasar el mouse <span class="book-text">aquí<%= image_tag "about/book_photo", class: "about-book-photo" %></span> para ver a un niño en Xuzhou, China, leyéndolo).
+      </p>
+    </div>
+  <% end %>
+</div>
+
+<div class="about-bottom">
+  <% if @language == "en" %>
+    <p>
+      Aside from drawing and coding, I spend most of my time listening to cumbia or podcasts about the GDR, imagining what my dog's accent would be like if he could talk, and saving videos of other people making recipes on the internet, despite knowing full well I'll never make them.
+    </p>
+
+    <br>
+
+    <p>
+      For all types of illustration work, including individual drawings, comics or books, animations and tattoo designs, get in touch via the <%= link_to "contact page", contact_path %> or using the icons on the left-hand side :)
+    </p>
+  <% end %>
+
+  <% if @language == "es" %>
+    <p>
+      Aparte de dibujar y programar, paso la mayor parte de mi tiempo escuchando cumbia o podcasts sobre alemania oriental, imaginando cómo sería el acento de mi perro si pudiera hablar y guardando vídeos de otras personas cocinando recetas en online sabiendo muy bien no nunca las haré.
+    </p>
+
+    <br>
+
+    <p>
+      Para cualquier tipo de trabajo de ilustración, incluyendo dibujos individuales, comics o libros, animaciónes y diseños de tatuajes, ponte en contacto conmigo a través la <%= link_to "página de contacto", contact_path %> o usando los icones a tu izquierda :)
+    </p>
+  <% end %>
+
+  <% if @language == "pt" %>
+    <p>
+      Além de desenhar e programar, passo a maioria do meu tempo ouvindou cumbia ou podcasts sobre a Alemanha Oriental, imaginando como seria o sotaque do meu cachorro se ele pudesse falar, e salvando vídeos de outras pessas fazendo receitas que eu também quero fazer, mas sabendo que nunca as farei.
+    </p>
+
+    <br>
+
+    <p>
+      Para qualquer tipo de trabalho de ilustração, including desenhos, histórias em quadrinhos ou livros, animações e desenhos de tatuagem, entre em contato através da <%= link_to "página de contato", contact_path %> ou usando os ícones no lado esquerdo :)
+    </p>
+  <% end %>
+</div>

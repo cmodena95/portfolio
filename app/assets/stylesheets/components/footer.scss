@@ -1,0 +1,37 @@
+.footer {
+  background-image: asset-url("footer.png");
+  width: 100%;
+  height: 65vh;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10vh;
+  padding-bottom: 5vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+  transition: 0.5s ease all;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+.footer-star {
+  height: 2rem;
+  width: 2rem;
+  object-fit: cover;
+  margin: 0 0.5rem;
+}

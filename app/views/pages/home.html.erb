@@ -14,7 +14,6 @@
     <div class="home-objects-left">
       <%= image_tag "home_objects/guava.png", class: "guava", data: {parallax_target: "guava"} %>
       <%= image_tag "home_objects/pizza.png", class: "pizza", data: {parallax_target: "pizza"} %>
-      <%= image_tag "home_objects/swan.png", class: "swan", data: {parallax_target: "swan"} %>
     </div>
 
     <div class="home-menu" data-controller="hover">
@@ -27,6 +26,7 @@
         <% end %>
       </div>
 
+
       <%#= image_tag "menu_#{@language}/design_#{@language}_bw.png", class: "menu-design", id: "design-#{@language}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
       color: "#{image_path "menu_#{@language}/design_#{@language}_col.png"}",
       bw: "#{image_path "menu_#{@language}/design_#{@language}_bw.png"}"} %>
@@ -36,13 +36,17 @@
       bw: "#{image_path "menu_#{@language}/websites_#{@language}_bw.png"}"} %>
 
       <div class="home-menu-level-2<%= @language == "en"  ? "" : "-es-pt" %>">
-        <%= image_tag "menu_#{@language}/about_#{@language}_bw.png", class: "menu-item home-about", data: {action: "mouseover->hover#color mouseout->hover#decolor",
-        color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}",
-        bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
+        <%= link_to about_path(language: @language) do %>
+          <%= image_tag "menu_#{@language}/about_#{@language}_bw.png", class: "menu-item home-about", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+          color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}",
+          bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
+        <% end %>
 
-        <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-item #{@language == "en" ? "home-contact-en" : "home-contact"}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
-        color: "#{image_path "menu_#{@language}/contact_#{@language}_col.png"}", 
-        bw: "#{image_path "menu_#{@language}/contact_#{@language}_bw.png"}"} %>
+        <%= link_to contact_path(language: @language) do %>
+          <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-item #{@language == "en" ? "home-contact-en" : "home-contact"}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+          color: "#{image_path "menu_#{@language}/contact_#{@language}_col.png"}", 
+          bw: "#{image_path "menu_#{@language}/contact_#{@language}_bw.png"}"} %>
+        <% end %>
       </div>
 
       <%#= image_tag "menu_#{@language}/shop_#{@language}_bw.png", class: "menu-shop", id: "shop-#{@language}", data: {
@@ -54,6 +58,7 @@
     <div class="home-objects-right">
       <%= image_tag "home_objects/sushi.png", class: "sushi", data: {parallax_target: "sushi"} %>
       <%= image_tag "home_objects/statue.png", class: "statue", data: {parallax_target: "statue"} %>
+      <%= image_tag "home_objects/swan.png", class: "swan", data: {parallax_target: "swan"} %>
     </div>
   </div>
 </div>

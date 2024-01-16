@@ -1,5 +1,6 @@
 // external
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 // local
 @import "pages/index";
@@ -29,4 +30,10 @@ body {
 p {
   font-family: "Anton";
   font-size: 1.5rem;
+}
+
+h2 {
+  font-family: "Anton";
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
 }

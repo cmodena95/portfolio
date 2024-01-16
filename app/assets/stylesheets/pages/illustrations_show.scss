@@ -36,9 +36,12 @@
 }
 
 .illustration-show-description {
-  background-color: var(--dark-purple);
-  padding: 2rem;
+  // background-color: var(--dark-purple);
+  background-image: asset-url("illustrations/illustrations_show_bg.png");
+  padding: 3rem 2rem;
   color: var(--white);
+  background-position: center;
+  background-size: cover;
 }
 
 .illustrations-photos {

@@ -1,4 +1,4 @@
-.navbar {
+.navbar-home {
   width: 20%;
   background-color: var(--purple);
   height: 90vh;
@@ -17,8 +17,22 @@
 .navbar-menu {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-menu-items {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+.navbar-star {
+  height: 1rem;
+  width: 1rem;
+  object-fit: cover;
 }
 
 .navbar-item {
@@ -26,6 +40,29 @@
   transition: 0.5s ease all;
 }
 
+.navbar-illustration {
+  height: 2.5rem;
+  width: 13rem;
+}
+
 .navbar-item:hover {
   transform: scale(1.2);
+}
+
+
+// ICONS
+.navbar-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-icon {
+  width: 2rem;
+  height: 2rem;
+  transition: 0.5s ease all;
+
+  &:hover {
+    transform: scale(1.3);
+  }
 }

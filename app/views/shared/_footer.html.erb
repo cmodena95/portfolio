@@ -1,0 +1,21 @@
+<div class="footer" data-controller="hover">
+  <div class="footer-icons">
+    <%= image_tag "icons/star.png", class: "footer-star" %>
+
+    <%= link_to "https://www.instagram.com/camillustrate", target: "_blank" do %>
+      <%= image_tag "icons/instagram_bw.png", class: "footer-icon", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+      color: "#{image_path "icons/instagram_col.png"}", 
+      bw: "#{image_path "icons/instagram_bw.png"}"} %>
+    <% end %>
+
+    <%= image_tag "icons/star.png", class: "footer-star" %>
+
+    <%= mail_to "cmodena95@gmail.com" do %>
+      <%= image_tag "icons/email_bw.png", class: "footer-icon", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+      color: "#{image_path "icons/email_col.png"}", 
+      bw: "#{image_path "icons/email_bw.png"}"} %>
+    <% end %>
+
+    <%= image_tag "icons/star.png", class: "footer-star" %>
+  </div>
+</div>

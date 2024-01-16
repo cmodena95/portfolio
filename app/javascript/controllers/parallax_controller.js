@@ -16,88 +16,43 @@ export default class extends Controller {
     this.guavaPos = -19
     this.sushiPos = -39
     this.pizzaPos = 0
-    this.statuePos = 41
-    this.swanPos = 31
+    this.statuePos = 21
+    this.swanPos = 15
 
     this.lastScrollTop = 0
   }
 
   move() {
-    // if window.scrollY == 0, put everything back to the beginning
-    // OR set limits on how far each element can move (if position is > x...)
+    this.sunPos = (125 - (window.scrollY) + 2)
+    this.sunTarget.style.transform = `translate(-350px, ${this.sunPos}px)`
 
-    //  number minus window.scrollY
+    this.mountainPos = (((window.scrollY / 13) - 80) - 0.1)
+    this.mountainTarget.style.transform = `translate(${this.mountainPos}px,0)`
 
-    this.st = window.scrollY || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-    if (this.st > this.lastScrollTop) {
-      // banner
-      this.sunPos -= 5
-      this.sunTarget.style.transform = `translate(-350px, ${this.sunPos}px)`
+    this.treePosHorizontal = (0 - (window.scrollY / 2))
+    this.treePosVertical = (200 - (window.scrollY / 10))
+    this.treeTarget.style.transform = `translate(${this.treePosHorizontal}px,${this.treePosVertical}px)`
 
-      this.mountainPos += 0.5
-      this.mountainTarget.style.transform = `translate(${this.mountainPos}px,0)`
+    this.housesPosHorizontal = (0 - (window.scrollY / 2.5))
+    this.housesPosVertical = (200 - (window.scrollY / 6))
+    this.housesTarget.style.transform = `translate(${this.housesPosHorizontal}px,${this.housesPosVertical}px)`
 
-      this.treePosHorizontal -= 2.5
-      this.treePosVertical -= 2.5
-      this.treeTarget.style.transform = `translate(${this.treePosHorizontal}px,${this.treePosVertical}px)`
 
-      this.housesPosHorizontal -= 2.5
-      this.housesPosVertical -= 2
-      this.housesTarget.style.transform = `translate(${this.housesPosHorizontal}px,${this.housesPosVertical}px)`
 
-      // objects
-      this.guavaPos += 0.5
-      this.guavaTarget.style.transform = `translate(61%, ${this.guavaPos}%)`
+    // objects
+    this.guavaPos = (-19 + (window.scrollY / 20))
+    this.guavaTarget.style.transform = `translate(61%, ${this.guavaPos}%)`
 
-      this.sushiPos += 0.75
-      this.sushiTarget.style.transform = `translate(1%, ${this.sushiPos}%) rotate(135deg)`
+    this.sushiPos = (-39 + (window.scrollY / 17))
+    this.sushiTarget.style.transform = `translate(1%, ${this.sushiPos}%) rotate(135deg)`
 
-      this.pizzaPos += 0.75
-      this.pizzaTarget.style.transform = `translate(0%, ${this.pizzaPos}%)`
+    this.pizzaPos = (window.scrollY / 13)
+    this.pizzaTarget.style.transform = `translate(0%, ${this.pizzaPos}%)`
 
-      this.statuePos += 0.25
-      this.statueTarget.style.transform = `translate(-29%, ${this.statuePos}%)`
+    this.statuePos = (21 + (window.scrollY / 20))
+    this.statueTarget.style.transform = `translate(-29%, ${this.statuePos}%)`
 
-      this.swanPos += 0.5
-      if (this.swanPos <= 59) {
-        this.swanTarget.style.transform = `translate(81%, ${this.swanPos}%) rotate(-15deg)`
-      }
-    } else if (this.st < this.lastScrollTop) {
-      this.sunPos += 5
-      this.sunTarget.style.transform = `translate(-350px,${this.sunPos}px)`
-      
-
-      this.mountainPos -= 0.5
-      this.mountainTarget.style.transform = `translate(${this.mountainPos}px,0)`
-
-      this.mountainPos -= window.scrollY / 1200
-      this.mountainTarget.style.transform = `translate(${this.mountainPos}px,0)`
-
-      this.treePosHorizontal += 2.5
-      this.treePosVertical += 2.5
-      this.treeTarget.style.transform = `translate(${this.treePosHorizontal}px,${this.treePosVertical}px)`
-
-      this.housesPosHorizontal += 2.5
-      this.housesPosVertical += 2
-      this.housesTarget.style.transform = `translate(${this.housesPosHorizontal}px,${this.housesPosVertical}px)`
-
-      
-      // objects
-      this.guavaPos -= 0.5
-      this.guavaTarget.style.transform = `translate(61%, ${this.guavaPos}%)`
-
-      this.sushiPos -= 0.75
-      this.sushiTarget.style.transform = `translate(1%, ${this.sushiPos}%) rotate(135deg)`
-
-      this.pizzaPos -= 0.75
-      this.pizzaTarget.style.transform = `translate(0%, ${this.pizzaPos}%)`
-
-      this.statuePos -= 0.25
-      this.statueTarget.style.transform = `translate(-29%, ${this.statuePos}%)`
-
-      this.swanPos -= 0.5
-      this.swanTarget.style.transform = `translate(81%, ${this.swanPos}%) rotate(-15deg)`
-    } 
-    this.lastScrollTop = this.st <= 0 ? 0 : this.st;
+    this.swanPos = (15 + (window.scrollY / 10))
+    this.swanTarget.style.transform = `translate(-190%, ${this.swanPos}%) rotate(-15deg)`
   }
 }

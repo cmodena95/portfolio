@@ -10,9 +10,9 @@
   <% @illustrations.each do |illustration| %>
     <div class="illustration-show hidden" data-slide-target="modal" style="display: none;" data-ref="<%= illustration.id %>">
       <div class="illustration-show-top">
-        <%= image_tag "left_arrow_bw.png", data: {action: "mouseover->hover#color mouseout->hover#decolor click->slide#infoOut",
-        color: "#{image_path "left_arrow_col.png"}", 
-        bw: "#{image_path "left_arrow_bw.png"}",
+        <%= image_tag "illustrations/arrow_bw.png", data: {action: "mouseover->hover#color mouseout->hover#decolor click->slide#infoOut",
+        color: "#{image_path "illustrations/arrow_col.png"}", 
+        bw: "#{image_path "illustrations/arrow_bw.png"}",
         ref: illustration.id} %>
       </div>
 
