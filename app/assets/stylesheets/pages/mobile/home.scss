@@ -1,0 +1,134 @@
+.banner-mobile {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 95vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.banner-bg-mobile {
+  position: absolute;
+  left: 0;
+  display: flex;
+}
+
+
+
+// BANNER IMAGES
+.mountain-mobile {
+  width: 110%;
+  z-index: 3;
+  position: relative;
+  transform: translate(0px, 0px);
+}
+
+.sun-mobile {
+  object-fit: cover;
+  position: absolute;
+  right: -10rem;
+  height: 50vh;
+  bottom: -13rem;
+  transform: translate(0px, 0px);
+}
+
+.tree-mobile {
+  height: 30vh;
+  transform: translate(-10px, 20px);
+  z-index: 2;
+}
+
+.houses-mobile {
+  height: 20vh;
+  transform: translate(-100px, 60px);
+  z-index: 1;
+}
+
+
+
+// MENU
+.home-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+  gap: 1rem;
+}
+
+.home-menu-level-1-mobile {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.home-menu-level-2-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-item-mobile {
+  height: 10vh;
+}
+
+.menu-item-mobile-sm {
+  height: 8vh;
+}
+
+
+// OBJECTS
+.guava-mobile {
+  width: 20vw;
+  transform: rotate(-38.65deg);
+}
+
+.statue-mobile {
+  width: 30vw;
+  transform: rotate(11.0429deg);
+}
+
+.swan-mobile {
+  height: 20vh;
+  transform: rotate(-7.73deg);
+}
+
+.pizza-mobile {
+  width: 40vw;
+  transform: rotate(-12.8833deg);
+}
+
+.sushi-mobile {
+  width: 25vw;
+  transform: rotate(38.65deg);
+}
+
+
+// FOOTER
+.footer-mobile {
+  width: 100%;
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 1vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: asset-url("footer.png");
+}
+
+.footer-icon-mobile {
+  width: 2rem;
+}
+
+.footer-star-mobile {
+  width: 1rem;
+}

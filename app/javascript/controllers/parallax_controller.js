@@ -10,7 +10,6 @@ export default class extends Controller {
     this.treePosVertical = 200
     this.housesPosHorizontal = 0
     this.housesPosVertical = 200
-    this.sharkPos = 0
     this.sunPos = 125
 
     this.guavaPos = -19

@@ -11,9 +11,18 @@
   </head>
 
   <body>
-    <%= render "shared/languages" %>
+    <% unless browser.device.mobile? %>
+      <%= render "shared/languages" %>
+    <% end %>
 
-    <% unless current_page?(root_path) %>
+    <% if browser.device.mobile? %>
+      <div class="layout-mobile">
+        <%= render "shared/navbar_mobile" %>
+        <%= yield %>
+      </div>
+    <% end %>
+
+    <% unless current_page?(root_path) || browser.device.mobile? %>
       <div class="layout">
         <%= render "shared/navbar" %>
         <div style="width: 100%;">
@@ -21,7 +30,9 @@
         </div>
       </div>
     <% else %>
-      <%= yield %>
+      <% unless browser.device.mobile? %>
+        <%= yield %>
+      <% end %>
     <% end %>
   </body>
 </html>

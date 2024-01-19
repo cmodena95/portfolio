@@ -1,0 +1,62 @@
+<div data-controller="menu">
+  <div class="menu-mobile menu-hidden" data-menu-target="menu">
+    <div class="menu-mobile-options">
+      <%= link_to root_path(language: @language) do %>
+        <%= image_tag "logo.png", class: "logo-mobile",
+          data: {action: "mouseover->hover#color mouseout->hover#decolor",
+          color: "#{image_path "logo_animated_en.png"}", 
+          bw: "#{image_path "logo.png"}"}  %>
+      <% end %>
+
+      <div style="display: flex; align-items: center;">
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+        <%= link_to illustrations_path(language: @language) do %>
+          <%= image_tag "menu_#{@language}/illustrations_#{@language}_bw.png", class: "menu-item-mobile", data: {
+          action: "mouseover->hover#color mouseout->hover#decolor",
+          color: "#{image_path "menu_#{@language}/illustrations_#{@language}_col.png"}",
+          bw: "#{image_path "menu_#{@language}/illustrations_#{@language}_bw.png"}"} %>
+        <% end %>
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+      </div>
+      
+      <div style="display: flex; align-items: center;">
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+        <%= link_to about_path(language: @language) do %>
+          <%= image_tag "menu_#{@language}/about_#{@language}_bw.png", class: "menu-item-mobile-sm", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+          color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}",
+          bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
+        <% end %>
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+      </div>
+
+      <div style="display: flex; align-items: center;">
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+        <%= link_to contact_path(language: @language) do %>
+          <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-item-mobile", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+          color: "#{image_path "menu_#{@language}/contact_#{@language}_col.png"}", 
+          bw: "#{image_path "menu_#{@language}/contact_#{@language}_bw.png"}"} %>
+        <% end %>
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+      </div>
+
+      <%# LANGUAGES %>
+      <div class="languages-mobile">
+
+          <%= image_tag "languages/en.png", class: "language-icon-mobile #{params[:language] == "en" ? "active" : ""}" %>
+          <%= link_to request.params.merge(language: "es") do %>
+            <%= image_tag "languages/es.png", class: "language-icon-mobile #{params[:language] == "es" ? "active" : ""}", id: "es" %>
+          <% end %>
+          <%= link_to request.params.merge(language: "pt") do %>
+            <%= image_tag "languages/pt.png", class: "language-icon #{params[:language] == "pt" ? "active" : ""}", id: "pt" %>
+            <% end %>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-close-mobile" data-action="click->menu#toggleMenu" data-status="closed">
+    <p>menu</p>
+    <br>
+    <p>X</p>
+  </div>
+</div>

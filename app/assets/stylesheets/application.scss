@@ -27,6 +27,11 @@ body {
   // align-items: flex-start;
 }
 
+.layout-mobile {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 p {
   font-family: "Anton";
   font-size: 1.5rem;

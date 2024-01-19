@@ -7,9 +7,14 @@ class PagesController < ApplicationController
   end
 
   def admin
+    @language = params[:language] || "en"
   end
 
   def about
+    @language = params[:language] || "en"
+  end
+
+  def contact
     @language = params[:language] || "en"
   end
 

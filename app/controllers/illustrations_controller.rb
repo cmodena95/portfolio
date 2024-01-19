@@ -1,9 +1,11 @@
 class IllustrationsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   before_action :set_illustration, except: [:new, :create, :index]
+  before_action :check_device
 
   def index
     @illustrations = policy_scope(Illustration)
+    @language = params[:language] || "en"
   end
 
   def show
@@ -45,5 +47,9 @@ class IllustrationsController < ApplicationController
 
   def illustration_params
     params.require(:illustration).permit(:description, :main_photo, photos: [])
+  end
+
+  def check_device
+    request.variant = :phone if browser.device.mobile?
   end
 end

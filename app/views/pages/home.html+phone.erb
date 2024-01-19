@@ -1,1 +1,75 @@
-dlfsdfs
+<div data-controller="parallax-mobile">
+  <div class="banner-mobile" data-action="scroll@window->parallax-mobile#move">
+    <%= image_tag "mountain.png", class: "mountain-mobile", data: {parallax_mobile_target: "mountain"} %>
+    <div class="banner-bg-mobile">
+      <%= image_tag "tree.png", class: "tree-mobile", data: {parallax_mobile_target: "tree"} %>
+      <%= image_tag "houses.png", class: "houses-mobile", data: {parallax_mobile_target: "houses"} %>
+
+      <%= image_tag "sun.png", class: "sun-mobile", data: {parallax_mobile_target: "sun"} %>
+    </div>
+  </div>
+
+  <div class="home-mobile" data-controller="rotate">
+
+    <div class="home-menu-mobile" data-controller="hover"  data-action="scroll@window->rotate#transform">
+
+      <div class="home-menu-level-1-mobile">
+        <%= image_tag "home_objects/pizza.png", class: "pizza-mobile", data: { rotate_target: "pizza" }%>
+        <%= image_tag "home_objects/swan.png", class: "swan-mobile", data: { rotate_target: "swan" }%>
+      </div>
+
+      <%= link_to illustrations_path(language: @language) do %>
+        <%= image_tag "menu_#{@language}/illustrations_#{@language}_bw.png", class: "menu-item-mobile", data: {
+          action: "mouseover->hover#color mouseout->hover#decolor",
+          color: "#{image_path "menu_#{@language}/illustrations_#{@language}_col.png"}",
+          bw: "#{image_path "menu_#{@language}/illustrations_#{@language}_bw.png"}"} %>
+      <% end %>
+
+      <div class="home-menu-level-2-mobile">
+        <%= image_tag "home_objects/guava.png", class: "guava-mobile", data: { rotate_target: "guava" } %>
+
+        <%= link_to about_path(language: @language) do %>
+          <%= image_tag "menu_#{@language}/about_#{@language}_bw.png", class: "menu-item-mobile-sm", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+          color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}",
+          bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
+        <% end %>
+
+        <%= image_tag "home_objects/statue.png", class: "statue-mobile", data: { rotate_target: "statue" }%>
+      </div>
+
+      <%= mail_to "cmodena95@gmail.com" do %>
+        <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-item-mobile-sm", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+        color: "#{image_path "menu_#{@language}/contact_#{@language}_col.png"}", 
+        bw: "#{image_path "menu_#{@language}/contact_#{@language}_bw.png"}"} %>
+      <% end %>
+
+      <%= image_tag "home_objects/sushi.png", class: "sushi-mobile", data: { rotate_target: "sushi" }%>
+
+    </div>
+
+  </div>
+</div>
+
+
+<%# footer %>
+<div class="footer-mobile" data-controller="hover">
+  <div class="footer-icons">
+    <%= image_tag "icons/star.png", class: "footer-star-mobile" %>
+
+    <%= link_to "https://www.instagram.com/camillustrate", target: "_blank" do %>
+      <%= image_tag "icons/instagram_bw.png", class: "footer-icon-mobile", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+      color: "#{image_path "icons/instagram_col.png"}", 
+      bw: "#{image_path "icons/instagram_bw.png"}"} %>
+    <% end %>
+
+    <%= image_tag "icons/star.png", class: "footer-star" %>
+
+    <%= mail_to "cmodena95@gmail.com" do %>
+      <%= image_tag "icons/email_bw.png", class: "footer-icon-mobile", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+      color: "#{image_path "icons/email_col.png"}", 
+      bw: "#{image_path "icons/email_bw.png"}"} %>
+    <% end %>
+
+    <%= image_tag "icons/star.png", class: "footer-star" %>
+  </div>
+</div>
