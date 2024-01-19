@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: :home
+  skip_before_action :authenticate_user!, only: [:home, :about, :contact]
+  before_action :check_device
 
   def home
     @language = params[:language] || "en"
@@ -12,6 +13,9 @@ class PagesController < ApplicationController
     @language = params[:language] || "en"
   end
 
-  def contact
+  private
+
+  def check_device
+    request.variant = :phone if browser.device.mobile?
   end
 end

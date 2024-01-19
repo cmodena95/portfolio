@@ -17,7 +17,7 @@ export default class extends Controller {
     this.sushiPos = -39
     this.pizzaPos = 0
     this.statuePos = 21
-    this.swanPos = 15
+    this.swanPos = -10
 
     this.lastScrollTop = 0
   }
@@ -52,7 +52,7 @@ export default class extends Controller {
     this.statuePos = (21 + (window.scrollY / 20))
     this.statueTarget.style.transform = `translate(-29%, ${this.statuePos}%)`
 
-    this.swanPos = (15 + (window.scrollY / 10))
+    this.swanPos = (-10 + (window.scrollY / 10))
     this.swanTarget.style.transform = `translate(-190%, ${this.swanPos}%) rotate(-15deg)`
   }
 }

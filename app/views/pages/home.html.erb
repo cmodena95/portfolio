@@ -42,7 +42,7 @@
           bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
         <% end %>
 
-        <%= link_to contact_path(language: @language) do %>
+        <%= mail_to "cmodena95@gmail.com" do %>
           <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-item #{@language == "en" ? "home-contact-en" : "home-contact"}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
           color: "#{image_path "menu_#{@language}/contact_#{@language}_col.png"}", 
           bw: "#{image_path "menu_#{@language}/contact_#{@language}_bw.png"}"} %>
@@ -62,3 +62,5 @@
     </div>
   </div>
 </div>
+
+<%= render "shared/footer" %>

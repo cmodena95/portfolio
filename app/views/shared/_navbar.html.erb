@@ -34,12 +34,12 @@
             bw: "#{image_path "navbar_en/about_bw.png"}"} %>
       <% end %>
 
-      <%= link_to contact_path(language: @language) do %>
-        <%= image_tag "navbar_en/contact_#{current_page?(contact_path) ? "col" : "bw"}.png", class: "navbar-item",
+      <%#= link_to contact_path(language: @language) do %>
+        <%#= image_tag "navbar_en/contact_#{current_page?(contact_path) ? "col" : "bw"}.png", class: "navbar-item",
             data: {action: "mouseover->hover#color mouseout->hover#decolor",
             color: "#{image_path "navbar_en/contact_col.png"}", 
             bw: "#{image_path "navbar_en/contact_bw.png"}"} %>
-      <% end %>
+      <%# end %>
     </div>
       
     <div class="navbar-icons">
