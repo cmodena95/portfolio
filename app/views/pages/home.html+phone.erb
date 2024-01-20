@@ -37,7 +37,7 @@
         <%= image_tag "home_objects/statue.png", class: "statue-mobile", data: { rotate_target: "statue" }%>
       </div>
 
-      <%= mail_to "cmodena95@gmail.com" do %>
+      <%= link_to contact_path(language: @language) do %>
         <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-item-mobile-sm", data: {action: "mouseover->hover#color mouseout->hover#decolor",
         color: "#{image_path "menu_#{@language}/contact_#{@language}_col.png"}", 
         bw: "#{image_path "menu_#{@language}/contact_#{@language}_bw.png"}"} %>

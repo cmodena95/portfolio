@@ -1,0 +1,18 @@
+<div class="container contact-mobile">
+<% if @language == "en" %>
+  <h2>Contact</h2>
+  <p>You can contact me via email here...</p>
+  <%= mail_to "cmodena95@gmail.com" do %>
+    <%= image_tag "icons/email_bw.png", class: "contact-icon" %>
+  <% end %>
+
+  <p>...Or via instagram, here :)</p>
+  <%= link_to "https://www.instagram.com/camillustrate", target: "_blank" do %>
+    <%= image_tag "icons/instagram_bw.png", class: "contact-icon" %>
+  <% end %>
+<% elsif @language == "es" %>
+  <h2>Contacto</h2>
+<% elsif @language == "pt" %>
+  <h2>Contato</h2>
+<% end %>
+</div>

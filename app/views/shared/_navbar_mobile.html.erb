@@ -1,7 +1,7 @@
 <div data-controller="menu languages">
   <div class="menu-mobile menu-hidden" data-menu-target="menu">
     <div class="menu-mobile-options">
-      <%= link_to root_path(language: params[:language]) do %>
+      <%= link_to root_path(language: @language) do %>
         <%= image_tag "logo.png", class: "logo-mobile",
           data: {action: "mouseover->hover#color mouseout->hover#decolor",
           color: "#{image_path "logo_animated_en.png"}", 
@@ -10,61 +10,48 @@
 
       <div style="display: flex; align-items: center;">
         <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
-        <%= link_to illustrations_path(language: params[:language]), data: {languages_target: "illustrationsLink"} do %>
+        <%= link_to illustrations_path(language: @language), data: {languages_target: "illustrationsLink"} do %>
           <%= image_tag "menu_#{@language}/illustrations_#{@language}_bw.png", class: "menu-item-mobile", data: {
-          action: "mouseover->hover#color mouseout->hover#decolor",
           languages_target: "illustrations",
-          en_bw: "#{image_path "menu_en/illustrations_en_bw.png"}",
-          en_col: "#{image_path "menu_en/illustrations_en_col.png"}",
-          es_bw: "#{image_path "menu_es/illustrations_es_bw.png"}",
-          es_col: "#{image_path "menu_es/illustrations_es_col.png"}",
-          pt_bw: "#{image_path "menu_pt/illustrations_pt_bw.png"}",
-          pt_col: "#{image_path "menu_pt/illustrations_pt_col.png"}",
-          color: "#{image_path "menu_#{@language}/illustrations_#{@language}_col.png"}",
-          bw: "#{image_path "menu_#{@language}/illustrations_#{@language}_bw.png"}"} %>
+          en: "#{image_path "menu_en/illustrations_en_bw.png"}",
+          es: "#{image_path "menu_es/illustrations_es_bw.png"}",
+          pt: "#{image_path "menu_pt/illustrations_pt_bw.png"}"
+          } %>
         <% end %>
         <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
       </div>
       
       <div style="display: flex; align-items: center;">
         <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
-        <%= link_to about_path(language: params[:language]), data: {languages_target: "aboutLink"} do %>
-          <%= image_tag "menu_#{@language}/about_#{@language}_bw.png", class: "menu-item-mobile-sm", data: {action: "mouseover->hover#color mouseout->hover#decolor",
-          languages_target: "about",
-          en_bw: "#{image_path "menu_en/about_en_bw.png"}",
-          en_col: "#{image_path "menu_en/about_en_col.png"}",
-          es_bw: "#{image_path "menu_es/about_es_bw.png"}",
-          es_col: "#{image_path "menu_es/about_es_col.png"}",
-          pt_bw: "#{image_path "menu_pt/about_pt_bw.png"}",
-          pt_col: "#{image_path "menu_pt/about_pt_col.png"}",
-          color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}",
-          bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
+        <%= link_to about_path(language: @language), data: {languages_target: "aboutLink"} do %>
+          <%= image_tag "menu_#{@language}/about_#{@language}_bw.png", class: "menu-item-mobile-sm", data: 
+          {languages_target: "about",
+          en: "#{image_path "menu_en/about_en_bw.png"}",
+          es: "#{image_path "menu_es/about_es_bw.png"}",
+          pt: "#{image_path "menu_pt/about_pt_bw.png"}"
+          } %>
         <% end %>
         <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
       </div>
 
       <div style="display: flex; align-items: center;">
         <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
-        <%= link_to contact_path(language: params[:language]), data: {languages_target: "contactLink"} do %>
-          <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-item-mobile", data: {action: "mouseover->hover#color mouseout->hover#decolor",
-          languages_target: "contact",
-          en_bw: "#{image_path "menu_en/contact_en_bw.png"}",
-          en_col: "#{image_path "menu_en/contact_en_col.png"}",
-          es_bw: "#{image_path "menu_es/contact_es_bw.png"}",
-          es_col: "#{image_path "menu_es/contact_es_col.png"}",
-          pt_bw: "#{image_path "menu_pt/contact_pt_bw.png"}",
-          pt_col: "#{image_path "menu_pt/contact_pt_col.png"}",
-          color: "#{image_path "menu_#{@language}/contact_#{@language}_col.png"}", 
-          bw: "#{image_path "menu_#{@language}/contact_#{@language}_bw.png"}"} %>
+        <%= link_to contact_path(language: @language), data: {languages_target: "contactLink"} do %>
+          <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-item-mobile", data: 
+          {languages_target: "contact",
+          en: "#{image_path "menu_en/contact_en_bw.png"}",
+          es: "#{image_path "menu_es/contact_es_bw.png"}",
+          pt: "#{image_path "menu_pt/contact_pt_bw.png"}"
+          } %>
         <% end %>
         <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
       </div>
 
       <%# LANGUAGES %>
       <div class="languages-mobile">
-        <%= image_tag "languages/en.png", data: {language: "en", action: "click->languages#switchLanguage"}, class: "language-icon-mobile #{params[:language] == "en" ? "active" : ""}" %>
-        <%= image_tag "languages/es.png", data: {language: "es", action: "click->languages#switchLanguage"}, class: "language-icon-mobile #{params[:language] == "es" ? "active" : ""}", id: "es" %>
-        <%= image_tag "languages/pt.png", data: {language: "pt", action: "click->languages#switchLanguage"}, class: "language-icon-mobile #{params[:language] == "pt" ? "active" : ""}", id: "pt" %>
+        <%= image_tag "languages/en.png", data: {language: "en", languages_target: "btn", action: "click->languages#switchLanguage"}, class: "language-icon-mobile #{@language == "en" ? "active" : ""}" %>
+        <%= image_tag "languages/es.png", data: {language: "es", languages_target: "btn", action: "click->languages#switchLanguage"}, class: "language-icon-mobile #{@language == "es" ? "active" : ""}", id: "es" %>
+        <%= image_tag "languages/pt.png", data: {language: "pt", languages_target: "btn", action: "click->languages#switchLanguage"}, class: "language-icon-mobile #{@language == "pt" ? "active" : ""}", id: "pt" %>
       </div>
     </div>
   </div>
