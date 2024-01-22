@@ -1,0 +1,32 @@
+.illustration-photo-mobile {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.illustrations-show-description-mobile {
+  margin: 0.5rem 0;
+  background-color: var(--dark-purple);
+  padding: 1rem;
+
+  & > div {
+    max-height: 30vh;
+    overflow: auto;
+  }
+
+  p {
+    color: var(--white);
+  }
+}
+
+.illustrations-show-mobile {
+  transition: 0.5s ease all;
+
+}
+
+.illustrations-show-mobile.hidden {
+  display: none;
+}
+
+.illustrations-show-mobile.off-screen {
+  transform: translate(100%, 0);
+}

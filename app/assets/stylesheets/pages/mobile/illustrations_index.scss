@@ -1,0 +1,18 @@
+.illustrations-mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.illustration-mobile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.illustrations-index-mobile {
+  transition: 0.5s ease all;
+}
+
+.illustrations-index-mobile.hidden {
+  transform: translate(100%, 0);
+}

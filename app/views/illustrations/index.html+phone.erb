@@ -1,3 +1,40 @@
-<%= link_to :back do %>
-  <%= image_tag "illustrations/arrow_col.png", class: "back-mobile"%>
-<% end %>
+<%# INDEX %>
+<div data-controller="slide-mobile">
+  <div data-slide-mobile-target="index" class="illustrations-index-mobile">
+    <%= link_to :back do %>
+      <%= image_tag "illustrations/arrow_col.png", class: "back-mobile" %>
+    <% end %>
+
+    <div class="illustrations-mobile">
+      <% @illustrations.each do |illustration| %>
+        <%= cl_image_tag illustration.main_photo.key, class: "illustration-mobile", data: {action: "click->slide-mobile#display", ref: illustration.id} %>
+      <% end %>
+    </div>
+  </div>
+
+
+
+  <%# SHOW %>
+   <% @illustrations.each do |illustration| %>
+    <div class="illustrations-show-mobile hidden off-screen" data-ref="<%= illustration.id %>" data-slide-mobile-target="show">
+      <%= image_tag "illustrations/arrow_col.png", class: "back-mobile", data: {action: "click->slide-mobile#hide", ref: illustration.id} %>
+
+      <div class="container-mobile">
+
+        <%= cl_image_tag illustration.main_photo.key, class: "illustration-photo-mobile" %>
+
+        <div class="illustrations-show-description-mobile">
+          <div>
+            <p>
+              <%= illustration.description %>
+            </p>
+          </div>
+        </div>
+
+        <% illustration.photos.each do |photo| %>
+          <%= cl_image_tag photo.key, class: "illustration-photo-mobile" %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
