@@ -1,0 +1,59 @@
+<%= link_to :back do %>
+  <%= image_tag "illustrations/arrow_col.png", class: "back-mobile"%>
+<% end %>
+
+<div class="container about-mobile">
+  <% if @language == "en" %>
+    <h2>Hi! I'm Camila</h2>
+  <% elsif @language == "es" %>
+    <h2>Hola! Soy Camila</h2>
+  <% elsif @language == "pt" %>
+    <h2>Oi! Meu nome é Camila</h2>
+  <% end %>
+
+  <%= image_tag "about/about_photo.png", class: "about-photo-mobile" %>
+
+  <% if @language == "en" %>
+    <div>
+      <p>
+        I'm an illustrator and web development teacher. I'm Brazilian but grew up in England. My identity crisis as the English cousin in Brazil but the Brazilian friend in England eventually took me to live in Spain, where I'm just another person 'not from here'.
+      </p>
+
+      <p>
+        I've been drawing my entire life but only realised after being approached to illustrate a children's book for the charity Learn Achieve Become that art could have a purpose.
+      </p>
+
+      <p>
+        For all types of illustration work, including individual drawings, comics or books, animations and tattoo designs, get in touch <%= link_to "here", contact_path(language: @language) %> :)
+      </p>
+    </div>
+  <% elsif @language == "es" %>
+    <div>
+      <p>
+        Soy ilustradora y professora de programación. Soy brasileña pero crecí en Inglaterra. Mi crise de identidad como la prima inglesa en Brasil pero la amiga brasileña en Inglaterra me acabó llevandome a vivir aquí en españa, donde soy simplemente una persona más 'no de aquí'.
+      </p>
+
+      <p>
+        Dibujo desde niña, pero sólo me di cuenta de que el arte podía tener un propósito cuande me propusieron ilustrar un libro infantil para la ONG Learn Achieve Become.
+      </p>
+
+      <p>
+        Para cualquier tipo de trabajo de ilustración, incluyendo dibujos individuales, comics o libros, animaciónes y diseños de tatuajes, <%= link_to "aquí", contact_path(language: @language) %> :)
+      </p>
+    </div>
+  <% elsif @language == "pt" %>
+    <div>
+      <p>
+        Sou ilustradora e professora de programação. Sou brasileira mas cresci na Inglaterra. Minha crise de identidade como a prima inglesa no Brasil mas a amiga brasileira na Inglaterra acabou me levando a morar aqui na Espanha, onde sou apenas mais uma pessoa 'não daqui'.
+      </p>
+
+      <p>
+        Desenho desde criança, mas só percebi que a arte poderia ter um propósito depois de ser abordada para ilustrar um livro infantil para a ONG Learn Achieve Become.
+      </p>
+
+      <p>
+        Para qualquer tipo de trabalho de ilustração, including desenhos, histórias em quadrinhos ou livros, animações e desenhos de tatuagem, entre em contato <%= link_to "aquí", contact_path(language: @language) %> :)
+      </p>
+    </div>
+  <% end %>
+</div>

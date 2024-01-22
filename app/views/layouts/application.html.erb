@@ -17,14 +17,14 @@
 
     <% if browser.device.mobile? %>
       <div class="layout-mobile">
-        <% unless current_page?(root_path) %>
+        <% unless current_page?(root_path) || current_page?(new_user_session_path) %>
           <%= render "shared/navbar_mobile" %>
         <% end %>
         <%= yield %>
       </div>
     <% end %>
 
-    <% unless current_page?(root_path) || browser.device.mobile? %>
+    <% unless current_page?(root_path) || current_page?(new_user_session_path) || browser.device.mobile? %>
       <div class="layout">
         <%= render "shared/navbar" %>
         <div style="width: 100%;">

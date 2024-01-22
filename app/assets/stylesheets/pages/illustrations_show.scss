@@ -30,18 +30,33 @@
   gap: 2rem;
   padding-bottom: 2rem;
 
+  height: 90vh;
+
   img {
-    width: 60%;
+    width: 55%;
   }
 }
 
 .illustration-show-description {
-  // background-color: var(--dark-purple);
-  background-image: asset-url("illustrations/illustrations_show_bg.png");
-  padding: 3rem 2rem;
-  color: var(--white);
+  width: 100%;
   background-position: center;
+  background-image: asset-url("illustrations/illustrations_show_bg.png");
+  color: var(--white);
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+
+  p {
+    max-height: 80vh;
+    overflow: auto;
+    width: 28vw;
+    height: 70vh;
+  }
 }
 
 .illustrations-photos {

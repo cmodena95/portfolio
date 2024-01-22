@@ -13,15 +13,17 @@ class IllustrationsController < ApplicationController
   end
 
   def new
+    @language = params[:language] || "en"
     @illustration = Illustration.new
     authorize @illustration
   end
 
   def create
+    @language = params[:language] || "en"
     @illustration = Illustration.new(illustration_params)
     authorize @illustration
     if @illustration.save
-      redirect_to illustrations_path
+      redirect_to illustrations_path(language: @language)
     else
       render :new
     end

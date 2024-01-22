@@ -1,0 +1,18 @@
+.about-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: var(--white);
+  }
+
+  a {
+    color: var(--dark-blue);
+  }
+}
+
+.about-photo-mobile {
+  height: 30vh;
+}

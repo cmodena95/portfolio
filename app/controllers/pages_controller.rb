@@ -6,7 +6,7 @@ class PagesController < ApplicationController
     @language = params[:language] || "en"
   end
 
-  def admin
+  def dashboard
     @language = params[:language] || "en"
   end
 
