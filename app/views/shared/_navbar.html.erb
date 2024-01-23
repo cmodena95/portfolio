@@ -9,10 +9,10 @@
   <div class="navbar-menu">
     <div class="navbar-menu-items">
       <%= link_to illustrations_path(language: @language) do %>
-        <%= image_tag "navbar_en/illustrations_#{current_page?(illustrations_path) ? "col" : "bw"}.png", class: "navbar-item navbar-illustration",
+        <%= image_tag "menu_#{@language}/illustrations_#{@language}_#{current_page?(illustrations_path) ? "col" : "bw"}.png", class: "navbar-item navbar-illustration",
           data: {action: "#{current_page?(illustrations_path) ? "" : "mouseover->hover#color mouseout->hover#decolor"}",
-          color: "#{image_path "navbar_en/illustrations_col.png"}", 
-          bw: "#{image_path "navbar_en/illustrations_bw.png"}"} %>
+          color: "#{image_path "menu_#{@language}/illustrations_#{@language}_col.png"}", 
+          bw: "#{image_path "menu_#{@language}/illustrations_#{@language}_bw.png"}"} %>
       <% end %>
 
       <%#= image_tag "navbar_en/design_bw.png", class: "navbar-item",
@@ -27,12 +27,14 @@
           data: {action: "mouseover->hover#color mouseout->hover#decolor",
           color: "#{image_path "navbar_en/shop_col.png"}", 
           bw: "#{image_path "navbar_en/shop_bw.png"}"} %>
+
+       
  
       <%= link_to about_path(language: @language) do %>
-        <%= image_tag "navbar_en/about_#{current_page?(about_path) ? "col" : "bw"}.png", class: "navbar-item",
+        <%= image_tag "menu_#{@language}/about_#{@language}_#{current_page?(about_path) ? "col" : "bw"}.png", class: "navbar-item",
             data: {action: "mouseover->hover#color mouseout->hover#decolor",
-            color: "#{image_path "navbar_en/about_col.png"}", 
-            bw: "#{image_path "navbar_en/about_bw.png"}"} %>
+            color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}", 
+            bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
       <% end %>
       
       <%#= link_to contact_path(language: @language) do %>

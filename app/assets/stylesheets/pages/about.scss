@@ -64,9 +64,23 @@
     // color: var(--white);
     // text-decoration: underline;
     color: var(--dark-purple);
-  }  
+  }
+
+  p:first-child {
+    width: 80%;
+  }
+
+  p:last-child {
+    width: 50%;
+  }
 }
 
 .about-email {
   height: 1.5rem;
+}
+
+.about-footer {
+  width: 100%;
+  position: absolute;
+  bottom: -50%;
 }

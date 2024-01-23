@@ -36,5 +36,9 @@
         <%= yield %>
       <% end %>
     <% end %>
+
+    <% if current_page?(about_path) %>
+      <%= image_tag "about/footer.png", class: "about-footer" %>
+    <% end %>
   </body>
 </html>
