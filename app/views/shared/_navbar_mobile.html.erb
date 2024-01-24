@@ -1,4 +1,4 @@
-<div data-controller="menu languages">
+<div data-controller="menu">
   <div class="menu-mobile menu-hidden" data-menu-target="menu">
     <div class="menu-mobile-options">
       <%= link_to root_path(language: @language) do %>
@@ -49,9 +49,17 @@
 
       <%# LANGUAGES %>
       <div class="languages-mobile">
-        <%= image_tag "languages/en.png", data: {language: "en", languages_target: "btn", action: "click->languages#switchLanguage"}, class: "language-icon-mobile #{@language == "en" ? "active" : ""}" %>
-        <%= image_tag "languages/es.png", data: {language: "es", languages_target: "btn", action: "click->languages#switchLanguage"}, class: "language-icon-mobile #{@language == "es" ? "active" : ""}", id: "es" %>
-        <%= image_tag "languages/pt.png", data: {language: "pt", languages_target: "btn", action: "click->languages#switchLanguage"}, class: "language-icon-mobile #{@language == "pt" ? "active" : ""}", id: "pt" %>
+       <%= link_to request.params.merge(language: "en") do %>
+        <%= image_tag "languages/en#{@language == "en" ? "_col": ""}.png", class: "language-icon-mobile" %>
+      <% end %>
+        
+       <%= link_to request.params.merge(language: "es") do %>
+        <%= image_tag "languages/es#{@language == "es" ? "_col": ""}.png", class: "language-icon-mobile", id: "es" %>
+      <% end %>
+
+       <%= link_to request.params.merge(language: "pt") do %>
+        <%= image_tag "languages/pt#{@language == "pt" ? "_col": ""}.png", class: "language-icon-mobile", id: "pt" %>
+      <% end %>
       </div>
     </div>
   </div>

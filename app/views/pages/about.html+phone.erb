@@ -4,11 +4,11 @@
 
 <div class="container-mobile about-mobile">
   <% if @language == "en" %>
-    <h2>Hi! I'm Camila</h2>
+    <%= image_tag "about/about_en.png", class: "about-title-mobile" %>
   <% elsif @language == "es" %>
-    <h2>Hola! Soy Camila</h2>
+    <%= image_tag "about/about_es_mobile.png", class: "about-title-mobile" %>
   <% elsif @language == "pt" %>
-    <h2>Oi! Meu nome é Camila</h2>
+    <%= image_tag "about/about_pt_mobile.png", class: "about-title-mobile" %>
   <% end %>
 
   <%= image_tag "about/about_photo.png", class: "about-photo-mobile" %>

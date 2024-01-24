@@ -3,7 +3,9 @@
 
   <% if @language == "en" %>
     <div class="about-text">
-      <h2>Hi! I'm Camila</h2>
+      <div>
+        <%= image_tag "about/about_en.png", class: "about-title" %>
+      </div>
       <p>
         I'm an illustrator and web development teacher. I'm Brazilian but grew up in England. My identity crisis as the English cousin in Brazil but the Brazilian friend in England eventually took me to live in Spain, where I'm just another person 'not from here'.
       </p>
@@ -16,7 +18,9 @@
 
   <% if @language == "pt" %>
     <div class="about-text">
-      <h2>Oi! Meu nome é Camila</h2>
+      <div>
+        <%= image_tag "about/about_pt.png", class: "about-title" %>
+      </div>
       <p>
         Sou ilustradora e professora de programação. Sou brasileira mas cresci na Inglaterra. Minha crise de identidade como a prima inglesa no Brasil mas a amiga brasileira na Inglaterra acabou me levando a morar aqui na Espanha, onde sou apenas mais uma pessoa 'não daqui'.
       </p>
@@ -30,7 +34,9 @@
 
   <% if @language == "es" %>
     <div class="about-text">
-      <h2>Hola! Soy Camila</h2>
+      <div>
+        <%= image_tag "about/about_es.png", class: "about-title" %>
+      </div>
       <p>
         Soy ilustradora y professora de programación. Soy brasileña pero crecí en Inglaterra. Mi crise de identidad como la prima inglesa en Brasil pero la amiga brasileña en Inglaterra me acabó llevandome a vivir aquí en españa, donde soy simplemente una persona más 'no de aquí'.
       </p>

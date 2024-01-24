@@ -32,7 +32,7 @@
  
       <%= link_to about_path(language: @language) do %>
         <%= image_tag "menu_#{@language}/about_#{@language}_#{current_page?(about_path) ? "col" : "bw"}.png", class: "navbar-item",
-            data: {action: "mouseover->hover#color mouseout->hover#decolor",
+            data: {action: "#{current_page?(about_path) ? "mouseover->hover#color mouseout->hover#decolor" : ""}",
             color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}", 
             bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
       <% end %>

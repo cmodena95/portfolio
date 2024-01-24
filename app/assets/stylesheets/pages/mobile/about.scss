@@ -16,3 +16,16 @@
 .about-photo-mobile {
   height: 30vh;
 }
+
+.about-footer-mobile {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  transform: scaleX(-1);
+}
+
+
+.about-title-mobile {
+  width: 100%;
+  margin-bottom: 2vh;
+}

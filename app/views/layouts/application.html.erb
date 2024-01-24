@@ -38,7 +38,7 @@
     <% end %>
 
     <% if current_page?(about_path) %>
-      <%= image_tag "about/footer.png", class: "about-footer" %>
+      <%= image_tag "about/footer.png", class: "#{ browser.device.mobile? ? "about-footer-mobile" :  "about-footer"}" %>
     <% end %>
   </body>
 </html>
