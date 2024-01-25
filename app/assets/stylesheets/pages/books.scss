@@ -47,12 +47,61 @@
   }
 }
 
+.book-description {
+  max-height: 50vh;
+  overflow: auto;
+  // margin-bottom: 2rem;
+}
+
+.book-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 // SCHOOL IMAGES
 .school-image {
-  height: 15vh;
+  height: 25vh;
+}
+
+
+.school-scroller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.china-school {
+  display: flex;
+  height: 40vh;
+  width: 25vw;
 
   &.hidden {
     display: none;
+  }
+
+  img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+.kenya-school {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 40vh;
+  width: 25vw;
+
+  &.hidden {
+    display: none;
+  }
+
+  img {
+    height: 20vh;
+    width: 100%;
+    object-fit: cover;
   }
 }

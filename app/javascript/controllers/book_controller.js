@@ -62,7 +62,7 @@ export default class extends Controller {
   }
 
   forwardSchool() {
-    if (this.imageNumber < 4) {
+    if (this.imageNumber < 2) {
       this.schoolImageTargets.forEach((image) => {
         if (image.dataset.status == "active") {
           image.dataset.status = "inactive"
@@ -77,19 +77,22 @@ export default class extends Controller {
       })
     }
 
-    if (this.imageNumber > 1) {
+    if (this.imageNumber > 0) {
       this.leftArrowSchoolTarget.style.opacity = 1
     }
 
-    if (this.imageNumber == 4) {
+    if (this.imageNumber == 2) {
       this.rightArrowSchoolTarget.style.opacity = 0
     }
 
-    console.log(this.imageNumber)
+    // console.log(this.imageNumber)
   }
 
   backwardSchool() {
-    if (this.imageNumber >= 2) {
+
+    console.log(this.imageNumber)
+
+    if (this.imageNumber > 1) {
       this.schoolImageTargets.forEach((image) => {
         if (image.dataset.status == "active") {
           image.dataset.status = "inactive"
@@ -108,9 +111,6 @@ export default class extends Controller {
 
     if (this.imageNumber == 1) {
       this.leftArrowSchoolTarget.style.opacity = 0
-    }
-
-    if (this.imageNumber == 3) {
       this.rightArrowSchoolTarget.style.opacity = 1
     }
   }
