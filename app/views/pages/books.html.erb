@@ -1,33 +1,73 @@
-<div class="book-scroller" data-controller="hover book">
-  <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", style: "opacity: 0;", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#backward",
-  color: "#{image_path "illustrations/arrow_col.png"}", 
-  bw: "#{image_path "illustrations/arrow_bw.png"}",
-  book_target: "leftArrow"
-  } %>
+<div class="books-section" data-controller="hover book">
+  <div class="book-scroller">
+    <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", style: "opacity: 0;", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#backwardBook",
+    color: "#{image_path "illustrations/arrow_col.png"}", 
+    bw: "#{image_path "illustrations/arrow_bw.png"}",
+    book_target: "leftArrow"
+    } %>
 
-  <%= image_tag "books/the_fish_in_the_sea/1.png", data: {status: "active", page: "1", book_target: "page"}, class: "book-page" %>
-  <%= image_tag "books/the_fish_in_the_sea/2.png", data: {book_target: "page", page: "2", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/3.png", data: {book_target: "page", page: "3", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/4.png", data: {book_target: "page", page: "4", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/5.png", data: {book_target: "page", page: "5", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/6.png", data: {book_target: "page", page: "6", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/7.png", data: {book_target: "page", page: "7", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/8.png", data: {book_target: "page", page: "8", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/9.png", data: {book_target: "page", page: "9", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/10.png", data: {book_target: "page", page: "10", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/11.png", data: {book_target: "page", page: "11", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/12.png", data: {book_target: "page", page: "12", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/13.png", data: {book_target: "page", page: "13", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/14.png", data: {book_target: "page", page: "14", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/15.png", data: {book_target: "page", page: "15", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/16.png", data: {book_target: "page", page: "16", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/17.png", data: {book_target: "page", page: "17", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/18.png", data: {book_target: "page", page: "18", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/19.png", data: {book_target: "page", page: "19", status: "inactive"}, class: "book-page hidden" %>
-  <%= image_tag "books/the_fish_in_the_sea/20.png", data: {book_target: "page", page: "20", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/1.png", data: {status: "active", page: "1", book_target: "page"}, class: "book-page" %>
+    <%= image_tag "books/the_fish_in_the_sea/2.png", data: {book_target: "page", page: "2", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/3.png", data: {book_target: "page", page: "3", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/4.png", data: {book_target: "page", page: "4", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/5.png", data: {book_target: "page", page: "5", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/6.png", data: {book_target: "page", page: "6", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/7.png", data: {book_target: "page", page: "7", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/8.png", data: {book_target: "page", page: "8", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/9.png", data: {book_target: "page", page: "9", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/10.png", data: {book_target: "page", page: "10", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/11.png", data: {book_target: "page", page: "11", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/12.png", data: {book_target: "page", page: "12", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/13.png", data: {book_target: "page", page: "13", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/14.png", data: {book_target: "page", page: "14", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/15.png", data: {book_target: "page", page: "15", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/16.png", data: {book_target: "page", page: "16", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/17.png", data: {book_target: "page", page: "17", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/18.png", data: {book_target: "page", page: "18", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/19.png", data: {book_target: "page", page: "19", status: "inactive"}, class: "book-page hidden" %>
+    <%= image_tag "books/the_fish_in_the_sea/20.png", data: {book_target: "page", page: "20", status: "inactive"}, class: "book-page hidden" %>
 
-  <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", id: "right", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#forward",
-  color: "#{image_path "illustrations/arrow_col.png"}", 
-  bw: "#{image_path "illustrations/arrow_bw.png"}",
-  book_target: "rightArrow"} %>
+    <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", id: "right", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#forwardBook",
+    color: "#{image_path "illustrations/arrow_col.png"}", 
+    bw: "#{image_path "illustrations/arrow_bw.png"}",
+    book_target: "rightArrow"} %>
+  </div>
+
+  <div>
+    <div>
+      <p>
+        'The Fish in the Sea Who Could Not See' is a children's book written by UK-based charity <%= link_to "Learn Achieve Become", "https://www.labcharity.org/" %> and illustrated by me. The book tells the story of three fish, each with their own disability, with the aim of helping children learn about disability inclusivity.
+      </p>
+
+      <br>
+
+      <p>
+        Though now discontinued, profits from the book's sales were used to fund the charity's missions in Africa and Central America, which include bringing free education to rural areas and supporting people with disabilities.
+      </p>
+
+      <br>
+
+      <p>
+        The book was also distributed for free to schools in Xuzhou, China and Eldoret, Kenya to help children practice their reading.
+      </p>
+    </div>
+
+    <div>
+      <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", style: "opacity: 0;", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#backwardSchool",
+      color: "#{image_path "illustrations/arrow_col.png"}", 
+      bw: "#{image_path "illustrations/arrow_bw.png"}",
+      book_target: "leftArrowSchool"
+      } %>
+
+      <%= image_tag "books/the_fish_in_the_sea/schools/1.png", class: "school-image", data: {book_target: "schoolImage", image: "1", status: "active"} %>
+      <%= image_tag "books/the_fish_in_the_sea/schools/2.png", class: "school-image hidden", data: {book_target: "schoolImage", image: "2", status: "inactive"} %>
+      <%= image_tag "books/the_fish_in_the_sea/schools/3.png", class: "school-image hidden", data: {book_target: "schoolImage", image: "3", status: "inactive"} %>
+      <%= image_tag "books/the_fish_in_the_sea/schools/4.png", class: "school-image hidden", data: {book_target: "schoolImage", image: "4", status: "inactive"} %>
+
+      <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", id: "right", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#forwardSchool",
+      color: "#{image_path "illustrations/arrow_col.png"}", 
+      bw: "#{image_path "illustrations/arrow_bw.png"}",
+      book_target: "rightArrowSchool"} %>
+    </div>
+  </div>
 </div>

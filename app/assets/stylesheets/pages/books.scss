@@ -1,3 +1,4 @@
+// CAROUSEL
 .book-scroller {
   display: flex;
   justify-content: center;
@@ -28,5 +29,30 @@
 
   &:hover {
     transform: scaleX(-1) scale(1.1);
+  }
+}
+
+
+// LAYOUT
+.books-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  padding-right: 6vw;
+  grid-gap: 2rem;
+  align-items: center;
+
+  a {
+    color: var(--dark-purple);
+  }
+}
+
+
+// SCHOOL IMAGES
+.school-image {
+  height: 15vh;
+
+  &.hidden {
+    display: none;
   }
 }
