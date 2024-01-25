@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "/about", to: "pages#about"
   get "/dashboard", to: "pages#dashboard"
   get "/contact", to: "pages#contact"
+  get "/books", to: "pages#books"
 
   resources :illustrations, except: :show
 end

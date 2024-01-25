@@ -40,19 +40,19 @@
   width: 1rem;
 }
 
-.menu-close-mobile {
-  position: fixed;
-  background-color: white;
-  padding: 2rem;
-  transition: 0.5s ease all;
-  bottom: -4.5rem;
-  right: -3rem;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  height: 5rem;
-  width: 5rem;
-}
+// .menu-close-mobile {
+//   position: fixed;
+//   background-color: white;
+//   padding: 2rem;
+//   transition: 0.5s ease all;
+//   bottom: -4.5rem;
+//   right: -3rem;
+//   border-radius: 50%;
+//   display: flex;
+//   flex-direction: column;
+//   height: 5rem;
+//   width: 5rem;
+// }
 
 // LANGUAGES
 .languages-mobile {
@@ -73,4 +73,19 @@
 .back-mobile {
   height: 3rem;
   margin: 1rem;
+}
+
+.menu-btn {
+  // width: 150px;
+  // height: 150px;
+
+  position: fixed;
+  padding: 2rem;
+  transition: 0.5s ease all;
+  bottom: -4.5rem;
+  right: -3rem;
+  // display: flex;
+  // flex-direction: column;
+  height: 10vh;
+  width: 20vw;
 }

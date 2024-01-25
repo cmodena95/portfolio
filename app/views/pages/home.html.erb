@@ -17,42 +17,48 @@
     </div>
 
     <div class="home-menu" data-controller="hover">
-      <div>
+      <div style="display: flex; align-items: center;">
+        <%= image_tag "icons/star.png", class: "footer-star" %>
         <%= link_to illustrations_path(language: @language) do %>
           <%= image_tag "menu_#{@language}/illustrations_#{@language}_bw.png", class: "home-illustrations menu-item", data: {
             action: "mouseover->hover#color mouseout->hover#decolor",
             color: "#{image_path "menu_#{@language}/illustrations_#{@language}_col.png"}",
             bw: "#{image_path "menu_#{@language}/illustrations_#{@language}_bw.png"}"} %>
         <% end %>
+        <%= image_tag "icons/star.png", class: "footer-star" %>
       </div>
 
 
-      <%#= image_tag "menu_#{@language}/design_#{@language}_bw.png", class: "menu-design", id: "design-#{@language}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
-      color: "#{image_path "menu_#{@language}/design_#{@language}_col.png"}",
-      bw: "#{image_path "menu_#{@language}/design_#{@language}_bw.png"}"} %>
+      <div class="home-menu-level-2<%= @language == "en"  ? "" : "-es-pt" %>" style="display: flex; align-items: center;">
+      <%= image_tag "icons/star.png", class: "footer-star" %>
 
-      <%#= image_tag "menu_#{@language}/websites_#{@language}_bw.png", class: "menu-websites", id: "websites-#{@language}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
-      color: "#{image_path "menu_#{@language}/websites_#{@language}_col.png"}",
-      bw: "#{image_path "menu_#{@language}/websites_#{@language}_bw.png"}"} %>
+        <%= link_to books_path(language: @language) do %>
+          <%= image_tag "menu_#{@language}/books_#{@language}_bw.png", class: "menu-item home-books", data: {
+            action: "mouseover->hover#color mouseout->hover#decolor",
+            color: "#{image_path "menu_#{@language}/books_#{@language}_col.png"}",
+            bw: "#{image_path "menu_#{@language}/books_#{@language}_bw.png"}"} %>
+        <% end %>
 
-      <div class="home-menu-level-2<%= @language == "en"  ? "" : "-es-pt" %>">
+        <%= image_tag "icons/star.png", class: "footer-star" %>
+
         <%= link_to about_path(language: @language) do %>
           <%= image_tag "menu_#{@language}/about_#{@language}_bw.png", class: "menu-item home-about", data: {action: "mouseover->hover#color mouseout->hover#decolor",
           color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}",
           bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
         <% end %>
 
+        <%= image_tag "icons/star.png", class: "footer-star" %>
+      </div>
+
+      <div style="display: flex; align-items: center;">
+        <%= image_tag "icons/star.png", class: "footer-star" %>
         <%= mail_to "cmodena95@gmail.com" do %>
           <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-item #{@language == "en" ? "home-contact-en" : "home-contact"}", data: {action: "mouseover->hover#color mouseout->hover#decolor",
           color: "#{image_path "menu_#{@language}/contact_#{@language}_col.png"}", 
           bw: "#{image_path "menu_#{@language}/contact_#{@language}_bw.png"}"} %>
         <% end %>
+        <%= image_tag "icons/star.png", class: "footer-star" %>
       </div>
-
-      <%#= image_tag "menu_#{@language}/shop_#{@language}_bw.png", class: "menu-shop", id: "shop-#{@language}", data: {
-        action: "mouseover->hover#color mouseout->hover#decolor",
-        color: "#{image_path "menu_#{@language}/shop_#{@language}_col.png"}",
-        bw: "#{image_path "menu_#{@language}/shop_#{@language}_bw.png"}"} %>
     </div>
 
     <div class="home-objects-right">

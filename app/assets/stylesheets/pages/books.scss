@@ -1,0 +1,32 @@
+.book-scroller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-page {
+  width: 30vw;
+}
+
+.book-page.hidden {
+  display: none;
+}
+
+
+.book-arrow {
+  width: 5vw;
+  transition: 0.5s ease all;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.book-arrow#right {
+  transform: scaleX(-1);
+
+  &:hover {
+    transform: scaleX(-1) scale(1.1);
+  }
+}

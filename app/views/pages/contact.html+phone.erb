@@ -3,20 +3,17 @@
 <% end %>
 
 <div class="container-mobile contact-mobile">
-  <% if @language == "en" %>
-    <h2>Contact</h2>
-    <p>You can contact me via email here...</p>
-    <%= mail_to "cmodena95@gmail.com" do %>
-      <%= image_tag "icons/email_bw.png", class: "contact-icon" %>
-    <% end %>
+  <div class="contact-header">
+    <%= image_tag "icons/star.png", class: "footer-star" %>
+    <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-item-mobile" %>
+    <%= image_tag "icons/star.png", class: "footer-star" %>
+  </div>
 
-    <p>...Or via instagram, here :)</p>
-    <%= link_to "https://www.instagram.com/camillustrate", target: "_blank" do %>
-      <%= image_tag "icons/instagram_bw.png", class: "contact-icon" %>
-    <% end %>
-  <% elsif @language == "es" %>
-    <h2>Contacto</h2>
-  <% elsif @language == "pt" %>
-    <h2>Contato</h2>
+  <%= mail_to "cmodena95@gmail.com" do %>
+    <%= image_tag "contact/email.png", class: "contact-email" %>
+  <% end %>
+
+  <%= link_to "https://www.instagram.com/camillustrate", target: "_blank" do %>
+    <%= image_tag "contact/instagram.png", class: "contact-instagram" %>
   <% end %>
 </div>

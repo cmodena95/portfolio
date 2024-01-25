@@ -64,9 +64,10 @@
     </div>
   </div>
 
-  <div class="menu-close-mobile" data-action="click->menu#toggleMenu" data-status="closed">
-    <p>menu</p>
+  <%# <div class="menu-close-mobile" data-action="click->menu#toggleMenu" data-status="closed"> %>
+    <%# <p>menu</p>
     <br>
-    <p>X</p>
-  </div>
+    <p>X</p> %>
+    <%= image_tag "menu.png", class: "menu-btn", data: {action: "click->menu#toggleMenu" } %>
+  <%# </div> %>
 </div>

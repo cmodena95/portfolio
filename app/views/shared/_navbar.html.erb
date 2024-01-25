@@ -15,34 +15,20 @@
           bw: "#{image_path "menu_#{@language}/illustrations_#{@language}_bw.png"}"} %>
       <% end %>
 
-      <%#= image_tag "navbar_en/design_bw.png", class: "navbar-item",
-          data: {action: "mouseover->hover#color mouseout->hover#decolor",
-          color: "#{image_path "navbar_en/design_col.png"}", 
-          bw: "#{image_path "navbar_en/design_bw.png"}"} %>
-      <%#= image_tag "navbar_en/websites_bw.png", class: "navbar-item",
-          data: {action: "mouseover->hover#color mouseout->hover#decolor",
-          color: "#{image_path "navbar_en/websites_col.png"}", 
-          bw: "#{image_path "navbar_en/websites_bw.png"}"} %>
-      <%#= image_tag "navbar_en/shop_bw.png", class: "navbar-item",
-          data: {action: "mouseover->hover#color mouseout->hover#decolor",
-          color: "#{image_path "navbar_en/shop_col.png"}", 
-          bw: "#{image_path "navbar_en/shop_bw.png"}"} %>
-
-       
- 
       <%= link_to about_path(language: @language) do %>
         <%= image_tag "menu_#{@language}/about_#{@language}_#{current_page?(about_path) ? "col" : "bw"}.png", class: "navbar-item",
-            data: {action: "#{current_page?(about_path) ? "mouseover->hover#color mouseout->hover#decolor" : ""}",
+            data: {action: "#{current_page?(about_path) ? "" : "mouseover->hover#color mouseout->hover#decolor"}",
             color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}", 
             bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
       <% end %>
-      
-      <%#= link_to contact_path(language: @language) do %>
-        <%#= image_tag "navbar_en/contact_#{current_page?(contact_path) ? "col" : "bw"}.png", class: "navbar-item",
-            data: {action: "mouseover->hover#color mouseout->hover#decolor",
-            color: "#{image_path "navbar_en/contact_col.png"}", 
-            bw: "#{image_path "navbar_en/contact_bw.png"}"} %>
-      <%# end %>
+
+      <%= link_to books_path(language: @language) do %>
+        <%= image_tag "menu_#{@language}/books_#{@language}_#{current_page?(books_path) ? "col" : "bw"}.png", class: "navbar-item",
+            data: {action: "#{current_page?(books_path) ? "" : "mouseover->hover#color mouseout->hover#decolor"}",
+            color: "#{image_path "menu_#{@language}/books_#{@language}_col.png"}", 
+            bw: "#{image_path "menu_#{@language}/books_#{@language}_bw.png"}"} %>
+      <% end %>
+
     </div>
       
     <div class="navbar-icons">

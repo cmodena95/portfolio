@@ -12,10 +12,10 @@ export default class extends Controller {
     this.rotate += 540
     event.currentTarget.style.transform = `rotate(${this.rotate}deg)`
 
-    if (event.currentTarget.dataset.status == "closed") {
-      event.currentTarget.dataset.status = "open"
-    } else {
-      event.currentTarget.dataset.status = "closed"
-    }
+    // if (event.currentTarget.dataset.status == "closed") {
+    //   event.currentTarget.dataset.status = "open"
+    // } else {
+    //   event.currentTarget.dataset.status = "closed"
+    // }
   }
 }

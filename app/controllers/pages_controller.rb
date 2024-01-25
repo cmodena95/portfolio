@@ -18,6 +18,10 @@ class PagesController < ApplicationController
     @language = params[:language] || "en"
   end
 
+  def books
+    @language = params[:language] || "en"
+  end
+
   private
 
   def check_device
