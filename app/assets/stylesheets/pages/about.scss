@@ -15,32 +15,6 @@
   width: 100%;
 }
 
-.about-book-photo {
-  width: 15vw;
-  height: 40vh;
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  opacity: 0;
-  z-index: 1000;
-  transition: 0.25s ease all;
-}
-
-.book-text {
-  position: relative;
-  text-decoration: underline;
-  // color: var(--dark-purple);
-  cursor: pointer;
-
-  // &:hover .about-book-photo {
-  //   opacity: 1;
-  // }
-}
-
-.book-text:hover .about-book-photo {
-  opacity: 1;
-}
-
 .about-text {
   display: flex;
   flex-direction: column;
@@ -51,14 +25,10 @@
   padding: 1rem 0;
 
   p {
-    // color: var(--black);
-    // font-family: 'Quicksand', sans-serif;
     padding-right: 4rem;
   }
 
   a {
-    // color: var(--white);
-    // text-decoration: underline;
     color: var(--dark-purple);
   }
 

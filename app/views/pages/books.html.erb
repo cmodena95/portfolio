@@ -1,6 +1,6 @@
 <div class="books-section" data-controller="hover book">
   <div class="book-scroller">
-    <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", style: "opacity: 0;", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#backwardBook",
+    <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", style: "opacity: 0.2;", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#backwardBook",
     color: "#{image_path "illustrations/arrow_col.png"}", 
     bw: "#{image_path "illustrations/arrow_bw.png"}",
     book_target: "leftArrow"
@@ -34,39 +34,91 @@
   </div>
 
   <div class="book-information">
-    <div class="book-description">
-      <p>
-        'The Fish in the Sea Who Could Not See' is a children's book written by UK-based charity <%= link_to "Learn Achieve Become", "https://www.labcharity.org/" %> and illustrated by me. The book tells the story of three fish, each with their own disability, with the aim of helping children learn about disability inclusivity.
-      </p>
 
-      <br>
+    <div class="flex-column">
+      <div class="flex">
+        <%= image_tag "icons/star.png", class: "star-mini" %>
+        <%= image_tag "icons/star.png", class: "footer-star" %>
+        <%= image_tag "icons/star.png", class: "star-mini" %>
+      </div>
+        <div class="book-description">
+          <p>
+            'The Fish in the Sea Who Could Not See' is a children's book created in 2020, written by UK-based charity <%= link_to "Learn Achieve Become", "https://www.labcharity.org/" %> and illustrated by me. The book tells the story of three fish, each with their own disability, with the aim of helping children learn about disability inclusivity.
+          </p>
 
-      <p>
-        Though now discontinued, profits from the book's sales were used to fund the charity's missions in Africa and Central America, which include bringing free education to rural areas and supporting people with disabilities.
-      </p>
+          <br>
 
-      <br>
+          <p>
+            Though now discontinued, profits from the book's sales were used to fund the charity's missions in Africa and Central America, which include bringing free education to rural areas and supporting people with disabilities.
+          </p>
 
-      <p>
-        The book was also distributed for free to schools in Xuzhou, China and Eldoret, Kenya to help children practice their reading.
-      </p>
+          <p>
+            The book is part of a wider series of illustrations I did for Learn Achieve Become, which included their <span class="book-text" data-action="mouseover->hover#display mouseout->hover#hide" data-function="logo">charity logo</span>
+            <span class="book-hover-lab" data-hover-target="logo">
+              <%= image_tag "books/the_fish_in_the_sea/lab.png", class: "lab-img" %>
+            </span>
+            
+            and 
+
+            <span class="book-text" data-action="mouseover->hover#display mouseout->hover#hide" data-function="myanmar">sticker designs for Myanmar.</span>
+              <span class="book-hover-photo" data-hover-target="myanmar">
+                <%= image_tag "books/the_fish_in_the_sea/myanmar/1.png", class: "myanmar-img" %>
+                <%= image_tag "books/the_fish_in_the_sea/myanmar/2.png", class: "myanmar-img" %>
+                <%= image_tag "books/the_fish_in_the_sea/myanmar/3.png", class: "myanmar-img" %>
+              </span>
+            
+            
+          </p>
+
+          <br>
+        </div>
+      <div class="flex">
+        <%= image_tag "icons/star.png", class: "star-mini" %>
+        <%= image_tag "icons/star.png", class: "footer-star" %>
+        <%= image_tag "icons/star.png", class: "star-mini" %>
+      </div>
+    </div>
+
+
+  </div>
+
+    <div class="flex-column">
+      <div class="flex">
+        <%= image_tag "icons/star.png", class: "star-mini" %>
+        <%= image_tag "icons/star.png", class: "footer-star" %>
+        <%= image_tag "icons/star.png", class: "star-mini" %>
+      </div>
+
+      <div class="book-description">
+        <p>
+          The book was also distributed for free to schools in Xuzhou, China and Eldoret, Kenya. It was used in classrooms to help children practice their english reading and comprehension.
+        </p>
+      </div>
+
+      <div class="flex">
+        <%= image_tag "icons/star.png", class: "star-mini" %>
+        <%= image_tag "icons/star.png", class: "footer-star" %>
+        <%= image_tag "icons/star.png", class: "star-mini" %>
+      </div>
     </div>
 
     <div class="school-scroller">
-      <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", style: "opacity: 0;", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#backwardSchool",
+      <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", style: "opacity: 0.2;", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#backwardSchool",
       color: "#{image_path "illustrations/arrow_col.png"}", 
       bw: "#{image_path "illustrations/arrow_bw.png"}",
       book_target: "leftArrowSchool"
       } %>
 
       <div class="china-school" data-book-target="schoolImage" data-image="1" data-status="active">
-        <%= image_tag "books/the_fish_in_the_sea/schools/1.png" %>
-        <%= image_tag "books/the_fish_in_the_sea/schools/2.png" %>
+        <%#= image_tag "books/the_fish_in_the_sea/schools/1.png" %>
+        <%#= image_tag "books/the_fish_in_the_sea/schools/2.png" %>
+        <%= image_tag "books/the_fish_in_the_sea/schools/china.png" %>
       </div>
 
       <div class="kenya-school hidden" data-book-target="schoolImage" data-image="2" data-status="inactive">
-        <%= image_tag "books/the_fish_in_the_sea/schools/3.png" %>
-        <%= image_tag "books/the_fish_in_the_sea/schools/4.png" %>
+        <%#= image_tag "books/the_fish_in_the_sea/schools/3.png" %>
+        <%#= image_tag "books/the_fish_in_the_sea/schools/4.png" %>
+        <%= image_tag "books/the_fish_in_the_sea/schools/kenya.png" %>
       </div>
 
       <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", id: "right", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#forwardSchool",
@@ -74,5 +126,6 @@
       bw: "#{image_path "illustrations/arrow_bw.png"}",
       book_target: "rightArrowSchool"} %>
     </div>
-  </div>
+
+    
 </div>

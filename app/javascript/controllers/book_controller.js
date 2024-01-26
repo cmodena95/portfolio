@@ -11,7 +11,7 @@ export default class extends Controller {
 
   forwardBook() {
     if (this.pageNumber == 19) {
-      this.rightArrowTarget.style.opacity = 0
+      this.rightArrowTarget.style.opacity = 0.2
     }
 
     if (this.pageNumber <= 19) {
@@ -53,7 +53,7 @@ export default class extends Controller {
     }
 
     if (this.pageNumber == 1) {
-      this.leftArrowTarget.style.opacity = 0
+      this.leftArrowTarget.style.opacity = 0.2
     }
 
     if (this.pageNumber == 19) {
@@ -82,7 +82,7 @@ export default class extends Controller {
     }
 
     if (this.imageNumber == 2) {
-      this.rightArrowSchoolTarget.style.opacity = 0
+      this.rightArrowSchoolTarget.style.opacity = 0.2
     }
 
     // console.log(this.imageNumber)
@@ -110,7 +110,7 @@ export default class extends Controller {
     }
 
     if (this.imageNumber == 1) {
-      this.leftArrowSchoolTarget.style.opacity = 0
+      this.leftArrowSchoolTarget.style.opacity = 0.2
       this.rightArrowSchoolTarget.style.opacity = 1
     }
   }
