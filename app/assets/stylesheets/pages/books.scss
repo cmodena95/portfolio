@@ -24,6 +24,11 @@
   }
 }
 
+.book-arrow-disabled {
+  width: 5vw;
+  transition: 0.5s ease all;
+}
+
 .book-arrow#right {
   transform: scaleX(-1);
 
@@ -32,12 +37,16 @@
   }
 }
 
+.book-arrow-disabled#right {
+  transform: scaleX(-1);
+}
+
 
 // LAYOUT
 .books-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 2rem;
+  margin: 2rem 0;
   grid-gap: 2rem;
   align-items: center;
   width: 95%;

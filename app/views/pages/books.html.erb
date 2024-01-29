@@ -1,6 +1,6 @@
 <div class="books-section" data-controller="hover book">
   <div class="book-scroller">
-    <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", style: "opacity: 0.2;", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#backwardBook",
+    <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow-disabled", style: "opacity: 0.2;", data: {action: "mouseout->hover#decolor click->book#backwardBook",
     color: "#{image_path "illustrations/arrow_col.png"}", 
     bw: "#{image_path "illustrations/arrow_bw.png"}",
     book_target: "leftArrow"
@@ -103,21 +103,17 @@
     </div>
 
     <div class="school-scroller">
-      <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow", style: "opacity: 0.2;", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#backwardSchool",
+      <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow-disabled", style: "opacity: 0.2;", data: {action: "mouseout->hover#decolor click->book#backwardSchool",
       color: "#{image_path "illustrations/arrow_col.png"}", 
       bw: "#{image_path "illustrations/arrow_bw.png"}",
       book_target: "leftArrowSchool"
       } %>
 
       <div class="china-school" data-book-target="schoolImage" data-image="1" data-status="active">
-        <%#= image_tag "books/the_fish_in_the_sea/schools/1.png" %>
-        <%#= image_tag "books/the_fish_in_the_sea/schools/2.png" %>
         <%= image_tag "books/the_fish_in_the_sea/schools/china.png" %>
       </div>
 
       <div class="kenya-school hidden" data-book-target="schoolImage" data-image="2" data-status="inactive">
-        <%#= image_tag "books/the_fish_in_the_sea/schools/3.png" %>
-        <%#= image_tag "books/the_fish_in_the_sea/schools/4.png" %>
         <%= image_tag "books/the_fish_in_the_sea/schools/kenya.png" %>
       </div>
 

@@ -12,6 +12,9 @@ export default class extends Controller {
   forwardBook() {
     if (this.pageNumber == 19) {
       this.rightArrowTarget.style.opacity = 0.2
+      this.rightArrowTarget.classList.add("book-arrow-disabled")
+      this.rightArrowTarget.classList.remove("book-arrow")
+      this.rightArrowTarget.dataset.action = "mouseout->hover#decolor click->book#forwardBook"
     }
 
     if (this.pageNumber <= 19) {
@@ -31,6 +34,9 @@ export default class extends Controller {
 
     if (this.pageNumber > 1) {
       this.leftArrowTarget.style.opacity = 1
+      this.leftArrowTarget.classList.remove("book-arrow-disabled")
+      this.leftArrowTarget.classList.add("book-arrow")
+      this.leftArrowTarget.dataset.action = "mouseover->hover#color mouseout->hover#decolor click->book#backwardBook"
     }
   }
 
@@ -54,10 +60,17 @@ export default class extends Controller {
 
     if (this.pageNumber == 1) {
       this.leftArrowTarget.style.opacity = 0.2
+      this.leftArrowTarget.classList.add("book-arrow-disabled")
+      this.leftArrowTarget.classList.remove("book-arrow")
+      this.leftArrowTarget.dataset.action = "mouseout->hover#decolor click->book#backwardBook"
     }
 
     if (this.pageNumber == 19) {
       this.rightArrowTarget.style.opacity = 1
+      this.rightArrowTarget.classList.remove("book-arrow-disabled")
+      this.rightArrowTarget.classList.add("book-arrow")
+      this.rightArrowTarget.dataset.action = "mouseover->hover#color mouseout->hover#decolor click->book#forwardBook"
+
     }
   }
 
@@ -79,18 +92,21 @@ export default class extends Controller {
 
     if (this.imageNumber > 0) {
       this.leftArrowSchoolTarget.style.opacity = 1
+      this.leftArrowSchoolTarget.classList.remove("book-arrow-disabled")
+      this.leftArrowSchoolTarget.classList.add("book-arrow")
+      this.leftArrowSchoolTarget.dataset.action = "mouseover->hover#color mouseout->hover#decolor click->book#backwardSchool"
     }
 
     if (this.imageNumber == 2) {
       this.rightArrowSchoolTarget.style.opacity = 0.2
+      this.rightArrowSchoolTarget.classList.add("book-arrow-disabled")
+      this.rightArrowSchoolTarget.classList.remove("book-arrow")
+      this.rightArrowSchoolTarget.dataset.action = "mouseout->hover#decolor click->book#forwardSchool"
     }
-
-    // console.log(this.imageNumber)
   }
 
   backwardSchool() {
 
-    console.log(this.imageNumber)
 
     if (this.imageNumber > 1) {
       this.schoolImageTargets.forEach((image) => {
@@ -111,7 +127,15 @@ export default class extends Controller {
 
     if (this.imageNumber == 1) {
       this.leftArrowSchoolTarget.style.opacity = 0.2
+      this.leftArrowSchoolTarget.classList.add("book-arrow-disabled")
+      this.leftArrowSchoolTarget.classList.remove("book-arrow")
+      this.leftArrowSchoolTarget.dataset.action = "mouseout->hover#decolor click->book#backwardSchool"
+
+
       this.rightArrowSchoolTarget.style.opacity = 1
+      this.rightArrowSchoolTarget.classList.remove("book-arrow-disabled")
+      this.rightArrowSchoolTarget.classList.add("book-arrow")
+      this.rightArrowSchoolTarget.dataset.action = "mouseover->hover#color mouseout->hover#decolor click->book#forwardSchool"
     }
   }
 }
