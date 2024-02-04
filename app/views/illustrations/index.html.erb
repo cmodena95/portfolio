@@ -2,7 +2,7 @@
   <div class="grid-3" data-slide-target="index">
     <% @illustrations.each do |illustration| %>
       <div>
-        <%= cl_image_tag illustration.main_photo.key, data: {action: "click->slide#infoIn", ref: illustration.id} %>
+        <%= cl_image_tag illustration.main_photo.key, style: "#{illustration.dimension == "H" ? "object-position: left;" : ""}", data: {action: "click->slide#infoIn", ref: illustration.id} %>
       </div>
     <% end %>
   </div>
@@ -17,20 +17,63 @@
       </div>
 
       <div class="illustration-show-content">
-        <div class="illustration-show-content-top">
-          <%= cl_image_tag illustration.main_photo.key %>
+        <div class="illustration-show-content-top <%= illustration.photos.empty? ? "main-only" : "" %>">
 
-          <div class="illustration-show-description">
-            <p><%= illustration.description %></p>
-          </div>
+          <% if illustration.photos.empty? && illustration.description == "" %>
+            <div class="flex-column-lg">
+              <%= image_tag "icons/star.png", class: "illustration-star" %>
+              <%= image_tag "icons/star.png", class: "illustration-star-lg" %>
+              <%= image_tag "icons/star.png", class: "illustration-star" %>
+            </div>
+          <% end %>
+
+          <%= cl_image_tag illustration.main_photo.key, id: "#{illustration.dimension == "H" ? "horizontal" : ""}" %>
+
+          <% if illustration.photos.empty? && illustration.description == "" %>
+            <div class="flex-column-lg">
+              <%= image_tag "icons/star.png", class: "illustration-star" %>
+              <%= image_tag "icons/star.png", class: "illustration-star-lg" %>
+              <%= image_tag "icons/star.png", class: "illustration-star" %>
+            </div>
+          <% end %>
+
+          <% if illustration.description == "" %>
+            <div class="illustration-show-content-top-right">
+              <%# if 1 image, full height %>
+              <% if illustration.photos.length == 1 %>
+              <%# if 2 images, half height each %>
+                <%= cl_image_tag illustration.photos.first.key, class: "right-1" %>
+              <% elsif illustration.photos.length > 1 %>
+              <%# etc %>
+                <div class="illustrations-right-2">
+                  <%= cl_image_tag illustration.photos.first.key, class: "right-2" %>
+                  <%= cl_image_tag illustration.photos[1].key, class: "right-2" %>
+                </div>
+              <% end %>
+            </div>
+          <% else %>
+            <div class="illustration-show-description">
+              <p><%= illustration.description %></p>
+            </div>
+          <% end %>
         </div>
 
-        <% if illustration.photos.attached? %>
+        <% if illustration.photos.attached? && illustration.description != "" %>
           <div class="illustrations-photos">
             <% illustration.photos.each do |photo| %>
               <%= cl_image_tag photo.key, class: "#{illustration.photos.length.odd? && illustration.photos.last.key == photo.key ? "final-photo" : ""}" %>
             <% end %>
           </div>
+        <% elsif illustration.photos.attached? && illustration.description == "" %>
+          <% if illustration.photos.length > 1 %>
+          <% illustration.photos[2..].each do |photo| %>
+            <%= cl_image_tag photo.key, class: "#{illustration.photos.length.odd? && illustration.photos.last.key == photo.key ? "final-photo" : ""}" %>
+          <% end %>
+          <% else %>
+            <% illustration.photos[1..].each do |photo| %>
+              <%= cl_image_tag photo.key, class: "#{illustration.photos.length.odd? && illustration.photos.last.key == photo.key ? "final-photo" : ""}" %>
+            <% end %>
+          <% end %>
         <% end %>
       </div>
     </div>

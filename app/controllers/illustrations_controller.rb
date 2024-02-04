@@ -4,7 +4,7 @@ class IllustrationsController < ApplicationController
   before_action :check_device
 
   def index
-    @illustrations = policy_scope(Illustration)
+    @illustrations = policy_scope(Illustration).order("id DESC")
     @language = params[:language] || "en"
   end
 

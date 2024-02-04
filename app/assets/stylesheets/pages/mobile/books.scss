@@ -1,0 +1,45 @@
+#book-page-mobile {
+  width: 70vw;
+
+  a {
+    color: var(--black);
+    text-decoration: underline;
+  }
+}
+
+.arrow-mobile {
+  width: 10vw !important;
+}
+
+.book-mobile {
+  text-align: justify;
+
+  p {
+  margin-top: 2vh;
+  }
+
+  a {
+    color: var(--black);
+    text-decoration: underline;
+  }
+}
+
+.book-hover-photo#mobile {
+  width: 70vw;
+  height: 16vh;
+}
+
+.book-hover-lab#mobile {
+  width: 30vw;
+  height: 16vh;
+  left: 11vw;
+}
+
+.kenya-school#mobile, .china-school#mobile {
+  height: 21vh;
+  width: 60vw;
+}
+
+.school-scroller#mobile {
+  margin-top: 2vh;
+}

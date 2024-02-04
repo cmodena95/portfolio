@@ -1,0 +1,139 @@
+<div class="container-mobile book-mobile" data-controller="book hover">
+  <div class="book-scroller">
+    <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow-disabled arrow-mobile", style: "opacity: 0.2;", data: {action: "mouseout->hover#decolor click->book#backwardBook",
+    color: "#{image_path "illustrations/arrow_col.png"}", 
+    bw: "#{image_path "illustrations/arrow_bw.png"}",
+    book_target: "leftArrow"
+    } %>
+
+    <%= image_tag "books/the_fish_in_the_sea/1.png", data: {status: "active", page: "1", book_target: "page"}, class: "book-page", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/2.png", data: {book_target: "page", page: "2", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/3.png", data: {book_target: "page", page: "3", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/4.png", data: {book_target: "page", page: "4", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/5.png", data: {book_target: "page", page: "5", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/6.png", data: {book_target: "page", page: "6", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/7.png", data: {book_target: "page", page: "7", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/8.png", data: {book_target: "page", page: "8", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/9.png", data: {book_target: "page", page: "9", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/10.png", data: {book_target: "page", page: "10", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/11.png", data: {book_target: "page", page: "11", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/12.png", data: {book_target: "page", page: "12", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/13.png", data: {book_target: "page", page: "13", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/14.png", data: {book_target: "page", page: "14", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/15.png", data: {book_target: "page", page: "15", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/16.png", data: {book_target: "page", page: "16", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/17.png", data: {book_target: "page", page: "17", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/18.png", data: {book_target: "page", page: "18", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/19.png", data: {book_target: "page", page: "19", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+    <%= image_tag "books/the_fish_in_the_sea/20.png", data: {book_target: "page", page: "20", status: "inactive"}, class: "book-page hidden", id: "book-page-mobile" %>
+
+    <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow arrow-mobile", id: "right", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#forwardBook",
+    color: "#{image_path "illustrations/arrow_col.png"}", 
+    bw: "#{image_path "illustrations/arrow_bw.png"}",
+    book_target: "rightArrow"} %>
+  </div>
+
+  <p>
+    <% if @language == "en" %>
+      'The Fish in the Sea Who Could Not See' is a children's book created in 2020, written by UK-based charity <%= link_to "Learn Achieve Become", "https://www.labcharity.org/" %> and illustrated by me. The book tells the story of three fish, each with their own disability, with the aim of helping children learn about disability inclusivity.
+    <% elsif @language == "pt" %>
+      'The Fish in the Sea Who Could Not See' é um livro infantil criado em 2020, escrito pela instituição de caridade britânica <%= link_to "Learn Achieve Become", "https://www.labcharity.org/" %> e com ilustrações feitas por mim. O livro conta a história de três peixinhos, cada um com sua própria deficiência, e tem como objetivo ensinar às crianças sobre a inclusão de pessoas com deficiência. 
+    <% elsif @language == "es" %>
+      'The Fish in the Sea Who Could Not See' es un libro infantil creado en 2020, escrito por la organización benéfica británica <%= link_to "Learn Achieve Become", "https://www.labcharity.org/" %> e ilustrado por mí. El libro cuenta la historia de tres peces, cada uno con su propia discapacidad, y tiene el objetivo de ayudar a los niños a aprender sobre la inclusión de la discapacidad.
+    <% end %>
+  </p>
+
+
+  <p>
+    <% if @language == "en" %>
+      Though now discontinued, profits from the book's sales were used to fund the charity's missions in Africa and Central America, which include bringing free education to rural areas and supporting people with disabilities.
+    <% elsif @language == "pt" %>
+      Embora agora descontinuado, os lucros das vendas do livro foram usados para financiar as missões da instituição na África e na América Central, que incluem levar educação gratuita às áreas rurais e apoiar pessoas com deficiências.
+    <% elsif @language == "es" %>
+      Aunque ahora está descatalogado, los beneficios de las ventas del libro se destinaron a financiar las misiones de la organización benéfica en África y Centroamérica, que incluyen llevar educación gratuita a zonas rurales y apoyar a personas con discapacidad.
+    <% end %>
+  </p>
+
+
+
+  <p>
+    <% if @language == "en" %>
+    The book is part of a wider series of illustrations I did for Learn Achieve Become, which included their <span class="book-text" data-action="click->hover#display mouseout->hover#hide" data-function="logo">charity logo</span>
+    <span class="book-hover-lab" data-hover-target="logo" id="mobile">
+      <%= image_tag "books/the_fish_in_the_sea/lab.png", class: "lab-img" %>
+    </span>
+    
+    and 
+
+    <span class="book-text" data-action="click->hover#display mouseout->hover#hide" data-function="myanmar">sticker designs for Myanmar.</span>
+    <span class="book-hover-photo" data-hover-target="myanmar" id="mobile">
+      <%= image_tag "books/the_fish_in_the_sea/myanmar/1.png", class: "myanmar-img" %>
+      <%= image_tag "books/the_fish_in_the_sea/myanmar/2.png", class: "myanmar-img" %>
+      <%= image_tag "books/the_fish_in_the_sea/myanmar/3.png", class: "myanmar-img" %>
+    </span>
+    <% elsif @language == "pt" %>
+      O livro faz parte de uma série de ilustrações que fiz para a Learn Achieve Become, que incluiu o seu <span class="book-text" data-action="click->hover#display mouseout->hover#hide" data-function="logo">logo</span>
+      <span class="book-hover-lab" data-hover-target="logo" id="mobile">
+        <%= image_tag "books/the_fish_in_the_sea/lab.png", class: "lab-img" %>
+      </span>
+
+      e
+
+      <span class="book-text" data-action="click->hover#display mouseout->hover#hide" data-function="myanmar">designs de adesivos para Mianmar.</span>
+      <span class="book-hover-photo" data-hover-target="myanmar" id="mobile">
+        <%= image_tag "books/the_fish_in_the_sea/myanmar/1.png", class: "myanmar-img" %>
+        <%= image_tag "books/the_fish_in_the_sea/myanmar/2.png", class: "myanmar-img" %>
+        <%= image_tag "books/the_fish_in_the_sea/myanmar/3.png", class: "myanmar-img" %>
+      </span>
+
+
+
+    <% elsif @language == "es" %>
+      El libro forma parte de una serie de ilustraciones que hice para Learn Achieve Become, que incluía su <span class="book-text" data-action="click->hover#display mouseout->hover#hide" data-function="logo">logotipo</span>
+      <span class="book-hover-lab" data-hover-target="logo" id="mobile">
+        <%= image_tag "books/the_fish_in_the_sea/lab.png", class: "lab-img" %>
+      </span>
+
+      y
+
+      <span class="book-text" data-action="click->hover#display mouseout->hover#hide" data-function="myanmar">diseños de pegatinas para Myanmar.</span>
+      <span class="book-hover-photo" data-hover-target="myanmar" id="mobile">
+        <%= image_tag "books/the_fish_in_the_sea/myanmar/1.png", class: "myanmar-img" %>
+        <%= image_tag "books/the_fish_in_the_sea/myanmar/2.png", class: "myanmar-img" %>
+        <%= image_tag "books/the_fish_in_the_sea/myanmar/3.png", class: "myanmar-img" %>
+      </span>
+    <% end %>
+  </p>
+
+
+  <div class="school-scroller" id="mobile">
+    <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow-disabled arrow-mobile", style: "opacity: 0.2;", data: {action: "mouseout->hover#decolor click->book#backwardSchool",
+    color: "#{image_path "illustrations/arrow_col.png"}", 
+    bw: "#{image_path "illustrations/arrow_bw.png"}",
+    book_target: "leftArrowSchool"
+    } %>
+
+    <div class="china-school" data-book-target="schoolImage" data-image="1" data-status="active" id="mobile">
+      <%= image_tag "books/the_fish_in_the_sea/schools/china.png" %>
+    </div>
+
+    <div class="kenya-school hidden" data-book-target="schoolImage" data-image="2" data-status="inactive" id="mobile">
+      <%= image_tag "books/the_fish_in_the_sea/schools/kenya.png" %>
+    </div>
+
+    <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow arrow-mobile", id: "right", data: {action: "mouseover->hover#color mouseout->hover#decolor click->book#forwardSchool",
+    color: "#{image_path "illustrations/arrow_col.png"}", 
+    bw: "#{image_path "illustrations/arrow_bw.png"}",
+    book_target: "rightArrowSchool"} %>
+  </div>
+
+  <p>
+    <% if @language == "en" %>
+      The book was also distributed for free to schools in Xuzhou, China and Eldoret, Kenya. It was used in classrooms to help children practice their english reading and comprehension.
+    <% elsif @language == "pt" %>
+      O livro também foi distribuído gratuitamente para escolas em Xuzhou, na China, e Eldoret, no Quênia. Ele foi usado em salas de aula para ajudar as crianças a praticar leitura e compreensão em inglês.
+    <% elsif @language == "es" %>
+      El libro también se distribuyó gratuitamente en escuelas de Xuzhou (China) y Eldoret (Kenia). Se utilizó en las aulas para ayudar a los niños a practicar su lectura y comprensión en inglés.
+    <% end %>
+  </p>
+</div>

@@ -30,10 +30,11 @@
   gap: 2rem;
   padding-bottom: 2rem;
 
-  height: 90vh;
+  height: 100vh;
 
-  img {
-    width: 55%;
+  & > img {
+    width: 50%;
+    object-fit: cover;
   }
 }
 
@@ -42,14 +43,15 @@
   background-position: center;
   background-image: asset-url("illustrations/illustrations_show_bg.png");
   color: var(--white);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
   overflow: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0.5rem;
+  // padding: 0.5rem;
+  justify-content: center;
 
   p {
     max-height: 80vh;
@@ -90,4 +92,45 @@
   width: 100% !important;
   height: 50vh;
   padding-bottom: 0 !important;
+  object-fit: cover;
+}
+
+.right-2 {
+  height: 47.5%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.illustrations-right-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.right-1 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-only {
+  justify-content: center;
+}
+
+.illustration-star {
+  height: 1rem;
+  width: 1rem;
+  object-fit: cover;
+}
+
+.illustration-star-lg {
+  height: 2rem;
+  width: 2rem;
+  object-fit: cover;
+}
+
+#horizontal {
+  width: 80% !important;
+  object-fit: contain;
 }

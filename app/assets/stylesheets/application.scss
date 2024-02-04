@@ -50,12 +50,16 @@ h2 {
   color: var(--black);
 }
 
-.flex, .flex-column {
+.flex, .flex-column, .flex-column-lg {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flex-column {
+.flex-column, .flex-column-lg {
   flex-direction: column;
+}
+
+.flex-column-lg {
+  gap: 2rem;
 }
