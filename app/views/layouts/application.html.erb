@@ -39,6 +39,10 @@
 
     <% if current_page?(about_path) %>
       <%= image_tag "about/footer.png", class: "#{ browser.device.mobile? ? "about-footer-mobile" :  "about-footer"}" %>
+    <% elsif current_page?(books_path) %>
+      <div class="fish-footer">
+        <%= image_tag "books/the_fish_in_the_sea/fish.png" %>
+      </div>
     <% end %>
   </body>
 </html>
