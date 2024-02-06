@@ -1,3 +1,11 @@
+<%= link_to :back do %>
+  <%= image_tag "illustrations/arrow_col.png", class: "back-mobile"%>
+<% end %>
+
+<div class="fish-header-mobile">
+  <%= image_tag "books/the_fish_in_the_sea/header-mobile.png" %>
+</div>
+
 <div class="container-mobile book-mobile" data-controller="book hover">
   <div class="book-scroller">
     <%= image_tag "illustrations/arrow_bw.png", class: "book-arrow-disabled arrow-mobile", style: "opacity: 0.2;", data: {action: "mouseout->hover#decolor click->book#backwardBook",
@@ -66,7 +74,7 @@
     and 
 
     <span class="book-text" data-action="click->hover#display mouseout->hover#hide" data-function="myanmar">sticker designs for Myanmar.</span>
-    <span class="book-hover-photo" data-hover-target="myanmar" id="mobile">
+    <span class="book-hover-photo myanmar" data-hover-target="myanmar" id="mobile">
       <%= image_tag "books/the_fish_in_the_sea/myanmar/1.png", class: "myanmar-img" %>
       <%= image_tag "books/the_fish_in_the_sea/myanmar/2.png", class: "myanmar-img" %>
       <%= image_tag "books/the_fish_in_the_sea/myanmar/3.png", class: "myanmar-img" %>
@@ -80,7 +88,7 @@
       e
 
       <span class="book-text" data-action="click->hover#display mouseout->hover#hide" data-function="myanmar">designs de adesivos para Mianmar.</span>
-      <span class="book-hover-photo" data-hover-target="myanmar" id="mobile">
+      <span class="book-hover-photo myanmar" data-hover-target="myanmar" id="mobile">
         <%= image_tag "books/the_fish_in_the_sea/myanmar/1.png", class: "myanmar-img" %>
         <%= image_tag "books/the_fish_in_the_sea/myanmar/2.png", class: "myanmar-img" %>
         <%= image_tag "books/the_fish_in_the_sea/myanmar/3.png", class: "myanmar-img" %>
@@ -97,7 +105,7 @@
       y
 
       <span class="book-text" data-action="click->hover#display mouseout->hover#hide" data-function="myanmar">diseños de pegatinas para Myanmar.</span>
-      <span class="book-hover-photo" data-hover-target="myanmar" id="mobile">
+      <span class="book-hover-photo myanmar" data-hover-target="myanmar" id="mobile">
         <%= image_tag "books/the_fish_in_the_sea/myanmar/1.png", class: "myanmar-img" %>
         <%= image_tag "books/the_fish_in_the_sea/myanmar/2.png", class: "myanmar-img" %>
         <%= image_tag "books/the_fish_in_the_sea/myanmar/3.png", class: "myanmar-img" %>
