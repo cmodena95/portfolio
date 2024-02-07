@@ -84,7 +84,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 6rem;
+  margin: 2rem 0;
 }
 
 
@@ -217,9 +217,9 @@
 }
 
 .header {
+  height: 52vh;
   width: 60vw;
-  // height: 50vw;
-  object-fit: contain;
+  margin-top: 5vh;
 }
 
 

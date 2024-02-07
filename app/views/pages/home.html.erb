@@ -1,7 +1,7 @@
 <div data-controller="parallax">
   <div class="banner-container">
     <div class="header-container">
-      <%= image_tag "header.png", class: "header" %>
+      <%= image_tag "header.png", class: "header", data: {parallax_target: "header"} %>
     </div>
 
     <div class="banner" data-action="scroll@window->parallax#move">
