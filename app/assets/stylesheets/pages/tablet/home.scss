@@ -1,0 +1,96 @@
+.banner#tablet {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.mountain#tablet {
+  height: 100vh;
+  object-fit: cover;
+  width: 180%;
+  transform: translate(-400px, 0px);
+}
+
+.header#tablet {
+  height: 33vh;
+  width: 80vw;
+  margin-top: 10vh;
+}
+
+.tree#tablet {
+  width: 26rem;
+  transform: translate(0, 100px);
+}
+
+.houses#tablet {
+  width: 26rem;
+  transform: translate(0, 100px);
+}
+
+.sun#tablet {
+  transform: translate(0, -98px);
+}
+
+.sushi-tablet {
+  height: 13vh;
+  transform: translate(0px, -50px);
+}
+
+.guava-tablet {
+  height: 13vh;
+  transform: translate(0px, 0px);
+  z-index: 1000;
+}
+
+.swan-tablet {
+  height: 13vh;
+  transform: translate(0px, -100px);
+}
+
+.statue-tablet {
+  height: 13vh;
+  transform: translate(0px, 0px);
+}
+
+.pizza-tablet {
+  height: 13vh;
+  transform: translate(0px, -100px);
+  z-index: 1000;
+}
+
+.menu-item-tablet {
+  height: 10vh;
+
+  &#illustrations {
+    height: 12vh;
+  }
+}
+
+.home-menu#tablet {
+  width: 100%;
+  // padding-bottom: 6rem;
+}
+
+.home-tablet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-menu-level-2#tablet {
+  justify-content: space-around;
+}
+
+.objects-tablet {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+// FOOTER
+.footer#tablet {
+  height: 28vh;
+  padding-bottom: 1vh;
+  margin-top: 3vh;
+}

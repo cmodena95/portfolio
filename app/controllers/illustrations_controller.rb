@@ -6,6 +6,8 @@ class IllustrationsController < ApplicationController
   def index
     @illustrations = policy_scope(Illustration).order("id DESC")
     @language = params[:language] || "en"
+
+    p  "hi #{browser.device.tablet?}"
   end
 
   def show
@@ -53,5 +55,6 @@ class IllustrationsController < ApplicationController
 
   def check_device
     request.variant = :phone if browser.device.mobile?
+    request.variant = :tablet if browser.device.tablet?
   end
 end

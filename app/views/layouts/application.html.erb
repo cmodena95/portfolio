@@ -11,11 +11,11 @@
   </head>
 
   <body>
-    <% unless browser.device.mobile? %>
+    <% unless browser.device.mobile? || browser.device.tablet? %>
       <%= render "shared/languages" %>
     <% end %>
 
-    <% if browser.device.mobile? %>
+    <% if browser.device.mobile? || browser.device.tablet? %>
       <div class="layout-mobile">
         <% unless current_page?(root_path) || current_page?(new_user_session_path) %>
           <%= render "shared/navbar_mobile" %>
