@@ -10,8 +10,10 @@
         I'm an illustrator and web development teacher. I'm Brazilian but grew up in England. My identity crisis as the English cousin in Brazil but the Brazilian friend in England eventually took me to live in Spain, where I'm just another person 'not from here'.
       </p>
 
+      <br>
+
       <p>
-        I've been drawing my entire life but only realised after being approached to illustrate a children's book for the charity Learn Achieve Become that art could have a purpose (the book is no longer for sale, but <span class="book-text">hover here<%= image_tag "about/book_photo.png", class: "about-book-photo" %></span> for a picture of a kid in Xuzhou, China reading it).
+        I've been drawing my entire life but only realised after being approached to illustrate a <%= link_to "children's book", books_path(language: @language) %> for the charity Learn Achieve Become that art could have a purpose. Soon after, I learned to code and decided to see how I could combine these two things.
       </p>
     </div>
   <% end %>
@@ -25,9 +27,10 @@
         Sou ilustradora e professora de programação. Sou brasileira mas cresci na Inglaterra. Minha crise de identidade como a prima inglesa no Brasil mas a amiga brasileira na Inglaterra acabou me levando a morar aqui na Espanha, onde sou apenas mais uma pessoa 'não daqui'.
       </p>
 
-      <p>
-        Desenho desde criança, mas só percebi que a arte poderia ter um propósito depois de ser abordada para ilustrar um livro infantil para a ONG Learn Achieve Become (o livro não está mais à venda, mas <span class="book-text">passe o mouse aquí<%= image_tag "about/book_photo.png", class: "about-book-photo" %></span> pra ver uma criança em Xuzhou, China, lendo ele).
+      <br>
 
+      <p>
+        Desenho desde criança, mas só percebi que a arte poderia ter um propósito depois de ser abordada para ilustrar um <%= link_to "livro infantil", books_path(language: @language) %> para a ONG Learn Achieve Become. Logo depois, aprendi a programar e decidi ver como poderia cmbinar as duas coisas.
       </p>
     </div>
   <% end %>
@@ -41,8 +44,10 @@
         Soy ilustradora y professora de programación. Soy brasileña pero crecí en Inglaterra. Mi crise de identidad como la prima inglesa en Brasil pero la amiga brasileña en Inglaterra me acabó llevandome a vivir aquí en españa, donde soy simplemente una persona más 'no de aquí'.
       </p>
 
+      <br>
+
       <p>
-        Dibujo desde niña, pero sólo me di cuenta de que el arte podía tener un propósito cuande me propusieron ilustrar un libro infantil para la ONG Learn Achieve Become (el libro ya no está a la venta, pero puedes pasar el mouse <span class="book-text">aquí<%= image_tag "about/book_photo.png", class: "about-book-photo" %></span> para ver a un niño en Xuzhou, China, leyéndolo).
+        Dibujo desde niña, pero sólo me di cuenta de que el arte podía tener un propósito cuande me propusieron ilustrar un <%= link_to "libro infantil", books_path(language: @language) %> para la ONG Learn Achieve Become. Poco después, aprendí a programar y me puse a explorar como poría mezclar ambas cosas.
       </p>
     </div>
   <% end %>
@@ -57,7 +62,7 @@
     <br>
 
     <p>
-      For all types of illustration work, including individual drawings, comics or books, animations and tattoo designs, get in touch <%= mail_to "cmodena95@gmail.com", "here" %> :)
+      For all types of work, including websites, illustrations, comics or books, animations and tattoo designs, get in touch using the links on the left :)
     </p>
   <% end %>
 
@@ -69,7 +74,7 @@
     <br>
 
     <p>
-      Para cualquier tipo de trabajo de ilustración, incluyendo dibujos individuales, comics o libros, animaciónes y diseños de tatuajes, ponte en contacto conmigo <%= mail_to "cmodena95@gmail.com", "aquí" %> :)
+      Para cualquier tipo de trabajo, incluyendo webs, ilustraciones, comics o libros, animaciónes y diseños de tatuajes, ponte en contacto conmigo a través de los links de la izquierda :)
     </p>
   <% end %>
 
@@ -81,7 +86,7 @@
     <br>
 
     <p>
-      Para qualquer tipo de trabalho de ilustração, including desenhos, histórias em quadrinhos ou livros, animações e desenhos de tatuagem, entre em contato <%= mail_to "cmodena95@gmail.com", "aquí" %> :)
+      Para qualquer tipo de trabalho, including sites, ilustrações, histórias em quadrinhos ou livros, animações e desenhos de tatuagem, entre em contato através dos links no lado esquerdo :)
     </p>
   <% end %>
 </div>

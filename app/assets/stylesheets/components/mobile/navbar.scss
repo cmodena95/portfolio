@@ -86,3 +86,10 @@
   width: 20vw;
   z-index: 101;
 }
+
+@media screen and (max-width: 375px), 
+       screen and (max-height: 667px) {
+  .menu-btn {
+    bottom: -4rem;
+  }
+}

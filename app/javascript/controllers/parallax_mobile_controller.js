@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="parallax-mobile"
 export default class extends Controller {
-  static targets = ["mountain", "tree", "houses", "sun"]
+  static targets = ["mountain", "tree", "houses", "sun", "header"]
 
   connect() {
     this.mountainPos = 0
@@ -27,5 +27,10 @@ export default class extends Controller {
     
     this.sunPos = window.scrollY + 20
     this.sunTarget.style.transform = `translate(0px, -${this.sunPos}px)`
+
+    this.headerWidth = (90 - (window.scrollY / 20))
+    this.headerHeight = (22 - (window.scrollY / 40))
+    this.headerTarget.style.width = `${this.headerWidth}vw`
+    this.headerTarget.style.height = `${this.headerHeight}vh`
   }
 }

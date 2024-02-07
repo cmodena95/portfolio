@@ -75,3 +75,12 @@
     height: 14vh;
   }
 }
+
+
+@media screen and (max-width: 375px), 
+       screen and (max-height: 667px) {
+  .china-school#mobile, .kenya-school#mobile {
+    height: 21vh;
+    width: 49vw;
+  }
+}

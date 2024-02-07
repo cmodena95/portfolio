@@ -19,6 +19,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  a {
+    color: var(--black);
+    text-decoration: underline;
+  }
 }
 
 .about-bottom {
@@ -26,10 +31,6 @@
 
   p {
     padding-right: 4rem;
-  }
-
-  a {
-    color: var(--dark-purple);
   }
 
   p:first-child {

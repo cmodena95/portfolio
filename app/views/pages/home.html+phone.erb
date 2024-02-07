@@ -1,11 +1,17 @@
 <div data-controller="parallax-mobile">
-  <div class="banner-mobile" data-action="scroll@window->parallax-mobile#move">
-    <%= image_tag "mountain.png", class: "mountain-mobile", data: {parallax_mobile_target: "mountain"} %>
-    <div class="banner-bg-mobile">
-      <%= image_tag "tree.png", class: "tree-mobile", data: {parallax_mobile_target: "tree"} %>
-      <%= image_tag "houses.png", class: "houses-mobile", data: {parallax_mobile_target: "houses"} %>
+  <div class="banner-container">
+    <div class="header-container-mobile">
+      <%= image_tag "header.png", class: "header-mobile", data: {parallax_mobile_target: "header"} %>
+    </div>
 
-      <%= image_tag "sun.png", class: "sun-mobile", data: {parallax_mobile_target: "sun"} %>
+    <div class="banner-mobile" data-action="scroll@window->parallax-mobile#move">
+      <%= image_tag "mountain.png", class: "mountain-mobile", data: {parallax_mobile_target: "mountain"} %>
+      <div class="banner-bg-mobile">
+        <%= image_tag "tree.png", class: "tree-mobile", data: {parallax_mobile_target: "tree"} %>
+        <%= image_tag "houses.png", class: "houses-mobile", data: {parallax_mobile_target: "houses"} %>
+
+        <%= image_tag "sun.png", class: "sun-mobile", data: {parallax_mobile_target: "sun"} %>
+      </div>
     </div>
   </div>
 

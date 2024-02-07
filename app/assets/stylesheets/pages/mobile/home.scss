@@ -50,6 +50,20 @@
   z-index: 1;
 }
 
+.header-mobile {
+  width: 90vw;
+  height: 22vh;
+}
+
+.header-container-mobile {
+  height: 50vh;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
 
 
 // MENU
@@ -91,7 +105,7 @@
 }
 
 .statue-mobile {
-  width: 30vw;
+  width: 24vw;
   transform: rotate(11.0429deg);
 }
 

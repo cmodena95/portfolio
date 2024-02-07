@@ -10,7 +10,7 @@ export default class extends Controller {
     this.treePosVertical = 200
     this.housesPosHorizontal = 0
     this.housesPosVertical = 200
-    this.sunPos = 125
+    this.sunPos = 50
 
     this.guavaPos = -19
     this.sushiPos = -39
@@ -22,7 +22,8 @@ export default class extends Controller {
   }
 
   move() {
-    this.sunPos = (125 - (window.scrollY) + 2)
+    // this.sunPos = (125 - (window.scrollY) + 2)
+    this.sunPos = (50 - (window.scrollY) + 2)
     this.sunTarget.style.transform = `translate(-350px, ${this.sunPos}px)`
 
     this.mountainPos = (((window.scrollY / 13) - 80) - 0.1)
@@ -40,8 +41,8 @@ export default class extends Controller {
     // header
     // this.headerPos = (0 - (window.scrollY / 2.5))
     // this.headerTarget.style.transform = `translate(0,${this.headerPos}px)`
-    this.headerWidth = (60 - (window.scrollY / 10))
-    this.headerHeight = (52 - (window.scrollY / 10))
+    this.headerWidth = (60 - (window.scrollY / 30))
+    this.headerHeight = (52 - (window.scrollY / 30))
 
     this.headerTarget.style.width = `${this.headerWidth}vw`
     this.headerTarget.style.height = `${this.headerHeight}vh`

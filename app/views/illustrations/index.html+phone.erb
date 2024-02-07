@@ -19,17 +19,19 @@
     <div class="illustrations-show-mobile hidden off-screen" data-ref="<%= illustration.id %>" data-slide-mobile-target="show">
       <%= image_tag "illustrations/arrow_col.png", class: "back-mobile", data: {action: "click->slide-mobile#hide", ref: illustration.id} %>
 
-      <div class="container-mobile">
+      <div class="container-mobile illustration-content-mobile">
 
         <%= cl_image_tag illustration.main_photo.key, class: "illustration-photo-mobile" %>
 
-        <div class="illustrations-show-description-mobile">
-          <div>
-            <p>
-              <%= illustration.description %>
-            </p>
+        <% if illustration.description != "" %>
+          <div class="illustrations-show-description-mobile">
+            <div>
+              <p>
+                <%= illustration.description %>
+              </p>
+            </div>
           </div>
-        </div>
+        <% end %>
 
         <% illustration.photos.each do |photo| %>
           <%= cl_image_tag photo.key, class: "illustration-photo-mobile" %>
