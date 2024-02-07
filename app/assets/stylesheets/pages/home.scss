@@ -207,6 +207,21 @@
   transform: translate(60px, 40px);
 }
 
+.header-container {
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  position: absolute;
+}
+
+.header {
+  width: 60vw;
+  // height: 50vw;
+  object-fit: contain;
+}
+
 
 
 @media screen and (min-width: 2000px) {

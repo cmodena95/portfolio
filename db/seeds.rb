@@ -130,69 +130,69 @@ User.create(
   # E Deus respondeu 'mais ou menos!'
   
   # 'É Tudo Pra Ontem', Emicida
-  "
-# )
-# i.main_photo.attach(io: File.open('app/assets/images/drawings/13.png'), filename: "13", content_type: "image/png")
-# i.save
+#   "
+# # )
+# # i.main_photo.attach(io: File.open('app/assets/images/drawings/13.png'), filename: "13", content_type: "image/png")
+# # i.save
 
 
 
 
-# i = Illustration.new(
-#   description: ""
-# )
-# i.main_photo.attach(io: File.open('app/assets/images/drawings/14.png'), filename: "14", content_type: "image/png")
-# i.photos.attach(io: File.open('app/assets/images/drawings/14-1.png'), filename: "14-1", content_type: "image/png")
-# i.photos.attach(io: File.open('app/assets/images/drawings/14-2.png'), filename: "14-2", content_type: "image/png")
-# i.save
+# # i = Illustration.new(
+# #   description: ""
+# # )
+# # i.main_photo.attach(io: File.open('app/assets/images/drawings/14.png'), filename: "14", content_type: "image/png")
+# # i.photos.attach(io: File.open('app/assets/images/drawings/14-1.png'), filename: "14-1", content_type: "image/png")
+# # i.photos.attach(io: File.open('app/assets/images/drawings/14-2.png'), filename: "14-2", content_type: "image/png")
+# # i.save
 
 
-# i = Illustration.new(
-#   description: ""
-# )
-# i.main_photo.attach(io: File.open('app/assets/images/drawings/15.png'), filename: "15", content_type: "image/png")
-# i.photos.attach(io: File.open('app/assets/images/drawings/15-1.png'), filename: "15-1", content_type: "image/png")
-# i.save
+# # i = Illustration.new(
+# #   description: ""
+# # )
+# # i.main_photo.attach(io: File.open('app/assets/images/drawings/15.png'), filename: "15", content_type: "image/png")
+# # i.photos.attach(io: File.open('app/assets/images/drawings/15-1.png'), filename: "15-1", content_type: "image/png")
+# # i.save
 
 
-# i = Illustration.new(
-#   description: ""
-# )
-# i.main_photo.attach(io: File.open('app/assets/images/drawings/16.png'), filename: "16", content_type: "image/png")
-# i.photos.attach(io: File.open('app/assets/images/drawings/16-1.png'), filename: "16-1", content_type: "image/png")
-# i.photos.attach(io: File.open('app/assets/images/drawings/16-2.png'), filename: "16-2", content_type: "image/png")
-# i.save
+# # i = Illustration.new(
+# #   description: ""
+# # )
+# # i.main_photo.attach(io: File.open('app/assets/images/drawings/16.png'), filename: "16", content_type: "image/png")
+# # i.photos.attach(io: File.open('app/assets/images/drawings/16-1.png'), filename: "16-1", content_type: "image/png")
+# # i.photos.attach(io: File.open('app/assets/images/drawings/16-2.png'), filename: "16-2", content_type: "image/png")
+# # i.save
 
 
-# i = Illustration.new(
-#   description: ""
-# )
-# i.main_photo.attach(io: File.open('app/assets/images/drawings/17.png'), filename: "17", content_type: "image/png")
-# i.photos.attach(io: File.open('app/assets/images/drawings/17-1.png'), filename: "17-1", content_type: "image/png")
-# i.photos.attach(io: File.open('app/assets/images/drawings/17-2.png'), filename: "17-2", content_type: "image/png")
-# i.save
+# # i = Illustration.new(
+# #   description: ""
+# # )
+# # i.main_photo.attach(io: File.open('app/assets/images/drawings/17.png'), filename: "17", content_type: "image/png")
+# # i.photos.attach(io: File.open('app/assets/images/drawings/17-1.png'), filename: "17-1", content_type: "image/png")
+# # i.photos.attach(io: File.open('app/assets/images/drawings/17-2.png'), filename: "17-2", content_type: "image/png")
+# # i.save
 
 
-# i = Illustration.new(
-#   description: ""
-# )
-# i.main_photo.attach(io: File.open('app/assets/images/drawings/18.png'), filename: "18", content_type: "image/png")
-# i.photos.attach(io: File.open('app/assets/images/drawings/18-1.png'), filename: "18-1", content_type: "image/png")
-# i.save
+# # i = Illustration.new(
+# #   description: ""
+# # )
+# # i.main_photo.attach(io: File.open('app/assets/images/drawings/18.png'), filename: "18", content_type: "image/png")
+# # i.photos.attach(io: File.open('app/assets/images/drawings/18-1.png'), filename: "18-1", content_type: "image/png")
+# # i.save
 
 
-# i = Illustration.new(
-#   description: ""
-# )
-# i.main_photo.attach(io: File.open('app/assets/images/drawings/19.png'), filename: "19", content_type: "image/png")
-# i.photos.attach(io: File.open('app/assets/images/drawings/19-1.png'), filename: "19-1", content_type: "image/png")
-# i.photos.attach(io: File.open('app/assets/images/drawings/19-2.png'), filename: "19-2", content_type: "image/png")
-# i.save
+# # i = Illustration.new(
+# #   description: ""
+# # )
+# # i.main_photo.attach(io: File.open('app/assets/images/drawings/19.png'), filename: "19", content_type: "image/png")
+# # i.photos.attach(io: File.open('app/assets/images/drawings/19-1.png'), filename: "19-1", content_type: "image/png")
+# # i.photos.attach(io: File.open('app/assets/images/drawings/19-2.png'), filename: "19-2", content_type: "image/png")
+# # i.save
 
 
-# i = Illustration.new(
-#   description: ""
-# )
-# i.main_photo.attach(io: File.open('app/assets/images/drawings/20.png'), filename: "20", content_type: "image/png")
-# i.photos.attach(io: File.open('app/assets/images/drawings/20-1.png'), filename: "20-1", content_type: "image/png")
-# i.save
+# # i = Illustration.new(
+# #   description: ""
+# # )
+# # i.main_photo.attach(io: File.open('app/assets/images/drawings/20.png'), filename: "20", content_type: "image/png")
+# # i.photos.attach(io: File.open('app/assets/images/drawings/20-1.png'), filename: "20-1", content_type: "image/png")
+# # i.save

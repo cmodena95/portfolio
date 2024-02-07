@@ -1,12 +1,19 @@
 <div data-controller="parallax">
-  <div class="banner" data-action="scroll@window->parallax#move">
-    <%= image_tag "mountain.png", class: "mountain", data: {parallax_target: "mountain"} %>
-    <div class="banner-bg">
-      <%= image_tag "sun.png", class: "sun", data: {parallax_target: "sun"} %>
+  <div class="banner-container">
+    <div class="header-container">
+      <%= image_tag "header.png", class: "header" %>
+    </div>
 
-      <%#= image_tag "shark.png", class: "shark", data: {parallax_target: "shark"} %>
-      <%= image_tag "tree.png", class: "tree", data: {parallax_target: "tree"} %>
-      <%= image_tag "houses.png", class: "houses", data: {parallax_target: "houses"} %>
+    <div class="banner" data-action="scroll@window->parallax#move">
+
+      <%= image_tag "mountain.png", class: "mountain", data: {parallax_target: "mountain"} %>
+      <div class="banner-bg">
+        <%= image_tag "sun.png", class: "sun", data: {parallax_target: "sun"} %>
+
+        <%#= image_tag "shark.png", class: "shark", data: {parallax_target: "shark"} %>
+        <%= image_tag "tree.png", class: "tree", data: {parallax_target: "tree"} %>
+        <%= image_tag "houses.png", class: "houses", data: {parallax_target: "houses"} %>
+      </div>
     </div>
   </div>
 
