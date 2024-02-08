@@ -4,10 +4,6 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["myanmar", "logo"]
 
-  connect() {
-    console.log("hi")
-  }
-
   color(event) {
     event.currentTarget.src = event.currentTarget.dataset.color
   }

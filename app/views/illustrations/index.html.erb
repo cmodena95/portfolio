@@ -2,7 +2,7 @@
   <div class="grid-3" data-slide-target="index">
     <% @illustrations.each do |illustration| %>
       <div>
-        <%= cl_image_tag illustration.main_photo.key, style: "#{illustration.dimension == "H" ? "object-position: left;" : ""}", data: {action: "click->slide#infoIn", ref: illustration.id} %>
+        <%= cl_image_tag illustration.main_photo.key, style: "#{illustration.dimension == "H" ? "object-position: left;" : ""}", data: {action: "click->slide#infoIn", ref: illustration.id, slide_target: "image"} %>
       </div>
     <% end %>
   </div>

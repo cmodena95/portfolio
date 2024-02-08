@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="slide"
 export default class extends Controller {
-  static targets = ["modal", "index"]
+  static targets = ["modal", "index", "image"]
 
   infoIn(event) {
     this.indexTarget.classList.add("hidden")
@@ -42,6 +42,19 @@ export default class extends Controller {
       setTimeout(() => {
         this.indexTarget.classList.remove("hidden")
       }, 700)
+
+      const refNum = event.currentTarget.dataset.ref
+
+      setTimeout(() => {
+        const img = document.querySelector(`[data-ref="${refNum}"]`)
+        // console.log(img.offsetTop)
+        // this.indexTarget.scrollTop = img.offsetTop
+        img.scrollIntoView({ behavior: "smooth" })
+      }, 800, refNum)
+
+
+      // document.querySelectorAll('[data-slide-target="image"]')[7].offsetTop
+      
     })
   }
 }
