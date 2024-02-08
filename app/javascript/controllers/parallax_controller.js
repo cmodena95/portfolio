@@ -5,62 +5,70 @@ export default class extends Controller {
   static targets = ["mountain", "tree", "houses", "sun", "swan", "guava", "sushi", "statue", "pizza", "header"]
 
   connect() {
-    this.mountainPos = -80
-    this.treePosHorizontal = 0
-    this.treePosVertical = 200
-    this.housesPosHorizontal = 0
-    this.housesPosVertical = 200
-    this.sunPos = 50
+    // this.mountainPos = -80
+    // this.treePosHorizontal = 0
+    // this.treePosVertical = 200
+    // this.housesPosHorizontal = 0
+    // this.housesPosVertical = 200
+    // this.sunPos = 50
 
-    this.guavaPos = -19
-    this.sushiPos = -39
-    this.pizzaPos = 0
-    this.statuePos = 21
-    this.swanPos = -10
+    // this.guavaPos = -19
+    // this.sushiPos = -39
+    // this.pizzaPos = 0
+    // this.statuePos = 21
+    // this.swanPos = -10
 
-    this.lastScrollTop = 0
+    // this.lastScrollTop = 0
   }
 
   move() {
-    // this.sunPos = (125 - (window.scrollY) + 2)
-    this.sunPos = (50 - (window.scrollY) + 2)
-    this.sunTarget.style.transform = `translate(-350px, ${this.sunPos}px)`
+    if (window.screen.availWidth <= 1024) {
+      this.sunPos = (0 - (window.scrollY) + 2)
+      this.mountainPos = (((window.scrollY / 13) - 400) - 0.1)
+      this.treePosHorizontal = (0 - (window.scrollY / 10))
+      this.treePosVertical = (100 - (window.scrollY / 7))
+      this.housesPosHorizontal = (0 - (window.scrollY / 4))
+      this.housesPosVertical = (100 - (window.scrollY / 8))
+      this.headerWidth = (80 - (window.scrollY / 30))
+      this.headerHeight = (33 - (window.scrollY / 30))
 
-    this.mountainPos = (((window.scrollY / 13) - 80) - 0.1)
+      this.guavaPos = (0 + (window.scrollY / 45))
+      this.sushiPos = (-80 + (window.scrollY / 55))
+      this.pizzaPos = -70 + (window.scrollY / 35)
+      this.statuePos = (0 + (window.scrollY / 55))
+      this.swanPos = (-100 + (window.scrollY / 35))
+    } else {
+      this.sunPos = (50 - (window.scrollY) + 2)
+      this.mountainPos = (((window.scrollY / 13) - 80) - 0.1)
+      this.treePosHorizontal = (0 - (window.scrollY / 2))
+      this.treePosVertical = (200 - (window.scrollY / 10))
+      this.housesPosHorizontal = (0 - (window.scrollY / 2.5))
+      this.housesPosVertical = (200 - (window.scrollY / 6))
+      this.headerWidth = (60 - (window.scrollY / 30))
+      this.headerHeight = (52 - (window.scrollY / 30))
+
+      this.guavaPos = (-19 + (window.scrollY / 20))
+      this.sushiPos = (-39 + (window.scrollY / 17))
+      this.pizzaPos = (window.scrollY / 13)
+      this.statuePos = (21 + (window.scrollY / 20))
+      this.swanPos = (-10 + (window.scrollY / 10))
+    }
+
+    
+    this.sunTarget.style.transform = `translate(${window.screen.availWidth <= 1024 ? "-80" : "-350"}px, ${this.sunPos}px)`
     this.mountainTarget.style.transform = `translate(${this.mountainPos}px,0)`
-
-    this.treePosHorizontal = (0 - (window.scrollY / 2))
-    this.treePosVertical = (200 - (window.scrollY / 10))
     this.treeTarget.style.transform = `translate(${this.treePosHorizontal}px,${this.treePosVertical}px)`
-
-    this.housesPosHorizontal = (0 - (window.scrollY / 2.5))
-    this.housesPosVertical = (200 - (window.scrollY / 6))
     this.housesTarget.style.transform = `translate(${this.housesPosHorizontal}px,${this.housesPosVertical}px)`
 
-
     // header
-    // this.headerPos = (0 - (window.scrollY / 2.5))
-    // this.headerTarget.style.transform = `translate(0,${this.headerPos}px)`
-    this.headerWidth = (60 - (window.scrollY / 30))
-    this.headerHeight = (52 - (window.scrollY / 30))
-
     this.headerTarget.style.width = `${this.headerWidth}vw`
     this.headerTarget.style.height = `${this.headerHeight}vh`
 
     // objects
-    this.guavaPos = (-19 + (window.scrollY / 20))
-    this.guavaTarget.style.transform = `translate(61%, ${this.guavaPos}%)`
-
-    this.sushiPos = (-39 + (window.scrollY / 17))
-    this.sushiTarget.style.transform = `translate(1%, ${this.sushiPos}%) rotate(135deg)`
-
-    this.pizzaPos = (window.scrollY / 13)
+    this.guavaTarget.style.transform = `translate(${window.screen.availWidth <= 1024 ? "0" : "61%"}, ${this.guavaPos}%)`
+    this.sushiTarget.style.transform = `translate(${window.screen.availWidth <= 1024 ? "0" : "1%"}, ${this.sushiPos}%) rotate(135deg)`
     this.pizzaTarget.style.transform = `translate(0%, ${this.pizzaPos}%)`
-
-    this.statuePos = (21 + (window.scrollY / 20))
-    this.statueTarget.style.transform = `translate(-29%, ${this.statuePos}%)`
-
-    this.swanPos = (-10 + (window.scrollY / 10))
-    this.swanTarget.style.transform = `translate(-190%, ${this.swanPos}%) rotate(-15deg)`
+    this.statueTarget.style.transform = `translate(${window.screen.availWidth <= 1024 ? "0" : "-29%"}, ${this.statuePos}%)`
+    this.swanTarget.style.transform = `translate(${window.screen.availWidth <= 1024 ? "0" : "-190%"}, ${this.swanPos}%) rotate(-15deg)`
   }
 }

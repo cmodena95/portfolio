@@ -6,8 +6,6 @@ class IllustrationsController < ApplicationController
   def index
     @illustrations = policy_scope(Illustration).order("id DESC")
     @language = params[:language] || "en"
-
-    p  "hi #{browser.device.tablet?}"
   end
 
   def show
@@ -52,6 +50,8 @@ class IllustrationsController < ApplicationController
   def illustration_params
     params.require(:illustration).permit(:description, :main_photo, photos: [])
   end
+
+  private
 
   def check_device
     request.variant = :phone if browser.device.mobile?
