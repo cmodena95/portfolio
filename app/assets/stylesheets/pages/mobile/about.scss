@@ -3,14 +3,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: justify;
 
   p {
-    color: var(--white);
+    color: var(--black);
   }
 
   a {
     color: var(--dark-blue);
   }
+}
+
+.about-mobile > div {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .about-photo-mobile {

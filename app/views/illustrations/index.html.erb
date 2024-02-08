@@ -52,8 +52,20 @@
               <% end %>
             </div>
           <% else %>
+            <div class="flex description-stars">
+              <%= image_tag "icons/star.png", class: "illustration-star" %>
+              <%= image_tag "icons/star.png", class: "illustration-star-lg" %>
+              <%= image_tag "icons/star.png", class: "illustration-star" %>
+            </div>
+
             <div class="illustration-show-description">
               <p><%= illustration.description %></p>
+            </div>
+
+            <div class="flex description-stars">
+              <%= image_tag "icons/star.png", class: "illustration-star" %>
+              <%= image_tag "icons/star.png", class: "illustration-star-lg" %>
+              <%= image_tag "icons/star.png", class: "illustration-star" %>
             </div>
           <% end %>
         </div>

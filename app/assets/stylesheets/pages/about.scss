@@ -57,9 +57,26 @@
   height: 15vh;
 }
 
+.contact-tablet {
+  display: none;
+}
+
 
 
 @media screen and (max-width: 1024px) {
+  .contact-tablet {
+    display: inline;
+
+    a {
+      text-decoration: underline;
+      color: var(--black);
+    }
+  }
+
+  .contact-desktop {
+    display: none;
+  }
+
   .about-title {
     height: 12vh;
     margin-bottom: 2rem;

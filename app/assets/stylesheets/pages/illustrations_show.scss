@@ -43,6 +43,10 @@
   }
 }
 
+.description-stars {
+  display: none !important;
+}
+
 .illustration-show-description {
   width: 100%;
   background-position: center;
@@ -147,6 +151,10 @@
     overflow: hidden;
   }
 
+  .description-stars {
+    display: flex;
+  }
+
   .illustration-show-content-top {
     height: auto;
   }
@@ -166,5 +174,7 @@
   .illustration-show-description > p {
     width: unset;
     height: auto;
+
+    font-size: 2rem;
   }
 }

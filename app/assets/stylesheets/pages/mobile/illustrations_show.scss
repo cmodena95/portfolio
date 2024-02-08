@@ -11,23 +11,14 @@
 
 .illustrations-show-description-mobile {
   margin: 0.5rem 0;
-  // background-color: var(--dark-purple);
-  // background-position: center;
+  // background-color: var(--light-purple);
   background-size: contain;
-  background-image: asset-url("illustrations/illustrations_show_bg.png");
-  padding: 1rem;
   background-repeat: no-repeat;
-
-  height: 33vh;
-  width: 51vw;
-
-  & > div {
-    max-height: 32vh;
-    overflow: auto;
-  }
+  text-align: justify;
+  // padding: 1rem;
 
   p {
-    color: var(--white);
+    color: var(--black);
   }
 }
 

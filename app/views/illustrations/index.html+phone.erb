@@ -24,12 +24,24 @@
         <%= cl_image_tag illustration.main_photo.key, class: "illustration-photo-mobile" %>
 
         <% if illustration.description != "" %>
+          <div class="flex">
+            <%= image_tag "icons/star.png", class: "illustration-star" %>
+            <%= image_tag "icons/star.png", class: "illustration-star-lg" %>
+            <%= image_tag "icons/star.png", class: "illustration-star" %>
+          </div>
+
           <div class="illustrations-show-description-mobile">
             <div>
               <p>
                 <%= illustration.description %>
               </p>
             </div>
+          </div>
+
+          <div class="flex" style="margin-bottom: 2rem;">
+            <%= image_tag "icons/star.png", class: "illustration-star" %>
+            <%= image_tag "icons/star.png", class: "illustration-star-lg" %>
+            <%= image_tag "icons/star.png", class: "illustration-star" %>
           </div>
         <% end %>
 
