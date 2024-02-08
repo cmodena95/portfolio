@@ -21,7 +21,7 @@
   <% if @language == "pt" %>
     <div class="about-text">
       <div>
-        <%= image_tag "about/about_pt.png", class: "about-title" %>
+        <%= image_tag "about/about_pt.png", class: "about-title", id: "pt" %>
       </div>
       <p>
         Sou ilustradora e professora de programação. Sou brasileira mas cresci na Inglaterra. Minha crise de identidade como a prima inglesa no Brasil mas a amiga brasileira na Inglaterra acabou me levando a morar aqui na Espanha, onde sou apenas mais uma pessoa 'não daqui'.
@@ -62,7 +62,7 @@
     <br>
 
     <p>
-      For all types of work, including websites, illustrations, comics or books, animations and tattoo designs, get in touch using the links on the left :)
+      For all types of work, including websites, illustrations, comics or books, animations and tattoo designs, get in touch using the links in the menu :)
     </p>
   <% end %>
 
@@ -74,7 +74,7 @@
     <br>
 
     <p>
-      Para cualquier tipo de trabajo, incluyendo webs, ilustraciones, comics o libros, animaciónes y diseños de tatuajes, ponte en contacto conmigo a través de los links a la izquierda :)
+      Para cualquier tipo de trabajo, incluyendo webs, ilustraciones, comics o libros, animaciónes y diseños de tatuajes, ponte en contacto conmigo a través de los links en el menu :)
     </p>
   <% end %>
 
@@ -86,7 +86,9 @@
     <br>
 
     <p>
-      Para qualquer tipo de trabalho, including sites, ilustrações, histórias em quadrinhos ou livros, animações e desenhos de tatuagem, entre em contato através dos links no lado esquerdo :)
+      Para qualquer tipo de trabalho, including sites, ilustrações, histórias em quadrinhos ou livros, animações e desenhos de tatuagem, entre em contato através dos links no menu :)
     </p>
   <% end %>
 </div>
+
+<%= render "shared/navbar_tablet" %>

@@ -1,4 +1,4 @@
-<div data-controller="slide hover" style="max-width: 80vw; overflow: hidden;">
+<div data-controller="slide hover" class="show-container">
   <div class="grid-3" data-slide-target="index">
     <% @illustrations.each do |illustration| %>
       <div>
@@ -79,3 +79,5 @@
     </div>
   <% end %>
 </div>
+
+<%= render "shared/navbar_tablet" %>

@@ -45,6 +45,16 @@
 }
 
 
+@media screen and (max-width: 1024px) {
+  .illustration-show-content-top {
+    flex-direction: column;
+
+    & > img {
+      width: 100%;
+    }
+  }
+}
+
 @media screen and (max-width: 375px), 
        screen and (max-height: 667px) {
   .illustrations-show-description-mobile {

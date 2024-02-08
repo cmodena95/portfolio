@@ -82,3 +82,13 @@
 .language-icon.hidden {
   transform: translate(120%, 0);
 }
+
+.language-icons-tablet {
+  width: 15vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .languages {
+    display: none;
+  }
+}

@@ -1,0 +1,17 @@
+<div class="container-mobile contact-mobile">
+  <div class="contact-header">
+    <%= image_tag "icons/star.png", class: "footer-star" %>
+    <%= image_tag "menu_#{@language}/contact_#{@language}_bw.png", class: "menu-item-mobile" %>
+    <%= image_tag "icons/star.png", class: "footer-star" %>
+  </div>
+
+  <%= mail_to "cmodena95@gmail.com" do %>
+    <%= image_tag "contact/email.png", class: "contact-email-tablet" %>
+  <% end %>
+
+  <%= link_to "https://www.instagram.com/camillustrate", target: "_blank" do %>
+    <%= image_tag "contact/instagram.png", class: "contact-instagram-tablet" %>
+  <% end %>
+</div>
+
+<%= render "shared/navbar_tablet" %>

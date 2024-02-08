@@ -188,6 +188,7 @@
     animation-name: fish-sway;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    z-index: -1;
   }
 }
 
@@ -202,5 +203,42 @@
 
   100% {
     transform: translate(0px, 0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .books-section {
+    grid-template-columns: 1fr;
+    width: 90%;
+    padding: 0 5%;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .book-arrow, .book-arrow-disabled {
+    width: 8vw;
+  }
+
+  .book-page {
+    width: 50vw;
+  }
+
+  .optional {
+    display: none !important;
+  }
+
+  .china-school, .kenya-school {
+    width: 100%;
+    height: 100%;
+  }
+
+  .fish-footer {
+    height: 30vh;
+  }
+
+  .fish-header img {
+    width: 95vw;
   }
 }

@@ -55,6 +55,5 @@ class IllustrationsController < ApplicationController
 
   def check_device
     request.variant = :phone if browser.device.mobile?
-    request.variant = :tablet if browser.device.tablet?
   end
 end

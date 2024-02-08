@@ -1,0 +1,81 @@
+<div data-controller="menu" style="position: fixed; top: 0;">
+  <div class="menu-mobile menu-hidden" data-menu-target="menu">
+    <div class="menu-mobile-options">
+      <%= link_to root_path(language: @language) do %>
+        <%= image_tag "logo.png", class: "logo-mobile",
+          data: {action: "mouseover->hover#color mouseout->hover#decolor",
+          color: "#{image_path "logo_animated_en.png"}", 
+          bw: "#{image_path "logo.png"}"}  %>
+      <% end %>
+
+      <div style="display: flex; align-items: center;">
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+        <%= link_to illustrations_path(language: @language), data: {languages_target: "illustrationsLink"} do %>
+          <%= image_tag "menu_#{@language}/illustrations_#{@language}_#{current_page?(illustrations_path) ? "col" : "bw"}.png", class: "menu-item-tablet-illustrations", data: {
+          languages_target: "illustrations",
+          en: "#{image_path "menu_en/illustrations_en_bw.png"}",
+          es: "#{image_path "menu_es/illustrations_es_bw.png"}",
+          pt: "#{image_path "menu_pt/illustrations_pt_bw.png"}"
+          } %>
+        <% end %>
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+      </div>
+
+      <div style="display: flex; align-items: center;">
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+        <%= link_to books_path(language: @language), data: {languages_target: "booksLink"} do %>
+          <%= image_tag "menu_#{@language}/books_#{@language}_#{current_page?(books_path) ? "col" : "bw"}.png", class: "menu-item-mobile-sm books-mobile", data: {
+          languages_target: "books",
+          en: "#{image_path "menu_en/books_en_bw.png"}",
+          es: "#{image_path "menu_es/books_es_bw.png"}",
+          pt: "#{image_path "menu_pt/books_pt_bw.png"}"
+          } %>
+        <% end %>
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+      </div>
+      
+      <div style="display: flex; align-items: center;">
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+        <%= link_to about_path(language: @language), data: {languages_target: "aboutLink"} do %>
+          <%= image_tag "menu_#{@language}/about_#{@language}_#{current_page?(about_path) ? "col" : "bw"}.png", class: "menu-item-mobile-sm", data: 
+          {languages_target: "about",
+          en: "#{image_path "menu_en/about_en_bw.png"}",
+          es: "#{image_path "menu_es/about_es_bw.png"}",
+          pt: "#{image_path "menu_pt/about_pt_bw.png"}"
+          } %>
+        <% end %>
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+      </div>
+
+      <div style="display: flex; align-items: center;">
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+        <%= link_to contact_path(language: @language), data: {languages_target: "contactLink"} do %>
+          <%= image_tag "menu_#{@language}/contact_#{@language}_#{current_page?(contact_path) ? "col" : "bw"}.png", class: "menu-item-mobile", data: 
+          {languages_target: "contact",
+          en: "#{image_path "menu_en/contact_en_bw.png"}",
+          es: "#{image_path "menu_es/contact_es_bw.png"}",
+          pt: "#{image_path "menu_pt/contact_pt_bw.png"}"
+          } %>
+        <% end %>
+        <%= image_tag "icons/star.png", class: "menu-star-mobile" %>
+      </div>
+
+      <%# LANGUAGES %>
+      <div class="languages-mobile">
+       <%= link_to request.params.merge(language: "en") do %>
+        <%= image_tag "languages/en#{@language == "en" ? "_col": ""}.png", class: "language-icons-tablet" %>
+      <% end %>
+        
+       <%= link_to request.params.merge(language: "es") do %>
+        <%= image_tag "languages/es#{@language == "es" ? "_col": ""}.png", class: "language-icons-tablet", id: "es" %>
+      <% end %>
+
+       <%= link_to request.params.merge(language: "pt") do %>
+        <%= image_tag "languages/pt#{@language == "pt" ? "_col": ""}.png", class: "language-icons-tablet", id: "pt" %>
+      <% end %>
+      </div>
+    </div>
+  </div>
+
+  <%= image_tag "menu.png", class: "menu-btn", data: {action: "click->menu#toggleMenu" } %>
+</div>

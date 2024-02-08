@@ -56,3 +56,62 @@
 .about-title {
   height: 15vh;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+  .about-title {
+    height: 12vh;
+    margin-bottom: 2rem;
+
+    &#pt {
+      width: 90vw;
+    }
+  }
+
+  .about-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-photo {
+    width: 50%;
+  }
+
+  .about-text {
+    align-items: center;
+  }
+
+  .about-bottom {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-text > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .about-bottom p:last-child, .about-bottom p:first-child {
+  //   width: 100%;
+  // }
+
+  .about-top p, .about-bottom p {
+    margin-right: 0 !important;
+    padding: 0 !important;
+    font-size: 2rem;
+
+    width: 90% !important;
+  }
+
+  .about-footer {
+    bottom: unset;
+  }
+
+  .about-text {
+    text-align: justify;
+  }
+}

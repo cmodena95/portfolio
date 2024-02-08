@@ -87,6 +87,33 @@
   z-index: 101;
 }
 
+
+// TABLET
+.menu-item-tablet-illustrations {
+  width: 38vw;
+}
+
+.back-tablet {
+  height: 7rem;
+  margin: 1rem;
+  display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .menu-btn {
+    height: 13vh;
+    bottom: -7.5rem;
+    right: -6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-btn {
+    bottom: -6.5rem;
+  }
+}
+
 @media screen and (max-width: 375px), 
        screen and (max-height: 667px) {
   .menu-btn {

@@ -3,6 +3,11 @@
   transition: 0.5s ease all;
 }
 
+.show-container {
+  max-width: 80vw;
+  overflow: hidden;
+}
+
 .illustration-show-top {
   display: flex;
   align-items: center;
@@ -133,4 +138,33 @@
 #horizontal {
   width: 80% !important;
   object-fit: contain;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .show-container {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .illustration-show-content-top {
+    height: auto;
+  }
+
+  .illustrations-right-2 {
+    gap: 2rem;
+  }
+
+  .illustration-show-top {
+    margin-left: 1rem;
+  }
+
+  .illustration-show-description {
+    background-image: none;
+  }
+
+  .illustration-show-description > p {
+    width: unset;
+    height: auto;
+  }
 }
