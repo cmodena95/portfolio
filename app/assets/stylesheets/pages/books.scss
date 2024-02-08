@@ -219,10 +219,11 @@
 
   .book-hover-lab {
     width: 16vw;
-    opacity: 1;
-    right: 4vw;
+    // opacity: 0;
     height: 18vh;
-    bottom: -37vw;
+    left: unset !important;
+    right: 10vw !important;
+    bottom: -34vh !important;
   }
 
   .book-hover-photo {
