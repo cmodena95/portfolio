@@ -32,6 +32,8 @@ export default class extends Controller {
       this.headerWidth = (80 - (window.scrollY / 30))
       this.headerHeight = (33 - (window.scrollY / 30))
 
+      this.sunVert = -80
+
       this.guavaPos = (0 + (window.scrollY / 45))
       this.sushiPos = (-80 + (window.scrollY / 55))
       this.pizzaPos = -70 + (window.scrollY / 35)
@@ -47,6 +49,8 @@ export default class extends Controller {
       this.headerWidth = (60 - (window.scrollY / 30))
       this.headerHeight = (52 - (window.scrollY / 30))
 
+      this.sunVert = -350
+
       this.guavaPos = (-19 + (window.scrollY / 20))
       this.sushiPos = (-39 + (window.scrollY / 17))
       this.pizzaPos = (window.scrollY / 13)
@@ -54,8 +58,11 @@ export default class extends Controller {
       this.swanPos = (-10 + (window.scrollY / 10))
     }
 
+    if (window.screen.availWidth >= 1900) {
+      this.sunVert = -530
+    }
     
-    this.sunTarget.style.transform = `translate(${window.screen.availWidth <= 1024 ? "-80" : "-350"}px, ${this.sunPos}px)`
+    this.sunTarget.style.transform = `translate(${this.sunVert}px, ${this.sunPos}px)`
     this.mountainTarget.style.transform = `translate(${this.mountainPos}px,0)`
     this.treeTarget.style.transform = `translate(${this.treePosHorizontal}px,${this.treePosVertical}px)`
     this.housesTarget.style.transform = `translate(${this.housesPosHorizontal}px,${this.housesPosVertical}px)`

@@ -4,27 +4,47 @@
   <title>The page you were looking for doesn't exist (404)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
+  @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
   .error {
     background-image: url("https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     /* background-size: cover; */
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 
   .sun {
     width: 50vw;
-    height: 80vh;
+    height: 60vh;
+    object-fit: contain;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h2, a {
+    font-family: 'Protest Riot', sans-serif;
+    color: #437c8c;
+  }
+
+  a {
+    font-size: 2rem;
+    text-decoration: none;
   }
 
   </style>
 </head>
 
 <body class="error">
+  <h2>404</h2>
   <img src="sun.png" class="sun">
+  <a href="/">Click here to go back home</a>
 </body>
 </html>

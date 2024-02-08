@@ -345,6 +345,16 @@
   }
 }
 
-// @media screen and (min-width: 1900px) {
+@media screen and (min-width: 1900px) {
+  .sun {
+    transform: translate(-530px, -98px);
+  }
 
-// } 
+  .home-contact-en, .home-contact {
+    height: 20vh;
+  }
+
+  .home-about {
+    height: 18vh;
+  }
+} 
