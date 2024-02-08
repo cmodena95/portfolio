@@ -60,6 +60,7 @@ export default class extends Controller {
 
     if (window.screen.availWidth >= 1900) {
       this.sunVert = -530
+      this.mountainPos = (((window.scrollY / 13) - 180) - 0.1)
     }
     
     this.sunTarget.style.transform = `translate(${this.sunVert}px, ${this.sunPos}px)`
