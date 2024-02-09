@@ -34,11 +34,19 @@
       <div class="home-menu-level-2-mobile">
         <%= image_tag "home_objects/guava.png", class: "guava-mobile", data: { rotate_target: "guava" } %>
 
-        <%= link_to about_path(language: @language) do %>
-          <%= image_tag "menu_#{@language}/about_#{@language}_bw.png", class: "menu-item-mobile-sm", data: {action: "mouseover->hover#color mouseout->hover#decolor",
-          color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}",
-          bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
-        <% end %>
+        <div class="flex-column" style="gap: 1rem;">
+          <%= link_to about_path(language: @language) do %>
+            <%= image_tag "menu_#{@language}/about_#{@language}_bw.png", class: "menu-item-mobile-sm", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+            color: "#{image_path "menu_#{@language}/about_#{@language}_col.png"}",
+            bw: "#{image_path "menu_#{@language}/about_#{@language}_bw.png"}"} %>
+          <% end %>
+
+          <%= link_to books_path(language: @language) do %>
+            <%= image_tag "menu_#{@language}/books_#{@language}_bw.png", class: "menu-item-mobile-sm", data: {action: "mouseover->hover#color mouseout->hover#decolor",
+            color: "#{image_path "menu_#{@language}/books_#{@language}_col.png"}",
+            bw: "#{image_path "menu_#{@language}/books_#{@language}_bw.png"}"} %>
+          <% end %>
+        </div>
 
         <%= image_tag "home_objects/statue.png", class: "statue-mobile", data: { rotate_target: "statue" }%>
       </div>

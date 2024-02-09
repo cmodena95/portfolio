@@ -42,6 +42,14 @@ export default class extends Controller {
       setTimeout(() => {
         this.indexTarget.classList.remove("hidden")
       }, 900)
+      
     })
+
+    const refNum = event.currentTarget.dataset.ref
+
+    setTimeout(() => {
+      const img = document.querySelector(`[data-ref="${refNum}"]`)
+      img.scrollIntoView({ behavior: "smooth" })
+    }, 800, refNum)
   }
 }
