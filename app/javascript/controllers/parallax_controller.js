@@ -4,23 +4,6 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["mountain", "tree", "houses", "sun", "swan", "guava", "sushi", "statue", "pizza", "header"]
 
-  connect() {
-    // this.mountainPos = -80
-    // this.treePosHorizontal = 0
-    // this.treePosVertical = 200
-    // this.housesPosHorizontal = 0
-    // this.housesPosVertical = 200
-    // this.sunPos = 50
-
-    // this.guavaPos = -19
-    // this.sushiPos = -39
-    // this.pizzaPos = 0
-    // this.statuePos = 21
-    // this.swanPos = -10
-
-    // this.lastScrollTop = 0
-  }
-
   move() {
     if (window.screen.availWidth <= 1024) {
       this.sunPos = (0 - (window.scrollY) + 2)
@@ -60,7 +43,7 @@ export default class extends Controller {
 
     if (window.screen.availWidth >= 1900) {
       this.sunVert = -530
-      this.mountainPos = (((window.scrollY / 13) - 180) - 0.1)
+      this.mountainPos = 0
     }
     
     this.sunTarget.style.transform = `translate(${this.sunVert}px, ${this.sunPos}px)`
