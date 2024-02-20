@@ -85,7 +85,7 @@
 .china-school {
   display: flex;
   height: 40vh;
-  width: 25vw;
+  width: auto;
 
   &.hidden {
     display: none;
@@ -102,7 +102,7 @@
   display: grid;
   grid-template-columns: 1fr;
   height: 40vh;
-  width: 25vw;
+  width: auto;
 
   &.hidden {
     display: none;
