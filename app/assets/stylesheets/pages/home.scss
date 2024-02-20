@@ -24,7 +24,7 @@
   width: 120%;
   z-index: 2;
   position: relative;
-  transform: translate(-80px, 0px);
+  // transform: translate(-80px, 0px);
 }
 
 .shark {
@@ -347,7 +347,7 @@
 
 @media screen and (min-width: 1900px) {
   .mountain {
-    transform: translate(0px, 0px);
+    // transform: translate(0px, 0px);
   }
 
   .sun {

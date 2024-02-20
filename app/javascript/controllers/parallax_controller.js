@@ -7,7 +7,7 @@ export default class extends Controller {
   move() {
     if (window.screen.availWidth <= 1024) {
       this.sunPos = (0 - (window.scrollY) + 2)
-      this.mountainPos = (((window.scrollY / 13) - 400) - 0.1)
+      // this.mountainPos = (((window.scrollY / 13) - 400) - 0.1)
       this.treePosHorizontal = (0 - (window.scrollY / 10))
       this.treePosVertical = (100 - (window.scrollY / 7))
       this.housesPosHorizontal = (0 - (window.scrollY / 4))
@@ -24,7 +24,7 @@ export default class extends Controller {
       this.swanPos = (-100 + (window.scrollY / 35))
     } else {
       this.sunPos = (50 - (window.scrollY) + 2)
-      this.mountainPos = (((window.scrollY / 13) - 80) - 0.1)
+      // this.mountainPos = (((window.scrollY / 13) - 80) - 0.1)
       this.treePosHorizontal = (0 - (window.scrollY / 2))
       this.treePosVertical = (200 - (window.scrollY / 10))
       this.housesPosHorizontal = (0 - (window.scrollY / 2.5))
@@ -47,7 +47,7 @@ export default class extends Controller {
     }
     
     this.sunTarget.style.transform = `translate(${this.sunVert}px, ${this.sunPos}px)`
-    this.mountainTarget.style.transform = `translate(${this.mountainPos}px,0)`
+    // this.mountainTarget.style.transform = `translate(${this.mountainPos}px,0)`
     this.treeTarget.style.transform = `translate(${this.treePosHorizontal}px,${this.treePosVertical}px)`
     this.housesTarget.style.transform = `translate(${this.housesPosHorizontal}px,${this.housesPosVertical}px)`
 

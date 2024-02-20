@@ -5,7 +5,7 @@ export default class extends Controller {
   static targets = ["mountain", "tree", "houses", "sun", "header"]
 
   connect() {
-    this.mountainPos = 0
+    // this.mountainPos = 0
     this.treePosHorizontal = -10
     this.treePosVertical = 20
     this.housesPosHorizontal = -100
@@ -22,8 +22,8 @@ export default class extends Controller {
     this.housesPosVertical = (60 - (window.scrollY / 35))
     this.housesTarget.style.transform = `translate(${this.housesPosHorizontal}px,${this.housesPosVertical}px)`
   
-    this.mountainPos = ((window.scrollY / 20) - 0.1)
-    this.mountainTarget.style.transform = `translate(${this.mountainPos}px,0)`
+    // this.mountainPos = ((window.scrollY / 20) - 0.1)
+    // this.mountainTarget.style.transform = `translate(${this.mountainPos}px,0)`
     
     this.sunPos = window.scrollY + 20
     this.sunTarget.style.transform = `translate(0px, -${this.sunPos}px)`
