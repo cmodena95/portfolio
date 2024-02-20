@@ -50,6 +50,6 @@ export default class extends Controller {
     setTimeout(() => {
       const img = document.querySelector(`[data-ref="${refNum}"]`)
       img.scrollIntoView({ behavior: "smooth" })
-    }, 800, refNum)
+    }, 1200, refNum)
   }
 }
