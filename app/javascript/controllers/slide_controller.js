@@ -49,7 +49,7 @@ export default class extends Controller {
         const img = document.querySelector(`[data-ref="${refNum}"]`)
         // console.log(img.offsetTop)
         // this.indexTarget.scrollTop = img.offsetTop
-        img.scrollIntoView({ behavior: "smooth" })
+        window.scroll({top: img.offsetTop, behavior: 'smooth'});
       }, 800, refNum)
 
 
