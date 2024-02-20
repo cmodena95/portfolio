@@ -1,6 +1,10 @@
 .illustration-show {
   // padding: 0 2rem;
   transition: 0.5s ease all;
+
+  img {
+    border-radius: 20px;
+  }
 }
 
 .show-container {
